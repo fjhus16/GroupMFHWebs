@@ -10,7 +10,6 @@ import Link from 'next/link'
 type Props = {
   allPosts: Post[]
 }
-
 export default function Index({ allPosts }: Props) {
   const morePosts = allPosts.slice(0,6)
   return (
@@ -50,7 +49,6 @@ export const getStaticProps = async () => {
     'coverImage',
     'excerpt',
   ])
-
   return {
     props: { allPosts },
   }
