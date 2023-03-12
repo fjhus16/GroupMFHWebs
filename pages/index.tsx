@@ -20,7 +20,7 @@ export default function Index({ allPosts }: Props) {
           <title>{`GroupMFH`}</title>
         </Head>
         <div className='fixed h-[50vh] ism:h-[40vh] md:h-[50vh] w-screen -z-30'>
-          <Image src='/assets/homepage/WallStreet.jpg' className='bg-right -z-30' fill={true} style={{ objectFit: "cover", objectPosition: "right" }} alt={'Wall Street'} />
+          <Image src='/assets/homepage/WallStreet.jpg' loading='eager' className='bg-right -z-30' fill={true} style={{ objectFit: "cover", objectPosition: "right" }} alt={'Wall Street'} />
           <p className='[text-shadow:_0_2px_0_rgb(0_0_0_/_80%)] text-2xl ism:text-3xl md:text-4xl text-white fixed font-bold mt-16 ism:mt-24 md:mt-48 ml-6 ism:ml-8 md:ml-60 -z-20 mx-auto'>Hedef, başarının ilk adımıdır.</p>
           <p className='[text-shadow:_0_2px_0_rgb(0_0_0_/_80%)] text-lg md:text-2xl text-white fixed font-bold mt-28 ism:mt-36 md:mt-64 ml-6 ism:ml-8 md:ml-60 -z-20 mx-auto'>
             Alanlarında uzman kadrodan oluşan ekibimiz,<br />
