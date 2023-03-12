@@ -1,6 +1,6 @@
 const Intro = () => {
   return (
-    <section className="flex-col flex items-center md:justify-between mt-6 mb-6">
+    <section className="flex-col flex items-center md:justify-between pt-6 pb-6">
       <h4 className="text-left text-md md:pl-8">
         MFH Group olarak alanında uzmanlaşmış kadromuz ile küresel çapta, bireysel ve
         kurumsal tüm müşterilerimize en üst seviyede nitelikli hizmet vermek için ekip halinde

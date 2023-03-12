@@ -5,8 +5,8 @@ import { Fragment } from 'react'
 
 const Header = () => {
   return (
-    <Popover className='container mx-auto flex items-center border-b-2 px-6 py-2 h-24'>
-      <Link className='font-bold text-5xl' href='/'>MFH Group</Link>
+    <Popover className='sticky top-0 mx-auto flex items-center border-b-2 px-12 py-2 h-24 bg-white'>
+      <Link className='font-bold text-3xl ism:text-5xl' href='/'>MFH Group</Link>
       <div className='grow'>
         <div className='hidden sm:flex font-bold items-center justify-end gap-2 md:gap-8'>
           <Link className='hover:underline text-xl lg:text-2xl' href='/'>Anasayfa</Link>
