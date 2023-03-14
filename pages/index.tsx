@@ -85,6 +85,7 @@ export default function Index({ allPosts }: Props) {
               <div className=''>
 
                 {accordionData.map((data, index) => {
+                  // @ts-ignore
                   return <AccordionItem key={index} open={index === open} title={data.title} desc={data.desc} toggle={() => toggle(index)} />;
                 })}
 
