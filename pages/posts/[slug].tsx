@@ -39,7 +39,7 @@ export default function Post({ post, morePosts, preview }: Props) {
                 coverImage={post.coverImage}
                 date={post.date}
               />
-              <PostBody content={post.content} />
+              <PostBody content={post.content} date={post.date} />
             </article>
           </>
         )}

@@ -1,12 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 * {
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
 }
-
 html {
     scroll-behavior: smooth;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
