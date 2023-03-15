@@ -36,7 +36,7 @@ export default function Legal() {
           <p>Kişisel veri işlenip işlenmediğini &ouml;ğrenme,</p>
           <p>Kişisel verileri işlenmişse buna ilişkin bilgi talep etme,</p>
           <p>Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını &ouml;ğrenme,</p>
-          <p>Yurt i&ccedil;inde veya yurt dışında kişisel verilerin aktarıldığı &uuml;&ccedil;&uuml;nc&uuml; kişileri bilme,</p>
+          <p>Yurti&ccedil;inde veya yurt dışında kişisel verilerin aktarıldığı &uuml;&ccedil;&uuml;nc&uuml; kişileri bilme,</p>
           <p>Kişisel verilerin eksik veya yanlış işlenmiş olması h&acirc;linde bunların d&uuml;zeltilmesini isteme,</p>
           <p>Kişisel verilerin silinmesini veya yok edilmesini isteme,</p>
           <p>(e) ve (f) bentleri uyarınca yapılan işlemlerin, kişisel verilerin aktarıldığı &uuml;&ccedil;&uuml;nc&uuml; kişilere bildirilmesini isteme,</p>
