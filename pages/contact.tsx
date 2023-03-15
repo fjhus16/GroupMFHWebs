@@ -16,7 +16,7 @@ export default function Contact() {
             <h3 className='pt-3 text-2xl font-bold tracking-tighter leading-tight'>Formu doldurup gönderin, en kısa zamanda isteğinize en uyumlu uzmanımız sizinle iletişime geçecek.</h3>
           </div>
           <div className='my-2 pb-4 pt-2 border rounded-md mt-10 mx-auto md:w-[40vw]'>
-            <form className='flex pt-5 gap-5 flex-col md:w-[40vw] justify-center items-center' action="https://formsubmit.co/form@groupmfh.com" method="POST">
+            <form className='flex pt-5 gap-5 flex-col md:w-[40vw] justify-center items-center' action="https://formsubmit.co/e4d7aa3a78d1dbb9a2517df63907c970" method="POST">
               <TextField required className='w-[90%]' id="outlined-basic" label="İsminiz" name="isim" variant="outlined" />
               <TextField required className='w-[90%]' id="outlined-basic" label="E-posta adresiniz" name="email" variant="outlined" />
               <TextField className='w-[90%]' id="outlined-basic" label="Telefon numaranız" name="telefon" variant="outlined" />
