@@ -11,6 +11,10 @@ export default function Contact() {
           <title>{`GroupMFH`}</title>
         </Head>
         <Container>
+          <div className='flex flex-col justify-center items-center'>
+            <h2 className='mb-8 pt-6 text-5xl font-bold tracking-tighter leading-tight'>İletişim</h2>
+            <h3 className='pt-3 text-2xl font-bold tracking-tighter leading-tight'>Formu doldurup gönderin, en kısa zamanda isteğinize en uyumlu uzmanımız sizinle iletişime geçecek.</h3>
+          </div>
           <div className='my-2 pb-4 pt-2 border rounded-md mt-10 mx-auto md:w-[40vw]'>
             <form className='flex pt-5 gap-5 flex-col md:w-[40vw] justify-center items-center' action="https://formsubmit.co/fce71d935be63f864888db98ccb0ccae" method="POST">
               <TextField className='w-[90%]' id="outlined-basic" label="İsminiz" name="isim" variant="outlined" />

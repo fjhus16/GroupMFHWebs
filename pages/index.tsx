@@ -6,7 +6,6 @@ import Head from 'next/head'
 import Post from '../interfaces/post'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
 import SimpleAccordion from '../components/accordion'
 
 type Props = {
@@ -14,27 +13,8 @@ type Props = {
 }
 export default function Index({ allPosts }: Props) {
 
-  const [open, setOpen] = useState(false);
-
-  const toggle = (index) => {
-    if (open === index) {
-      //if clicked question is already open, then close it
-      return setOpen(false);
-    } else {
-      //if clicked question is not open, then open it
-      return setOpen(index);
-    }
-  }
-
   const morePosts = allPosts.slice(0, 6)
-  const accordionData = [
-       
-    
-    {
-      title: "Şirketler Hukuku Mevzuatı Danışmanlığı",
-      desc: <>6102 sayılı Türk Ticaret Kanunu ve bu Kanuna ilişkin çıkarılan tali mevzuata göre ticari<br/>işletmelerin ve şirketlerin tür değişikliği; şirketlerin birleşme veya bölünme işlemleri vergi<br/>mevzuatıyla uyumlu olarak yapılmasında gerekli hizmetler sunulmaktadır.</>,
-    },
-  ]
+
   return (
     <>
       <Layout>
@@ -55,13 +35,7 @@ export default function Index({ allPosts }: Props) {
             <h2 className="mb-8 pt-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
               Hizmetlerimiz
             </h2>
-            <section className='grid place-items-center'>
-              <div>
-
-              <SimpleAccordion />
-
-              </div>
-            </section>
+            <SimpleAccordion />
           </div>
           <div className='flex flex-col justify-center items-center'>
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}

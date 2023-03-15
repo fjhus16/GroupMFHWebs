@@ -43,11 +43,11 @@ export default function Legal() {
           <p>İşlenen verilerin m&uuml;nhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya &ccedil;ıkmasına itiraz etme,</p>
           <p>Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması h&acirc;linde zararın giderilmesini talep etme, haklarına sahiptir.</p>
           <p><br /></p>
-          <p>Yukarıda sayılan haklarınızı kullanmak &uuml;zere <a data-fr-linked="true" href="mailto:info@groupmfh.com">info@groupmfh.com</a> &uuml;zerinden bizimle iletişime ge&ccedil;ebilirsiniz.</p>
+          <p>Yukarıda sayılan haklarınızı kullanmak &uuml;zere <a data-fr-linked="true" href="mailto:kvkk@groupmfh.com">kvkk@groupmfh.com</a> &uuml;zerinden bizimle iletişime ge&ccedil;ebilirsiniz.</p>
           <p><br /></p>
           <p>İletişim</p>
           <p><br /></p>
-          <p>Sizlere hizmet sunabilmek ama&ccedil;lı analizler yapabilmek i&ccedil;in, sadece gerekli olan kişisel verilerinizin, işbu gizlilik ve kişisel verilerin işlenmesi politikası uyarınca işlenmesini, kabul edip etmemek hususunda tamamen &ouml;zg&uuml;rs&uuml;n&uuml;z. Siteyi kullanmaya devam ettiğiniz takdirde kabul etmiş olduğunuz tarafımızca varsayılacak olup, daha ayrıntılı bilgi i&ccedil;in bizimle <a data-fr-linked="true" href="mailto:info@groupmfh.com">info@groupmfh.com</a> e-mail adresi &uuml;zerinden iletişime ge&ccedil;mekten l&uuml;tfen &ccedil;ekinmeyiniz.</p>
+          <p>Sizlere hizmet sunabilmek ama&ccedil;lı analizler yapabilmek i&ccedil;in, sadece gerekli olan kişisel verilerinizin, işbu gizlilik ve kişisel verilerin işlenmesi politikası uyarınca işlenmesini, kabul edip etmemek hususunda tamamen &ouml;zg&uuml;rs&uuml;n&uuml;z. Siteyi kullanmaya devam ettiğiniz takdirde kabul etmiş olduğunuz tarafımızca varsayılacak olup, daha ayrıntılı bilgi i&ccedil;in bizimle <a data-fr-linked="true" href="mailto:kvkk@groupmfh.com">kvkk@groupmfh.com</a> e-mail adresi &uuml;zerinden iletişime ge&ccedil;mekten l&uuml;tfen &ccedil;ekinmeyiniz.</p>
         </Container>
       </Layout>
     </>
