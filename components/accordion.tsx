@@ -24,19 +24,6 @@ export default function SimpleAccordion() {
             <Accordion>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel2a-content"
-                    id="panel2a-header">
-                    <Typography variant="h5">Bağımsız Denetim Hizmetleri</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Typography>
-                        <>KGK ve SPK yetki belgeleri ile şirketlerin finansal bilgilerinin,<br />düzenleyici kurumlarca belirlenen esaslara göre bağımsız denetimi ve raporlanması faaliyetlerini kapsar.<br />MFH Group, söz konusu denetimlerde finansal tablolarda şirketin ekonomik durumuna ilişkin verilen bilgilerin<br />doğruluğunu belirlemeyi amaçlar.</>
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion>
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel3a-content"
                     id="panel3a-header">
                     <Typography variant="h5">Muhasebe ve Mali Danışmanlık Hizmetleri</Typography>

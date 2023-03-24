@@ -25,11 +25,11 @@ export default function Contact() {
               <input type="text" name="_honey" className="hidden" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="box" />
-              <button className='w-[20%] py-2 rounded bg-gray-800 text-white' type="submit">Gönder</button>
+              <button className='w-[25%] py-2 px-2 rounded bg-gray-800 text-white' type="submit">Gönder</button>
             </form>
           </div>
         </Container>
       </Layout>
     </>
   )
-}
+} 
