@@ -2,11 +2,12 @@ import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Fragment } from 'react'
+import Image from 'next/image'
 
 const Header = () => {
   return (
     <Popover className='sticky top-0 mx-auto flex items-center border-b-2 px-12 py-2 h-24 z-10 bg-white'>
-      <Link className='font-bold text-3xl ism:text-5xl' href='/en/'>MFH Group</Link>
+      <Link className='font-bold text-3xl ism:text-5xl' href='/en/'><Image src={'/assets/header/logo.png'} alt={'MFH Group Logo'} width={150} height={85}></Image></Link>
       <div className='grow'>
         <div className='hidden sm:flex font-bold items-center justify-end gap-2 md:gap-8'>
           <Link className='hover:underline text-xl lg:text-2xl' href='/tr/'>Türkçe</Link>
@@ -26,7 +27,7 @@ const Header = () => {
         <Popover.Panel className='absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden'>
           <div className='rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 divide-y-2 divide-gray-500'>
             <div className='flex items-center justify-between'>
-              <Link className='font-bold ml-5 mt-3 text-5xl' href='/'>MFH Group</Link>
+              <Link className='font-bold ml-5 mt-3 text-5xl' href='/en/'>MFH Group</Link>
               <Popover.Button className="mr-3 inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400">
                 <span className='sr-only'>Close menu</span>
                 <XMarkIcon className='h-6 w-6' aria-hidden="true" />
