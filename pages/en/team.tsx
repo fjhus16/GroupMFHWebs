@@ -8,7 +8,7 @@ export default function Team() {
     <>
       <Layout>
         <Head>
-          <title>{`GroupMFH`}</title>
+          <title>GroupMFH</title>
         </Head>
         <Container>
           <div className='flex flex-col justify-center items-center'>

@@ -18,7 +18,7 @@ const Header = () => {
       </div>
       <div className='flex grow items-center justify-end sm:hidden'>
         <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
-          <span className='sr-only'>Menüyü aç</span>
+          <span className='sr-only'>Open menu</span>
           <Bars3Icon className='h-6 w-6' aria-hidden="true" />
         </Popover.Button>
       </div>
@@ -28,16 +28,16 @@ const Header = () => {
             <div className='flex items-center justify-between'>
               <Link className='font-bold ml-5 mt-3 text-5xl' href='/'>MFH Group</Link>
               <Popover.Button className="mr-3 inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400">
-                <span className='sr-only'>Menüyü kapat</span>
+                <span className='sr-only'>Close menu</span>
                 <XMarkIcon className='h-6 w-6' aria-hidden="true" />
               </Popover.Button>
             </div>
             <nav className='grid border-none ml-3 font-bold'>
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/'>Türkçe</Link>
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/'>Homepage</Link>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/about'>Hakkımızda</Link>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/team'>Ekibimiz</Link>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 mb-4 text-3xl' href='/en/contact'>İletişim</Link>
+              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/about'>About us</Link>
+              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/team'>Our team</Link>
+              <Link className='focus:outline-none focus:underline px-2 mt-4 mb-4 text-3xl' href='/en/contact'>Contact</Link>
             </nav>
           </div>
         </Popover.Panel>

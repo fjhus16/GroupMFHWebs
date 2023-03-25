@@ -4,7 +4,6 @@ import Layout from '../../components/en/layout'
 import { getAllPosts } from '../../lib/api'
 import Head from 'next/head'
 import Post from '../../interfaces/post'
-import Image from 'next/image'
 
 type Props = {
   allPosts: Post[]
@@ -16,7 +15,7 @@ export default function Blog({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>{`GroupMFH`}</title>
+          <title>GroupMFH</title>
         </Head>
         <Container>
           <div id='yazılar' className='pt-10 ism:pt-12'></div>

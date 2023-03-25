@@ -15,7 +15,7 @@ export default function Blog({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>{`GroupMFH`}</title>
+          <title>GroupMFH</title>
         </Head>
         <Container>
           <div id='yazılar' className='pt-10 ism:pt-12'></div>
