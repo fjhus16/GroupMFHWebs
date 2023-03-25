@@ -13,8 +13,13 @@ type Props = {
 }
 export default function Index({ allPosts }: Props) {
 
-  const morePosts = allPosts.slice(0, 6)
+  const morePosts = []
 
+  allPosts.forEach((post)=>{console.log(post),post.lang === 'tr' ? morePosts.push(post) : null})
+
+  const showPosts = morePosts.slice(0, 6)
+
+  
   return (
     <>
       <Layout>
@@ -51,6 +56,7 @@ export default function Index({ allPosts }: Props) {
 
 export const getStaticProps = async () => {
   const allPosts = getAllPosts([
+    'lang',
     'title',
     'date',
     'slug',

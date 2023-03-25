@@ -8,94 +8,147 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 export default function SimpleAccordion() {
     return (
         <div>
-            <Accordion>
+            <Accordion square>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header">
-                    <Typography variant="h5">Vergi Denetimi</Typography>
+                    <Typography variant="h5">Tax Auditing</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        <>KGK ve SPK yetki belgeleri ile şirketlerin finansal bilgilerinin,<br />düzenleyici kurumlarca belirlenen esaslara göre bağımsız denetimi ve raporlanması faaliyetlerini kapsar.<br />MFH Group, söz konusu denetimlerde finansal tablolarda şirketin ekonomik durumuna ilişkin verilen bilgilerin<br />doğruluğunu belirlemeyi amaçlar.</>
+                        <>MFH Group aims to determine the accuracy of the information provided in the financial statements of a company.<br />We provide independent auditing of a company's finances in accordance with the principles determined by<br />The Public Oversight, Accounting and Auditing Standards Authority and The Capital Markets Board of Turkey.</>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion square>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel3a-content"
                     id="panel3a-header">
-                    <Typography variant="h5">Muhasebe ve Mali Danışmanlık Hizmetleri</Typography>
+                    <Typography variant="h5">Accounting and Financial Consultancy Services</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        <>MFH Group, müşterilerinin karşılaştığı mali, idari ve hukuki olaylara ilişkin ihtiyaç duyabileceği aşağıdaki hizmetleri<br />çözüm odaklı bir bakış açısıyla sunmaktadır:<br /><br />✓ Mali Danışmanlık<br />✓ Vergi Planlaması<br />✓ Vergi Mevzuatı ve Uygulamaları Danışmanlığı<br />✓ Vergi Uyuşmazlıkları (Vergi Davaları)<br />✓ Vergi Uzlaşmaları<br />✓ Maliyet Muhasebesi Danışmalığı<br />✓ Uluslararası Vergi Danışmanlığı<br />✓ İkili Vergi Anlaşmaları Uygulamaları<br />✓ Yabancı Sermaye Mevzuatı, Uygulamaları ve Yabancı Sermaye Yatırımları ve Mali Danışmanlığı<br />✓ Yabancı Uyruklu Kişilerin/ Şirketlerin Vergi Uygulamaları<br />✓ Kuruluş İşlemleri (Yerli ve Yabancı Sermayeli Şirket, Şube, İrtibat Bürosu ve Temsilcilik Kurulması)<br />✓ Devir ve Birleşmeler, Değerleme, Şirket Tasfiyesi<br />✓ Ana Sözleşme Değişiklikleri, Genel Kurul Toplantıları<br />✓ Sermaye Piyasası Uygulamaları (Halka Arz Çalışmaları)<br />✓ Mali Mevzuattaki Değişikliklere İlişkin Güncel Bilgi Aktarımları</>
+                        <>MFH Group provides the following services that clients may require during<br />
+                        financial, administrative and legal events they face with a solution-oriented perspective:<br />
+                        <br />
+                        ✓ Financial Consulting<br />
+                        ✓ Tax Planning<br />
+                        ✓ Tax Legislation and Practices Consultancy<br />
+                        ✓ Tax Disputes (Tax Litigation)<br />
+                        ✓ Tax Compromises<br />
+                        ✓ Cost Accounting Consultancy<br />
+                        ✓ International Tax Consulting<br />
+                        ✓ Bilateral Tax Treaty Implementation<br />
+                        ✓ Foreign Capital Legislation, Practices and Foreign Capital Investments and Financial Advisory<br />
+                        ✓ Tax Practices of Foreign Individuals/Companies<br />
+                        ✓ Establishment Procedures (Establishment of Domestic and Foreign Capital Companies, Branches, Liaison Offices and Representative Offices)<br />
+                        ✓ Mergers and Acquisitions, Valuation, Company Liquidation<br />
+                        Articles of Association Amendments, General Assembly Meetings<br />
+                        ✓ Capital Market Practices (Public Offering Studies)<br />
+                        ✓ Up-to-date Information Transmissions on Changes in Financial Legislation<br /></>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion square>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel4a-content"
                     id="panel4a-header">
-                    <Typography variant="h5">Teşvik Hizmetleri ve Ar-Ge Danışmalığı</Typography>
+                    <Typography variant="h5">Incentives and R&D Consultancy</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        <>MFH Group, müşterilerinin Vergi, Teşvik, İstisna gibi teknik ve karmaşık bir yapıya sahip<br />konuları ve bu konulara ilişkin mevzuatlardan kaynaklı uyuşmazlıklarının çözümüne ilişkin<br />ihtiyaç duyabileceği aşağıdaki hizmetleri çözüm odaklı bakış açılarıyla sunmaktadır:<br /><br />✓ Yatırım Teşvik Mevzuatı (Yatırım İndirimi İstisnası, KDV İstisnası, Vergi-ResimHarç İstisnası Vb.) ile İlgili Danışmanlık<br />✓ Doğrudan Yabancı Yatırımlar Kanunu Çerçevesindeki Uygulamalar ile İlgili Danışmanlık<br />✓ Ar-Ge Teşvik Mevzuatı ile İlgili Danışmanlık<br />✓ Teknopark Mevzuatı ile İlgili Danışmanlık<br />✓ Serbest Bölge Mevzuatı Hakkında Danışmanlık<br />✓ Marka Teşvik Mevzuatı Hakkında Danışmanlık<br />✓ Fuar, Sergi, Panayır Teşvik Mevzuatı Hakkında Danışmanlık<br />✓ “Görünmeyen İşlemler” Olarak Tanımlanan İşlemlerdeki Vergisel Yükümlülüklerin Analizi<br />✓ Kaynak Kullanımını Destekleme Fonu ile İlgili Yükümlülükler ve Uygulamaları<br />✓ Diğer Vergi Teşvikleri</>
+                        <>MFH Group offers the following services with a solutions-oriented perspective<br />
+                        which clients may require for the resolution of technical and complex issues such as<br />
+                        Taxes, Incentives, Exemptions and disputes arising from legislation related to these issues:<br />
+                        <br />
+                        ✓ Consultancy on Investment Incentive Legislation (Investment Discount Exemption, VAT Exemption, Tax-Duty Fee Exemption, etc.)<br />
+                        ✓ Consultancy on the Implementation of the Foreign Direct Investment Law<br />
+                        ✓ Consultancy on R&D Incentive Legislation<br />
+                        ✓ Consultancy on Technopark Legislation<br />
+                        ✓ Consultancy on Free Zone Legislation<br />
+                        ✓ Consultancy on Trademark Incentive Legisla<br />tion
+                        ✓ Consultancy on Fair, Exhibition and Fair Incentive Legislation<br />
+                        Analysis of Tax Liabilities in Transactions Defined as "Invisible Transactions"<br />
+                        ✓ Obligations and Practices Related to the Resource Utilization Support Fund<br />
+                        ✓ Other Tax Incentives<br /></>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion square>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel5a-content"
                     id="panel5a-header">
-                    <Typography variant="h5">Sosyal Güvenlik Danışmalığı</Typography>
+                    <Typography variant="h5">Social Security Advisory</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        <>MFH Group, şirketlere, Sosyal Güvenlik Kurumu işlemleri, fesih süreçleri, işe iade ve<br />hesaplamaları, kıdem, ihbar ve izin ücreti, işyerinin devri, birleşmesi, iş sözleşmeleri ve yasal<br />tüm yükümlülüklere uyum çalışmasının yapılması gibi iş ve sosyal güvenlik alanında çözüm oluşturmaktadır.</>
+                        <>MFH Group provides solutions to companies in the fields of labor and social security such as<br />
+                        Social Security Institution procedures, termination processes, reinstatements and calculations,<br />
+                        severances, notice and vacation pay, transfers and mergers, employment contracts and compliance with all legal obligations.</>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion square>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel6a-content"
                     id="panel6a-header">
-                    <Typography variant="h5">Gümrük ve Dış Ticaret Mevzuatı Danışmalığı</Typography>
+                    <Typography variant="h5">Customs and Foreign Trade Legislation Consultancy</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        <>MFH Group, müşterilerinin İhracat, İthalat ve Kambiyo Mevzuatı ve<br />Uygulamaları kapsamında ihtiyaç duyabileceği aşağıdaki hizmetleri çözüm odaklı bir bakış<br />açısıyla sunmaktadır:<br /><br />✓ Gümrük mevzuatı<br />✓ Dış ticaret mevzuatı<br />✓ Dış ticaretle bağlantılı vergi mevzuatı (GMSİ, SMK, tevkifat, KDV,damga vergisi)<br />✓ Türk Parasının Kıymetini Koruma Hakkındaki Mevzuat ile İlgili Danışmanlık<br />✓ KDV-ÖTV mevzuatı ve iade işlemleri<br />✓ İhracat işlemleri<br />✓ Dahilde işleme rejimi<br />✓ Gümrük uzlaşma (uzlaşma sürecinde danışmanlık)<br />✓ Gümrük dava süreci<br />✓ Denetim süreci (müfettiş incelemesi sürecinde danışmanlık)</>
+                        <>MFH Group offers the following services that its customers may need within the scope of<br />
+                        Export, Import and Foreign Exchange Legislation and applications with a solution-oriented perspective:<br />
+                        <br />
+                        ✓ Customs legislation<br />
+                        ✓ Foreign trade legislation<br />
+                        ✓ Tax legislation related to foreign trade (GMSI, SMK, withholding tax, VAT, stamp tax)<br />
+                        ✓ Consultancy on the Legislation on the Protection of the Value of Turkish Currency<br />
+                        ✓ VAT-Tax legislation and refund transactions<br />
+                        ✓ Export transactions<br />
+                        ✓ Inward processing regime<br />
+                        ✓ Customs reconciliation (counseling in the reconciliation process)<br />
+                        ✓ Customs litigation<br />
+                        ✓ Audit process (consultancy in the process of inspector review)<br /></>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion square>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel7a-content"
                     id="panel7a-header">
-                    <Typography variant="h5">Yönetim, Kurumsal Finansman ve Teknoloji Danışmanlığı</Typography>
+                    <Typography variant="h5">Management, Corporate Finance and Technology Consulting</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        <>MFH Group’un edinmiş olduğu teknik bilgi ve tecrübe, esneklik ve müşterilerimiz ile<br />kurduğumuz yakın iş ilişkisi, her farklı olay için farklı yaklaşım geliştirebilen bir ekip olmamızı<br />sağlamaktadır. Teknik bilgi ve deneyimlerimiz sonucu oluşan sektör ve konu uzmanlığımızı,<br />farklı ölçek ve yapıya sahip şirketlerle çalışarak, zenginleştirip farklılaştırıyoruz. Her projede<br />hedefimiz esnek çalışma yapımız ile müşterimize değer katacak, uygulanabilir ve sonuç odaklı<br />yaklaşımları hayata geçirebilmektir.<br />Danışmanlık ekibimiz en güncel teorik bilgi ile donanmış olmakla birlikte, projelerin hayata<br />geçebilmesi için uygulama deneyimine ve son teknolojik gelişmelere vakıftır. MFH Group,<br />müşteri ihtiyaçları doğrultusunda bir bütün olarak hareket ederek yönetim danışmanlığı desteği<br />sağlayacak şekilde organize olmuştur.</>
+                        <>MFH Group's technical knowledge and experience, flexibility and close working relationship<br />
+                        with our clients enables us to be a team capable of developing a different approach for each different case.<br />
+                        We enrich and differentiate our sector and subject matter expertise, which is the result of our technical knowledge and experience,<br />
+                        by working with companies of varying scales and structures. Our goal in every project<br />
+                        is to implement feasible and result-oriented approaches that will add value to our customers with our flexible working structure.<br />
+                        Our consultancy team is equipped with the most up-to-date theoretical knowledge, as well as practical experience<br />
+                        and the latest technological developments in order to realize your projects.<br />
+                        MFH Group is organized to provide management consultancy support by acting as a whole in line with customer needs.</>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion square>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel8a-content"
                     id="panel8a-header">
-                    <Typography variant="h5">Şirketler Hukuku Mevzuatı Danışmanlığı</Typography>
+                    <Typography variant="h5">Company Law Legislation Consultancy</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        <>6102 sayılı Türk Ticaret Kanunu ve bu Kanuna ilişkin çıkarılan tali mevzuata göre ticari<br />işletmelerin ve şirketlerin tür değişikliği; şirketlerin birleşme veya bölünme işlemleri vergi<br />mevzuatıyla uyumlu olarak yapılmasında gerekli hizmetler sunulmaktadır.</><>6102 sayılı Türk Ticaret Kanunu ve bu Kanuna ilişkin çıkarılan tali mevzuata göre ticari<br />işletmelerin ve şirketlerin tür değişikliği; şirketlerin birleşme veya bölünme işlemleri vergi<br />mevzuatıyla uyumlu olarak yapılmasında gerekli hizmetler sunulmaktadır.</>
+                        <>Pursuant to the Turkish Commercial Code No. 6102 and the secondary legislation issued in relation to this Code,<br />
+                        necessary services are provided for the change of type of commercial enterprises and companies,<br />
+                        mergers or divisions of companies in accordance with the tax legislation.</>
                     </Typography>
                 </AccordionDetails>
             </Accordion>

@@ -10,7 +10,10 @@ type Props = {
 }
 
 export default function Blog({ allPosts }: Props) {
-  const morePosts = allPosts
+  const morePosts = []
+
+  allPosts.forEach((post)=>{console.log(post),post.lang === 'en' ? morePosts.push(post) : null})
+
   return (
     <>
       <Layout>
@@ -30,6 +33,7 @@ export default function Blog({ allPosts }: Props) {
 
 export const getStaticProps = async () => {
   const allPosts = getAllPosts([
+    'lang',
     'title',
     'date',
     'slug',

@@ -1,4 +1,5 @@
 ---
+lang: 'tr'
 title: 'Başlık'
 excerpt: 'Kısa yazı'
 coverImage: '/assets/blog/preview/cover.jpg'

@@ -8,7 +8,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 export default function SimpleAccordion() {
     return (
         <div>
-            <Accordion>
+            <Accordion square>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
@@ -21,7 +21,7 @@ export default function SimpleAccordion() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion square>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel3a-content"
@@ -34,7 +34,7 @@ export default function SimpleAccordion() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion square>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel4a-content"
@@ -47,7 +47,7 @@ export default function SimpleAccordion() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion square>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel5a-content"
@@ -60,7 +60,7 @@ export default function SimpleAccordion() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion square>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel6a-content"
@@ -73,7 +73,7 @@ export default function SimpleAccordion() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion square>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel7a-content"
@@ -86,7 +86,7 @@ export default function SimpleAccordion() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion square>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel8a-content"

@@ -1,8 +1,9 @@
 ---
-title: 'Başlık'
-excerpt: 'Kısa yazı'
+lang: 'en'
+title: 'Title'
+excerpt: 'Excerpt'
 coverImage: '/assets/blog/preview/cover.jpg'
-date: '2023-03-11'
+date: '2023-03-13'
 ogImage:
   url: '/assets/blog/preview/cover.jpg'
 ---
@@ -10,6 +11,8 @@ ogImage:
 ## Lorem Ipsum
 
 Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+
+![foto](https://picsum.photos/900/500)
 
 ## Lorem Ipsum
 
