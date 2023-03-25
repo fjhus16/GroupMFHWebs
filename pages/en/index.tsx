@@ -15,7 +15,7 @@ export default function Index({ allPosts }: Props) {
 
   const morePosts = []
 
-  allPosts.forEach((post)=>{console.log(post),post.lang === 'en' ? morePosts.push(post) : null})
+  allPosts.forEach((post)=>{post.lang === 'en' ? morePosts.push(post) : null})
 
   const showPosts = morePosts.slice(0, 6)
 
