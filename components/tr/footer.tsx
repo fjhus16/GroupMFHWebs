@@ -1,4 +1,4 @@
-import Container from './container'
+import Container from '../container'
 import Link from 'next/link'
 
 const Footer = () => {
@@ -12,13 +12,13 @@ const Footer = () => {
           </h3>
           <div className="flex flex-col lg:flex-row justify-end items-center lg:pl-4 lg:w-1/2">
             <Link
-              href="/contact"
+              href="/tr/contact"
               className="text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
             >
               Iletişime geçin
             </Link>
             <Link
-              href={`/legal`}
+              href={`/tr/legal`}
               className="text-sm ism:text-md mx-3 font-bold hover:underline"
             >
               Yasal bilgiler

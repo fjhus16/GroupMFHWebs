@@ -1,12 +1,12 @@
-import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
+import Container from '../../components/container'
+import MoreStories from '../../components/tr/more-stories'
+import Layout from '../../components/tr/layout'
+import { getAllPosts } from '../../lib/api'
 import Head from 'next/head'
-import Post from '../interfaces/post'
+import Post from '../../interfaces/post'
 import Image from 'next/image'
 import Link from 'next/link'
-import SimpleAccordion from '../components/accordion'
+import SimpleAccordion from '../../components/tr/accordion'
 
 type Props = {
   allPosts: Post[]
@@ -19,7 +19,7 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>{`GroupMFH`}</title>
+          <title>GroupMFH</title>
         </Head>
         <div className='fixed h-[50vh] ism:h-[40vh] md:h-[50vh] w-screen -z-30'>
           <Image src='/assets/homepage/WallStreet.jpg' priority loading='eager' className='bg-right -z-30' fill={true} style={{ objectFit: "cover", objectPosition: "right" }} alt={'Wall Street'} />
@@ -39,7 +39,7 @@ export default function Index({ allPosts }: Props) {
           </div>
           <div className='flex flex-col justify-center items-center'>
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-            <Link href="/blog" className="text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6">
+            <Link href="/tr/blog" className="text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6">
               Daha fazla yazı
             </Link>
           </div>

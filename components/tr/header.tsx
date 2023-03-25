@@ -6,13 +6,14 @@ import { Fragment } from 'react'
 const Header = () => {
   return (
     <Popover className='sticky top-0 mx-auto flex items-center border-b-2 px-12 py-2 h-24 z-10 bg-white'>
-      <Link className='font-bold text-3xl ism:text-5xl' href='/'>MFH Group</Link>
+      <Link className='font-bold text-3xl ism:text-5xl' href='/tr/'>MFH Group</Link>
       <div className='grow'>
         <div className='hidden sm:flex font-bold items-center justify-end gap-2 md:gap-8'>
-          <Link className='hover:underline text-xl lg:text-2xl' href='/'>Anasayfa</Link>
-          <Link className='hover:underline text-xl lg:text-2xl' href='/about'>Hakkımızda</Link>
-          <Link className='hover:underline text-xl lg:text-2xl' href='/team'>Ekibimiz</Link>
-          <Link className='hover:underline text-xl lg:text-2xl' href='/contact'>İletişim</Link>
+          <Link className='hover:underline text-xl lg:text-2xl' href='/en/'>English</Link>
+          <Link className='hover:underline text-xl lg:text-2xl' href='/tr/'>Anasayfa</Link>
+          <Link className='hover:underline text-xl lg:text-2xl' href='/tr/about'>Hakkımızda</Link>
+          <Link className='hover:underline text-xl lg:text-2xl' href='/tr/team'>Ekibimiz</Link>
+          <Link className='hover:underline text-xl lg:text-2xl' href='/tr/contact'>İletişim</Link>
         </div>
       </div>
       <div className='flex grow items-center justify-end sm:hidden'>
@@ -32,10 +33,11 @@ const Header = () => {
               </Popover.Button>
             </div>
             <nav className='grid border-none ml-3 font-bold'>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/'>Anasayfa</Link>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/about'>Hakkımızda</Link>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/team'>Ekibimiz</Link>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 mb-4 text-3xl' href='/contact'>İletişim</Link>
+          <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/'>English</Link>
+              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/'>Anasayfa</Link>
+              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/about'>Hakkımızda</Link>
+              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/team'>Ekibimiz</Link>
+              <Link className='focus:outline-none focus:underline px-2 mt-4 mb-4 text-3xl' href='/tr/contact'>İletişim</Link>
             </nav>
           </div>
         </Popover.Panel>

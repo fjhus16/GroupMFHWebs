@@ -1,7 +1,7 @@
-import Container from '../components/container'
-import Layout from '../components/layout'
+import Container from '../../components/container'
+import Layout from '../../components/en/layout'
 import Head from 'next/head'
-import TeamGrid from '../components/teamgrid'
+import TeamGrid from '../../components/en/teamgrid'
 
 export default function Team() {
   return (

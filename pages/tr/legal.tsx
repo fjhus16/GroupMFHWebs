@@ -1,6 +1,5 @@
-import Container from '../components/container'
-import Intro from '../components/intro'
-import Layout from '../components/layout'
+import Container from '../../components/container'
+import Layout from '../../components/tr/layout'
 import Head from 'next/head'
 
 export default function Legal() {
@@ -8,7 +7,7 @@ export default function Legal() {
     <>
       <Layout>
         <Head>
-          <title>{`GroupMFH`}</title>
+          <title>MFH Group</title>
         </Head>
         <Container>
           <p>Gizlilik Politikası</p>

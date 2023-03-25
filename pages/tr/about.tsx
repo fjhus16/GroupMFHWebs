@@ -1,6 +1,16 @@
-const Intro = () => {
+import Container from '../../components/container'
+import Layout from '../../components/tr/layout'
+import Head from 'next/head'
+
+export default function About() {
   return (
-    <section className="flex-col flex items-center md:justify-between pt-6 pb-6">
+    <>
+      <Layout>
+        <Head>
+          <title>GroupMFH</title>
+        </Head>
+        <Container>
+        <section className="flex-col flex items-center md:justify-between pt-6 pb-6">
       <h4 className="text-left text-md md:pl-8">
         MFH Group olarak alanında uzmanlaşmış kadromuz ile küresel çapta, bireysel ve
         kurumsal tüm müşterilerimize en üst seviyede nitelikli hizmet vermek için ekip halinde
@@ -13,7 +23,9 @@ const Intro = () => {
         kapsamında hizmet sunmaktadır.
       </h4>
     </section>
+          
+        </Container>
+      </Layout>
+    </>
   )
 }
-
-export default Intro
