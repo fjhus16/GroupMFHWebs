@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "start": "next start",
+    "build": "NODE_OPTIONS=\"--max_old_space_size=400\" next build",
+    "start": "NODE_OPTIONS=\"--max_old_space_size=400\" next start",
     "typecheck": "tsc"
   },
   "dependencies": {
