@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "NODE_OPTIONS=\"--max_old_space_size=400\" next build",
-    "start": "NODE_OPTIONS=\"--max_old_space_size=400\" next start",
+    "build": "NODE_OPTIONS=\"--max_old_space_size=800\" next build",
+    "start": "NODE_OPTIONS=\"--max_old_space_size=800\" next start",
     "typecheck": "tsc"
   },
   "dependencies": {
@@ -18,12 +18,10 @@
     "gray-matter": "^4.0.3",
     "headlessui": "^0.0.0",
     "next": "latest",
-    "nodemailer": "^6.9.1",
     "react": "^18.2.0",
     "react-collapse": "^5.1.1",
     "react-dom": "^18.2.0",
     "react-email": "^1.7.15",
-    "react-i18next": "^12.2.0",
     "react-icons": "^4.8.0",
     "react-intl": "^6.3.2",
     "remark": "^14.0.2",

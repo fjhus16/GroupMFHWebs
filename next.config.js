@@ -1,6 +1,7 @@
 module.exports = {
     images: {
         domains: ['picsum.photos'],
+        unoptimized: true,
     },
     async redirects() {
         return [
