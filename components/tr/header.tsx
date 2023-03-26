@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, GlobeEuropeAfricaIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Fragment } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+import { Phone } from '@mui/icons-material'
 
 const Header = () => {
 
@@ -12,13 +13,16 @@ const Header = () => {
   return (
     <Popover className='sticky top-0 mx-auto flex items-center border-b-2 px-12 py-2 h-24 z-10 bg-white'>
     <Link className='font-bold text-3xl ism:text-5xl' href='/tr/'><Image src={'/assets/header/logo.png'} priority loading='eager' alt={'MFH Group Logo'} width={200} height={120}></Image></Link>
-      <div className='grow'>
-        <div className='hidden sm:flex font-bold items-center justify-end gap-2 md:gap-8'>
-          <Link className='hover:underline text-xl lg:text-2xl' href={ asPath.replace('/tr', '/en') }>English</Link>
+      <div className='grow flex flex-row'>
+        <div className='hidden ml-6 sm:flex font-bold items-center justify-start gap-2 md:gap-8'>
           <Link className='hover:underline text-xl lg:text-2xl' href='/tr/'>Anasayfa</Link>
           <Link className='hover:underline text-xl lg:text-2xl' href='/tr/about'>Hakkımızda</Link>
           {/* <Link className='hover:underline text-xl lg:text-2xl' href='/tr/team'>Ekibimiz</Link> */}
           <Link className='hover:underline text-xl lg:text-2xl' href='/tr/contact'>İletişim</Link>
+        </div>
+        <div className='hidden ml-[auto] sm:flex font-bold items-center justify-end gap-2 md:gap-8'>
+          <Link className='hover:underline flex flex-row' href={ asPath.replace('/tr', '/en') }><GlobeEuropeAfricaIcon className='h-6 w-6 mr-1' />ENG</Link>
+          <Link href={'/tr/contact'}><Phone /></Link>
         </div>
       </div>
       <div className='flex grow items-center justify-end sm:hidden'>
@@ -38,11 +42,12 @@ const Header = () => {
               </Popover.Button>
             </div>
             <nav className='grid border-none ml-3 font-bold'>
-          <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href={ asPath.replace('/tr', '/en') }>English</Link>
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/'>Anasayfa</Link>
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/about'>Hakkımızda</Link>
               {/*<Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/team'>Ekibimiz</Link>*/}
-              <Link className='focus:outline-none focus:underline px-2 mt-4 mb-4 text-3xl' href='/tr/contact'>İletişim</Link>
+              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/contact'>İletişim</Link>
+              <Link className='flex flex-row focus:outline-none focus:underline px-2 mt-4 mb-4 text-3xl' href={ asPath.replace('/tr', '/en') }><GlobeEuropeAfricaIcon className='h-10 w-10 mr-1' />ENG</Link>
+        
             </nav>
           </div>
         </Popover.Panel>

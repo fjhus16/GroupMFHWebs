@@ -1,6 +1,7 @@
 type PostType = {
   slug: string
   lang: string
+  cat: String
   title: string
   date: string
   coverImage: string

@@ -17,7 +17,17 @@ export default function SimpleAccordion() {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        <>KGK ve SPK yetki belgeleri ile şirketlerin finansal bilgilerinin,<br />düzenleyici kurumlarca belirlenen esaslara göre bağımsız denetimi ve raporlanması faaliyetlerini kapsar.<br />MFH Group, söz konusu denetimlerde finansal tablolarda şirketin ekonomik durumuna ilişkin verilen bilgilerin<br />doğruluğunu belirlemeyi amaçlar.</>
+                        <>MFH Group, gerçek ve tüzel kişilerin (şirket, dernek ve vakıfların, bunların işletme veya
+                        teşebbüslerinin)<br />
+                        bilanço ve gelir tablolarını, vergi kanunlarına göre verilmiş beyanlarını, vergi
+                        kanunlarıyla ilgili taleplerini,<br />
+                        vergi kanunları ve genel kabul görmüş muhasebe standartlarına
+                        uygunluğu açısından denetler ve tasdik eder.<br />
+                        Hazırlanan tasdik raporları müşterilerin ve resmi mercilerin istifadesine sunulur.<br />
+                        Kanunlar gereğince resmi mercilere verilen ve Yeminli Mali Müşavirler tarafından tasdik
+                        edilmiş tablolar,<br />
+                        kamu idarelerince devletin denetim elemanlarınca tasdikin kapsamı ölçüsünde
+                        incelenmiş bir belge olarak kabul edilir.</>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -95,7 +105,7 @@ export default function SimpleAccordion() {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        <>6102 sayılı Türk Ticaret Kanunu ve bu Kanuna ilişkin çıkarılan tali mevzuata göre ticari<br />işletmelerin ve şirketlerin tür değişikliği; şirketlerin birleşme veya bölünme işlemleri vergi<br />mevzuatıyla uyumlu olarak yapılmasında gerekli hizmetler sunulmaktadır.</><>6102 sayılı Türk Ticaret Kanunu ve bu Kanuna ilişkin çıkarılan tali mevzuata göre ticari<br />işletmelerin ve şirketlerin tür değişikliği; şirketlerin birleşme veya bölünme işlemleri vergi<br />mevzuatıyla uyumlu olarak yapılmasında gerekli hizmetler sunulmaktadır.</>
+                        <>6102 sayılı Türk Ticaret Kanunu ve bu Kanuna ilişkin çıkarılan tali mevzuata göre ticari<br />işletmelerin ve şirketlerin tür değişikliği; şirketlerin birleşme veya bölünme işlemleri vergi<br />mevzuatıyla uyumlu olarak yapılmasında gerekli hizmetler sunulmaktadır.</>
                     </Typography>
                 </AccordionDetails>
             </Accordion>

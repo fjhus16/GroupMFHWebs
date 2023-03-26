@@ -1,5 +1,6 @@
 ---
 lang: 'en'
+cat: 'Test'
 title: 'Title'
 excerpt: 'Excerpt'
 coverImage: '/assets/blog/preview/cover.jpg'

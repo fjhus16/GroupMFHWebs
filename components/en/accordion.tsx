@@ -17,7 +17,11 @@ export default function SimpleAccordion() {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        <>MFH Group aims to determine the accuracy of the information provided in the financial statements of a company.<br />We provide independent auditing of a company's finances in accordance with the principles determined by<br />The Public Oversight, Accounting and Auditing Standards Authority and The Capital Markets Board of Turkey.</>
+                    <>MFH Group audits and certifies the balance sheets, income statements, and tax declarations of individuals and legal entities<br />
+                    (companies, associations, foundations, and their enterprises), as well as their requests related to tax laws, in terms of compliance with<br />
+                    tax laws and generally accepted accounting standards.The prepared audit reports are submitted for the use of clients and official authorities.<br />
+                    Tables that have been certified by Sworn-in Financial Advisors and given to official authorities in accordance with the law are considered as<br />
+                    a document that has been examined to the extent of certification by the state's audit officials.</>
                     </Typography>
                 </AccordionDetails>
             </Accordion>

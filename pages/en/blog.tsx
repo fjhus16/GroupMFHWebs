@@ -34,6 +34,7 @@ export default function Blog({ allPosts }: Props) {
 export const getStaticProps = async () => {
   const allPosts = getAllPosts([
     'lang',
+    'cat',
     'title',
     'date',
     'slug',

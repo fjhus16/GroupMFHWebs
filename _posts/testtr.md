@@ -1,5 +1,6 @@
 ---
 lang: 'tr'
+cat: 'Test'
 title: 'Başlık'
 excerpt: 'Kısa yazı'
 coverImage: '/assets/blog/preview/cover.jpg'
