@@ -5,6 +5,7 @@ import { Fragment } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { Phone } from '@mui/icons-material'
+import { TextField } from '@mui/material'
 
 const Header = () => {
 
@@ -21,6 +22,7 @@ const Header = () => {
           <Link className='hover:underline text-xl lg:text-2xl' href='/tr/contact'>İletişim</Link>
         </div>
         <div className='hidden ml-[auto] sm:flex font-bold items-center justify-end gap-2 md:gap-8'>
+          <TextField id="standard-search" label="Arama" type="search" className='mb-4' variant="standard"  />
           <Link className='hover:underline flex flex-row' href={ asPath.replace('/tr', '/en') }><GlobeEuropeAfricaIcon className='h-6 w-6 mr-1' />ENG</Link>
           <Link href={'/tr/contact'}><Phone /></Link>
         </div>
