@@ -7,17 +7,27 @@ import Post from '../../interfaces/post'
 import Image from 'next/image'
 import Link from 'next/link'
 import SimpleAccordion from '../../components/en/accordion'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import TopPostPreview from '../../components/top-post-preview'
+import SwiperCore, { Autoplay } from 'swiper';
 
 type Props = {
   allPosts: Post[]
 }
 export default function Index({ allPosts }: Props) {
 
+
+  SwiperCore.use([Autoplay]);
+
   const morePosts = []
+  const topPosts = []
 
   allPosts.forEach((post)=>{post.lang === 'en' ? morePosts.push(post) : null})
+  morePosts.forEach((post)=>{post.cat === 'Headlines' ? topPosts.push(post) : null})
 
   const showPosts = morePosts.slice(0, 6)
+  const showTopPosts = topPosts.slice(0, 4)
 
   return (
     <>
@@ -34,6 +44,25 @@ export default function Index({ allPosts }: Props) {
             so you can be certain of the decisions you make while building your future.</p>
         </div>
         <div className='h-[50vh] ism:h-[40vh] md:h-[50vh] -z-40'></div>
+        <Swiper className='pb-4 bg-white w-[100%]'
+          loop={true}
+          spaceBetween={0}
+          slidesPerView={1}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: true,
+          }}
+          breakpoints={{
+            768: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+            },
+          }}>
+          <SwiperSlide><TopPostPreview title={showTopPosts.at(0).title} coverImage={showTopPosts.at(0).coverImage} date={showTopPosts.at(0).date} excerpt={showTopPosts.at(0).excerpt} slug={showTopPosts.at(0).slug} /></SwiperSlide>
+          <SwiperSlide><TopPostPreview title={showTopPosts.at(0).title} coverImage={showTopPosts.at(0).coverImage} date={showTopPosts.at(0).date} excerpt={showTopPosts.at(0).excerpt} slug={showTopPosts.at(0).slug} /></SwiperSlide>
+          <SwiperSlide><TopPostPreview title={showTopPosts.at(0).title} coverImage={showTopPosts.at(0).coverImage} date={showTopPosts.at(0).date} excerpt={showTopPosts.at(0).excerpt} slug={showTopPosts.at(0).slug} /></SwiperSlide>
+          <SwiperSlide><TopPostPreview title={showTopPosts.at(0).title} coverImage={showTopPosts.at(0).coverImage} date={showTopPosts.at(0).date} excerpt={showTopPosts.at(0).excerpt} slug={showTopPosts.at(0).slug} /></SwiperSlide>
+        </Swiper>
         <Container>
           <div className='flex pb-6 flex-col justify-center items-center'>
             <h2 className="mb-8 pt-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
