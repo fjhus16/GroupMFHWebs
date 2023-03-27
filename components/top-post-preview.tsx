@@ -25,7 +25,7 @@ const TopPostPreview = ({
       backgroundImage: `url(${coverImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'
     }}>
       <div className='flex flex-col items-center justify-center bg-white bg-opacity-75'>
-      <h3 className="text-3xl mb-3 leading-loose w-[80%]">
+      <h3 className="text-3xl mb-3 leading-loose w-[85%] md:w-[65%]">
         <Link
           as={`${asPath.substring(0,3)}/posts/${slug}`}
           href={`${asPath.substring(0,3)}/posts/[slug]`}
@@ -36,7 +36,7 @@ const TopPostPreview = ({
       <Link
           as={`${asPath.substring(0,3)}/posts/${slug}`}
           href={`${asPath.substring(0,3)}/posts/[slug]`}
-          className="text-lg leading-relaxed mb-4 w-[80%]">{excerpt}</Link>
+          className="text-lg leading-relaxed mb-4 w-[85%] md:w-[65%]">{excerpt}</Link>
     </div>
     </div>
   )
