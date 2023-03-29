@@ -23,11 +23,16 @@ const Header = () => {
         </div>
         <div className='hidden ml-[auto] sm:flex font-bold items-center justify-end gap-2 md:gap-8'>
           <TextField id="standard-search" label="Arama" type="search" className='mb-4' variant="standard"  />
-          <Link className='hover:underline flex flex-row' href={ asPath.replace('/tr', '/en') }><GlobeEuropeAfricaIcon className='h-6 w-6 mr-1' />ENG</Link>
+          <Link className='hover:underline flex flex-row' href={ asPath.replace('/tr', '/en') }><img
+            alt="Flag of the United Kingdom"
+            src="http://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg" className='h-10 w-10 mr-1'/></Link>
           <Link href={'/tr/contact'}><Phone /></Link>
         </div>
-      </div>
+      </div>     
       <div className='flex grow items-center justify-end sm:hidden'>
+      <Link className='focus:outline-none focus:underline px-2 mt-4 mb-4 text-3xl' href={ asPath.replace('/tr', '/en') }><img
+               alt="Flag of the United Kingdom"
+               src="http://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg" className='h-10 w-10 mr-1'/></Link>
         <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
           <span className='sr-only'>Menüyü aç</span>
           <Bars3Icon className='h-6 w-6' aria-hidden="true" />
@@ -47,9 +52,7 @@ const Header = () => {
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/'>Anasayfa</Link>
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/about'>Hakkımızda</Link>
               {/*<Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/team'>Ekibimiz</Link>*/}
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/contact'>İletişim</Link>
-              <Link className='flex flex-row focus:outline-none focus:underline px-2 mt-4 mb-4 text-3xl' href={ asPath.replace('/tr', '/en') }><GlobeEuropeAfricaIcon className='h-10 w-10 mr-1' />ENG</Link>
-        
+              <Link className='focus:outline-none focus:underline px-2 mt-4 mb-4 text-3xl' href='/tr/contact'>İletişim</Link>
             </nav>
           </div>
         </Popover.Panel>
