@@ -6,20 +6,28 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { Phone } from '@mui/icons-material'
 import { TextField } from '@mui/material'
+import { Cormorant_Garamond } from '@next/font/google'
+import AboutMenu from './about-menu'
+
+
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ['latin-ext'],
+  weight: '500'
+})
 
 const Header = () => {
 
   const { asPath } = useRouter()
 
   return (
-    <Popover className='sticky top-0 mx-auto flex items-center border-b-2 px-12 py-2 h-24 z-10 bg-white'>
+    <Popover className="sticky top-0 mx-auto flex items-center border-b-2 px-12 py-2 h-24 z-10 bg-white">
       <Link className='font-bold text-3xl ism:text-5xl' href='/en/'><Image src={'/assets/header/logo.png'} priority loading='eager' alt={'MFH Group Logo'} width={200} height={120}></Image></Link>
       <div className='grow flex flex-row'>
         <div className='hidden ml-6  sm:flex font-bold items-center justify-end gap-2 md:gap-8'>
-          <Link className='hover:underline text-xl lg:text-2xl' href='/en/'>Homepage</Link>
-          <Link className='hover:underline text-xl lg:text-2xl' href='/en/about'>About us</Link>
+          <AboutMenu />
           {/*<Link className='hover:underline text-xl lg:text-2xl' href='/en/team'>Our team</Link>*/}
-          <Link className='hover:underline text-xl lg:text-2xl' href='/en/contact'>Contact</Link>
+          <Link className='hover:bg-black hover:text-white text-2xl lg:text-3xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/en/contact'><p className={cormorantGaramond.className}>Contact</p></Link>
+          <Link className='hover:bg-black hover:text-white text-2xl lg:text-3xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/en/contact'><p className={cormorantGaramond.className}>Our Services</p></Link>
         </div>
         <div className='hidden ml-[auto] sm:flex font-bold items-center justify-end gap-2 md:gap-8'>
           <TextField 
@@ -50,7 +58,6 @@ const Header = () => {
               </Popover.Button>
             </div>
             <nav className='grid border-none ml-3 font-bold'>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/'>Homepage</Link>
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/about'>About us</Link>
               {/*<Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/team'>Our team</Link>*/}
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl mb-4' href='/en/contact'>Contact</Link>

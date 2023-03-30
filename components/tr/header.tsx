@@ -6,6 +6,13 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { Phone } from '@mui/icons-material'
 import { TextField } from '@mui/material'
+import { Cormorant_Garamond } from '@next/font/google'
+import AboutMenu from './about-menu'
+
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ['latin-ext'],
+  weight: '500'
+})
 
 const Header = () => {
 
@@ -16,10 +23,10 @@ const Header = () => {
     <Link className='font-bold text-3xl ism:text-5xl' href='/tr/'><Image src={'/assets/header/logo.png'} priority loading='eager' alt={'MFH Group Logo'} width={200} height={120}></Image></Link>
       <div className='grow flex flex-row'>
         <div className='hidden ml-6 sm:flex font-bold items-center justify-start gap-2 md:gap-8'>
-          <Link className='hover:underline text-xl lg:text-2xl' href='/tr/'>Anasayfa</Link>
-          <Link className='hover:underline text-xl lg:text-2xl' href='/tr/about'>Hakkımızda</Link>
+          <AboutMenu />
           {/* <Link className='hover:underline text-xl lg:text-2xl' href='/tr/team'>Ekibimiz</Link> */}
-          <Link className='hover:underline text-xl lg:text-2xl' href='/tr/contact'>İletişim</Link>
+          <Link className='hover:bg-black hover:text-white text-2xl lg:text-3xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/tr/contact'><p className={cormorantGaramond.className}>İletişim</p></Link>
+          <Link className='hover:bg-black hover:text-white text-2xl lg:text-3xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/tr/contact'><p className={cormorantGaramond.className}>Hizmetlerimiz</p></Link>
         </div>
         <div className='hidden ml-[auto] sm:flex font-bold items-center justify-end gap-2 md:gap-8'>
           <TextField id="standard-search" label="Arama" type="search" className='mb-4' variant="standard"  />
@@ -49,7 +56,6 @@ const Header = () => {
               </Popover.Button>
             </div>
             <nav className='grid border-none ml-3 font-bold'>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/'>Anasayfa</Link>
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/about'>Hakkımızda</Link>
               {/*<Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/team'>Ekibimiz</Link>*/}
               <Link className='focus:outline-none focus:underline px-2 mt-4 mb-4 text-3xl' href='/tr/contact'>İletişim</Link>
