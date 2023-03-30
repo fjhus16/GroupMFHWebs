@@ -24,8 +24,6 @@ export default function Post({ post, allPosts }: Props) {
   const title = `${post.title}`
   var morePosts = []
 
-  console.log("moreposts" + morePosts)
-
   allPosts.forEach((postM) => {
     if (postM.lang === 'en' && postM.slug !== post.slug) {
       morePosts.push(postM);
