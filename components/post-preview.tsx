@@ -12,7 +12,6 @@ type Props = {
   slug: string
 }
 
-
 const PostPreview = ({
   title,
   coverImage,
@@ -25,11 +24,12 @@ const PostPreview = ({
 
   return (
     <div>
-      <Card sx={{ 
-    height: "100%",
-    display: "flex",
-    flexDirection: "column"}}
-   className='w-[300px] md:w-[400px] min-h-[400px]'>
+      <Card sx={{
+        height: "100%",
+        display: "flex",
+        flexDirection: "column"
+      }}
+        className='w-[300px] md:w-[400px] min-h-[400px]'>
         <CardMedia
           sx={{ height: 140 }}
           image={coverImage}
@@ -44,17 +44,11 @@ const PostPreview = ({
           </Typography>
         </CardContent>
         <CardActions sx={{ mt: "auto" }} className='flex flex-row items-center justify-between mt-auto'>
-          <Link className='hover:bg-black hover:text-white text-2xl pt-1 pb-1 pl-2 pr-2 mt-1 mb-3 duration-1000' as={`${asPath.substring(0, 3)}/posts/${slug}`} href={`${asPath.substring(0, 3)}/posts/[slug]`}>Read article</Link>
+          <Link className='hover:bg-black hover:text-white text-2xl pt-1 pb-1 pl-2 pr-2 mt-1 mb-3 duration-1000' as={`${asPath.substring(0, 3)}/posts/${slug}`} href={`${asPath.substring(0, 3)}/posts/[slug]`}>{asPath.substring(0, 3) == 'en' ? 'Read article' : 'Devamını oku'}</Link>
           <DateFormatter dateString={date} />
         </CardActions>
       </Card>
-
     </div>
-
-
-
-
-
   )
 }
 
