@@ -24,7 +24,6 @@ const Header = () => {
       <div className='grow flex flex-row'>
         <div className='hidden ml-6 sm:flex font-bold items-center justify-start gap-2 md:gap-8'>
           <AboutMenu />
-          {/* <Link className='hover:underline text-xl lg:text-2xl' href='/tr/team'>Ekibimiz</Link> */}
           <Link className='hover:bg-black hover:text-white text-2xl lg:text-3xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/tr/contact'><p className={cormorantGaramond.className}>İletişim</p></Link>
           <Link className='hover:bg-black hover:text-white text-2xl lg:text-3xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/tr/contact'><p className={cormorantGaramond.className}>Hizmetlerimiz</p></Link>
         </div>
