@@ -94,7 +94,7 @@ export default function Post({ post, allPosts }: Props) {
                 </Typography>
               </CardContent>
               <CardActions sx={{ mt: "auto" }} className='flex flex-row items-center justify-between mt-auto'>
-        <Link className='hover:bg-black hover:text-white text-2xl pt-1 pb-1 pl-2 pr-2 mt-1 mb-3 duration-1000' href={'/tr/posts/' + morePosts[2].slug}>Devamını oku</Link>
+        <Link className='hover:bg-black hover:text-white text-2xl pt-1 pb-1 pl-2 pr-2 mt-1 mb-3 duration-1000' href={'/tr/posts/' + morePosts[1].slug}>Devamını oku</Link>
               <DateFormatter dateString={morePosts[1].date} />
               </CardActions>
             </Card>
