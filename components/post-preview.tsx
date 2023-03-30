@@ -27,19 +27,19 @@ const PostPreview = ({
       <div className="mb-5">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">
+      <h3 className="text-xl font-bold mb-3 leading-snug">
         <Link
-          as={`${asPath.substring(0,3)}/posts/${slug}`}
-          href={`${asPath.substring(0,3)}/posts/[slug]`}
+          as={`${asPath.substring(0, 3)}/posts/${slug}`}
+          href={`${asPath.substring(0, 3)}/posts/[slug]`}
           className="hover:underline"
         >
           {title}
         </Link>
       </h3>
-      <div className="text-lg mb-4">
+      <div className="text-md mb-4">
         <DateFormatter dateString={date} />
       </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+      <p className="text-md leading-relaxed mb-4">{excerpt}</p>
     </div>
   )
 }
