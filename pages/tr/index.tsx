@@ -25,7 +25,7 @@ export default function Index({ allPosts }: Props) {
   allPosts.forEach((post)=>{post.lang === 'tr' ? morePosts.push(post) : null})
   morePosts.forEach((post)=>{post.cat === 'Gündem' ? topPosts.push(post) : null})
 
-  const showPosts = morePosts.slice(0, 6)
+  const showPosts = morePosts.slice(0, 4)
   const showTopPosts = topPosts.slice(0, 4)
   
   return (
@@ -64,7 +64,7 @@ export default function Index({ allPosts }: Props) {
             <SimpleAccordion />
           </div>
           <div className='flex flex-col justify-center items-center'>
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+            {morePosts.length > 0 && <MoreStories posts={showPosts} />}
             <Link href="/tr/blog" className="text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6">
               Daha fazla yazı
             </Link>

@@ -2,6 +2,7 @@ import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material'
 
 type Props = {
   title: string
@@ -24,23 +25,36 @@ const PostPreview = ({
 
   return (
     <div>
-      <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
-      </div>
-      <h3 className="text-xl font-bold mb-3 leading-snug">
-        <Link
-          as={`${asPath.substring(0, 3)}/posts/${slug}`}
-          href={`${asPath.substring(0, 3)}/posts/[slug]`}
-          className="hover:underline"
-        >
-          {title}
-        </Link>
-      </h3>
-      <div className="text-md mb-4">
-        <DateFormatter dateString={date} />
-      </div>
-      <p className="text-md leading-relaxed mb-4">{excerpt}</p>
+      <Card sx={{ 
+    height: "100%",
+    display: "flex",
+    flexDirection: "column"}}
+   className='w-[300px] md:w-[400px] min-h-[400px]'>
+        <CardMedia
+          sx={{ height: 140 }}
+          image={coverImage}
+          title={title}
+        />
+        <CardContent>
+          <Typography gutterBottom component="div" className='font-bold text-lg'>
+            {title}
+          </Typography>
+          <Typography variant="body2" className='text-black max-h-[110px]'>
+            {excerpt}
+          </Typography>
+        </CardContent>
+        <CardActions sx={{ mt: "auto" }} className='flex flex-row items-center justify-between mt-auto'>
+          <Link className='hover:bg-black hover:text-white text-2xl pt-1 pb-1 pl-2 pr-2 mt-1 mb-3 duration-1000' as={`${asPath.substring(0, 3)}/posts/${slug}`} href={`${asPath.substring(0, 3)}/posts/[slug]`}>Read article</Link>
+          <DateFormatter dateString={date} />
+        </CardActions>
+      </Card>
+
     </div>
+
+
+
+
+
   )
 }
 

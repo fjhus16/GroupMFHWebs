@@ -9,7 +9,7 @@ ogImage:
   url: '/assets/blog/images/excavator.jpg'
 ---
 
-## Yatırımlarda Devlet Yardımları Hakkında Kararda Değişiklik Yapılmasına Dair 6923 Sayılı Cumhurbaşkanı Kararı 10.03.2023 Tarihli Resmi Gazete’de Yayımlandı.
+## Karar Resmi Gazete’de Yayımlandı.
 
 Yatırımlarda Devlet Yardımları Hakkında Kararda Değişiklik Yapılmasına Dair 6923 sayılı Cumhurbaşkanı Kararı, 10.03.2023 tarih ve 32128 Sayılı Resmi Gazete’de yayımlanmıştır. Karar’ın 1’inci maddesinde yapılan düzenleme ile, Yatırımlarda Devlet Yardımları Hakkında Karar’ın 16’ncı maddesinin ikinci fıkrasında yer alan **“yatırımlara”** ibaresinden sonra **_“ve elektrik enerjisi üretimine ilişkin yatırımlara”_** ibaresi eklenmiş, yapılan bu değişiklik ile elektrik enerjisi üretimine ilişkin yatırımlara yatırım yeri tahsis edilemeyeceği hükme bağlanmıştır.
 

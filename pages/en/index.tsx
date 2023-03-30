@@ -15,6 +15,7 @@ import SwiperCore, { Autoplay } from 'swiper';
 type Props = {
   allPosts: Post[]
 }
+
 export default function Index({ allPosts }: Props) {
 
   SwiperCore.use([Autoplay]);
@@ -25,7 +26,7 @@ export default function Index({ allPosts }: Props) {
   allPosts.forEach((post) => { post.lang === 'en' ? morePosts.push(post) : null })
   morePosts.forEach((post) => { post.cat === 'Headlines' ? topPosts.push(post) : null })
 
-  const showPosts = morePosts.slice(0, 6)
+  const showPosts = morePosts.slice(0, 4)
   const showTopPosts = topPosts.slice(0, 4)
 
   return (
