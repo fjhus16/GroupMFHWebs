@@ -32,6 +32,7 @@ module.exports = {
       screens: {
         'ism': '420px',
         '2xl': '1536px',
+        'fhd': '1920px',
       },
     },
   },
