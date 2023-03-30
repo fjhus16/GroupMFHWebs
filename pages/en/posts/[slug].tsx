@@ -36,7 +36,7 @@ export default function Post({ post, allPosts }: Props) {
   return (
     <Layout>
       <Container>
-        <div className="flex flex-col justify-center items-start md:flex-row">
+        <div className="flex flex-col justify-center items-start lg:flex-row">
           <div>
             {router.isFallback ? (
               <PostTitle>Loading…</PostTitle>
