@@ -36,7 +36,7 @@ const PostPreview = ({
           title={title}
         />
         <CardContent>
-          <Typography gutterBottom component="div" className='font-bold text-lg'>
+          <Typography gutterBottom variant='h5' component="div" className='font-bold text-lg'>
             {title}
           </Typography>
           <Typography variant="body2" className='text-black max-h-[110px]'>

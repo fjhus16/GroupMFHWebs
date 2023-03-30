@@ -67,7 +67,7 @@ export default function Post({ post, allPosts }: Props) {
                 title="image for the most recent post"
               />
               <CardContent>
-                <Typography gutterBottom component="div" className='font-bold text-lg'>
+                <Typography gutterBottom variant='h5' component="div" className='font-bold text-lg'>
                   {morePosts[0].title}
                 </Typography>
                 <Typography variant="body2" className='text-black max-h-[110px]'>
@@ -86,7 +86,7 @@ export default function Post({ post, allPosts }: Props) {
                 title="image for the 2nd most recent post"
               />
               <CardContent>
-                <Typography gutterBottom  component="div" className='font-bold text-lg'>
+                <Typography gutterBottom variant='h5' component="div" className='font-bold text-lg'>
                   {morePosts[1].title}
                 </Typography>
                 <Typography variant="body2" className='text-black max-h-[110px]'>
