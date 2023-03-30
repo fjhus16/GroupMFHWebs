@@ -22,8 +22,8 @@ export default function Index({ allPosts }: Props) {
   const morePosts = []
   const topPosts = []
 
-  allPosts.forEach((post)=>{post.lang === 'en' ? morePosts.push(post) : null})
-  morePosts.forEach((post)=>{post.cat === 'Headlines' ? topPosts.push(post) : null})
+  allPosts.forEach((post) => { post.lang === 'en' ? morePosts.push(post) : null })
+  morePosts.forEach((post) => { post.cat === 'Headlines' ? topPosts.push(post) : null })
 
   const showPosts = morePosts.slice(0, 6)
   const showTopPosts = topPosts.slice(0, 4)
