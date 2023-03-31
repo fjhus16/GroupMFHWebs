@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-50 border-t border-neutral-200">
+    <footer className="bg-neutral-50 border-t border-neutral-200 z-40 absolute botton-0 w-full">
       <Container>
         <div className='flex flex-col'>
         <div className="py-8 flex flex-col lg:flex-row items-center">

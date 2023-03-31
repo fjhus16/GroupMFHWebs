@@ -28,8 +28,8 @@ const Header = () => {
   const { asPath } = useRouter()
 
   return (
-    <Popover className='bg-gradient-to-b from-slate-400 via-slate-200 to-slate-100 sticky top-0 mx-auto flex items-center px-12 py-2 h-24 z-10'>
-      <Link href='/tr/'><Image src={'/assets/header/logo.png'} priority loading='eager' alt={'MFH Group Logo'} width={200} height={120}></Image></Link>
+    <Popover className='z-50 bg-gradient-to-b from-slate-400 via-slate-200 to-slate-100 sticky top-0 flex items-center px-4 md:px-12 py-2 h-24 z-10'>
+      <Link className='' href='/tr/'><Image src={'/assets/header/logo.png'} priority loading='eager' alt={'MFH Group Logo'} width={200} height={120}></Image></Link>
       <div className='grow flex flex-row'>
         <div className='hidden ml-6 sm:flex font-bold items-center justify-start gap-2 md:gap-8'>
           <AboutMenu />
