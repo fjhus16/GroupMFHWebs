@@ -33,8 +33,8 @@ const Header = () => {
       <div className='grow flex flex-row'>
         <div className='hidden ml-6 sm:flex font-bold items-center justify-start gap-2 md:gap-8'>
           <AboutMenu />
+          <Link className='hover:bg-black hover:text-white text-2xl lg:text-3xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href=''><p className={cormorantGaramond.className}>Hizmetlerimiz</p></Link>
           <Link className='hover:bg-black hover:text-white text-2xl lg:text-3xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/tr/contact'><p className={cormorantGaramond.className}>İletişim</p></Link>
-          <Link className='hover:bg-black hover:text-white text-2xl lg:text-3xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/tr/services'><p className={cormorantGaramond.className}>Hizmetlerimiz</p></Link>
         </div>
         <div className='hidden ml-[auto] sm:flex font-bold items-center justify-end gap-2 md:gap-8'>
           <CssTextField id="standard-search" label="Arama" type="search" className='mb-4' variant="standard" />
@@ -66,8 +66,8 @@ const Header = () => {
             <nav className='grid border-none ml-3 font-bold'>
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/about'><p className={cormorantGaramond.className}>Hakkımızda</p></Link>
               {/*<Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/team'>Kadromuz</Link>*/}
+              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl mb-4' href=''><p className={cormorantGaramond.className}>Hizmetlerimiz</p></Link>
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/contact'><p className={cormorantGaramond.className}>İletişim</p></Link>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl mb-4' href='/tr/services'><p className={cormorantGaramond.className}>Hizmetlerimiz</p></Link>
             </nav>
           </div>
         </Popover.Panel>
