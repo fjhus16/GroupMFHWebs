@@ -2,6 +2,7 @@ import DateFormatter from './date-formatter'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material'
+import Image from 'next/image'
 
 type Props = {
   title: string
@@ -23,7 +24,7 @@ const PostPreview = ({
 
   return (
     <div>
-      <Card sx={{
+      <Card square sx={{
         height: "100%",
         display: "flex",
         flexDirection: "column"
@@ -31,9 +32,8 @@ const PostPreview = ({
         className='w-[300px] md:w-[400px] min-h-[400px]'>
         <CardMedia
           sx={{ height: 140 }}
-          image={coverImage}
           title={title}
-        />
+        ><div className='relative w-full h-[140px]'><Image fill style={{objectFit:"cover"}} src={coverImage} alt={title}/></div></CardMedia>
         <CardContent>
           <Typography gutterBottom variant='h5' component="div" className='font-bold text-lg'>
             {title}
