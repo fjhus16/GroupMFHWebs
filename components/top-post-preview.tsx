@@ -24,8 +24,8 @@ const TopPostPreview = ({
     <div className='h-[400px] flex flex-col items-center justify-center' style={{
       backgroundImage: `url(${coverImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'
     }}>
-      <div className='flex flex-col items-center justify-center font-bold text-white'>
-      <h3 className="text-3xl mb-3 w-[85%] md:w-[65%] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)]">
+      <div className='flex flex-col items-center justify-center text-white'>
+      <h3 className="font-bold text-3xl mb-3 w-[85%] md:w-[65%] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)]">
         <Link
           as={`${asPath.substring(0,3)}/posts/${slug}`}
           href={`${asPath.substring(0,3)}/posts/[slug]`}
