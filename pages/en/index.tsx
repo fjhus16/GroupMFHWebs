@@ -36,8 +36,8 @@ export default function Index({ allPosts }: Props) {
         </Head>
         <div className='fixed h-[400px] ism:h-[450px] w-screen -z-30'>
           <Image src='/assets/homepage/WallStreet.jpg' priority loading='eager' className='bg-right -z-30' fill={true} style={{ objectFit: "cover", objectPosition: "right" }} alt={'Wall Street'} />
-          <p className='[text-shadow:_0_2px_0_rgb(0_0_0_/_80%)] text-xl ism:text-3xl md:text-4xl text-white fixed font-bold mt-16 ism:mt-24 2xl:mt-40 ml-6 ism:ml-8 md:ml-60 -z-20 mx-auto'>A goal, is the first step to success.</p>
-          <p className='[text-shadow:_0_2px_0_rgb(0_0_0_/_80%)] text-lg md:text-2xl text-white fixed font-bold mt-28 ism:mt-36 2xl:mt-56 ml-6 ism:ml-8 md:ml-60 -z-20 mx-auto'>
+          <p className='[text-shadow:_0_2px_0_rgb(0_0_0_/_80%)] text-xl ism:text-3xl md:text-4xl text-white fixed font-bold mt-16 ism:mt-24 lg:mt-40 ml-6 ism:ml-8 md:ml-60 -z-20 mx-auto'>A goal, is the first step to success.</p>
+          <p className='[text-shadow:_0_2px_0_rgb(0_0_0_/_80%)] text-lg md:text-2xl text-white fixed font-bold mt-28 ism:mt-36 lg:mt-56 ml-6 ism:ml-8 md:ml-60 -z-20 mx-auto'>
             Our team, made up of experts in their fields,<br />
             stands ready to guide and support you at every step of your career,<br />
             so you can be certain of the decisions you make while building your future.</p>

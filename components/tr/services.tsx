@@ -49,8 +49,8 @@ const Services = () => {
     ];
 
     return (
-        <div className="flex flex-wrap justify-center items-center">
-            {services.map((service, index) => (
+        <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-wrap justify-center items-center">{services.map((service, index) => (
                 <button
                     key={index}
                     onClick={() => handleClick(index)}
@@ -59,7 +59,7 @@ const Services = () => {
                 >
                     {service.title}
                 </button>
-            ))}
+            ))}</div>
             {selectedButton !== -1 && (
                 <div
                     className="bg-gray-100 p-4 my-2 w-full md:w-3/4 lg:w-2/3"
