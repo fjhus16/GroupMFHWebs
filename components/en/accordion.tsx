@@ -7,7 +7,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function SimpleAccordion() {
     return (
-        <div>
+        <div className='block lg:hidden'>
             <Accordion square>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}

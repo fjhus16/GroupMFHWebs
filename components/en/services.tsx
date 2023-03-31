@@ -96,7 +96,7 @@ const Services = () => {
     ];
 
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex-col justify-center items-center hidden lg:flex">
             <div className="flex flex-wrap justify-center items-center">{services.map((service, index) => (
                 <button
                     key={index}

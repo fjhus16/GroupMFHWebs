@@ -11,6 +11,7 @@ import 'swiper/css';
 import TopPostPreview from '../../components/top-post-preview'
 import SwiperCore, { Autoplay } from 'swiper';
 import Services from '../../components/tr/services'
+import SimpleAccordion from '../../components/tr/accordion'
 
 type Props = {
   allPosts: Post[]
@@ -67,6 +68,7 @@ export default function Index({ allPosts }: Props) {
                 Hizmetlerimiz
               </h2>
               <Services />
+              <SimpleAccordion />
             </div>
             <div className='flex flex-col justify-center items-center'>
               {showPosts.length > 0 && <MoreStories posts={showPosts} />}
