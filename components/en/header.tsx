@@ -41,7 +41,7 @@ const Header = () => {
           <Link className='flex flex-row' href={asPath.replace('/en', '/tr')}><img
             alt="Türk bayrağı"
             src="https://purecatamphetamine.github.io/country-flag-icons/3x2/TR.svg" className='h-10 w-10 mr-1' /></Link>
-          <Link href={'/tr/contact'}><Phone /></Link>
+            <Link href={'/en/contact'} aria-label='Contact' aria-placeholder='Contact'><Phone /></Link>
         </div>
       </div>
       <div className='flex grow items-center justify-end lg:hidden'>
