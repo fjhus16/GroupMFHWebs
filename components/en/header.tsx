@@ -40,14 +40,14 @@ const Header = () => {
           <CssTextField id="standard-search" label="Search" type="search" className='mb-4' variant="standard" />
           <Link className='flex flex-row' href={asPath.replace('/en', '/tr')}><img
             alt="Türk bayrağı"
-            src="http://purecatamphetamine.github.io/country-flag-icons/3x2/TR.svg" className='h-10 w-10 mr-1' /></Link>
+            src="https://purecatamphetamine.github.io/country-flag-icons/3x2/TR.svg" className='h-10 w-10 mr-1' /></Link>
           <Link href={'/tr/contact'}><Phone /></Link>
         </div>
       </div>
       <div className='flex grow items-center justify-end sm:hidden'>
         <Link className='flex flex-row' href={asPath.replace('/en', '/tr')}><img
           alt="Türk bayrağı"
-          src="http://purecatamphetamine.github.io/country-flag-icons/3x2/TR.svg" className='h-10 w-10 mr-1' /></Link>
+          src="https://purecatamphetamine.github.io/country-flag-icons/3x2/TR.svg" className='h-10 w-10 mr-1' /></Link>
         <Popover.Button className="inline-flex items-center justify-center p-2 text-black hover:bg-black hover:text-white">
           <span className='sr-only'>Open menu</span>
           <Bars3Icon className='h-6 w-6' aria-hidden="true" />
