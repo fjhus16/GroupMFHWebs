@@ -8,7 +8,7 @@ type Props = {
 const MoreStories = ({ posts }: Props) => {
   return (
     <section>
-      <h2 className="mb-8 text-5xl font-bold tracking-tighter leading-tight">
+      <h2 className="mb-8 text-5xl justify-center w-full flex font-bold">
         Headlines
       </h2>
       <div className="grid justify-center grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 fhd:grid-cols-4 gap-4 mb-4">
