@@ -66,8 +66,8 @@ const Header = () => {
             <nav className='grid border-none ml-3 font-bold'>
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/about'><p className={cormorantGaramond.className}>About us</p></Link>
               {/*<Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/team'>Our team</Link>*/}
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl mb-4' href='/en/services'><p className={cormorantGaramond.className}>Our Services</p></Link>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href=''><p className={cormorantGaramond.className}>Contact</p></Link>
+              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/services'><p className={cormorantGaramond.className}>Our Services</p></Link>
+              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl mb-4' href=''><p className={cormorantGaramond.className}>Contact</p></Link>
             </nav>
           </div>
         </Popover.Panel>
