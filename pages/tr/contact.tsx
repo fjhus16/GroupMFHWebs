@@ -20,7 +20,7 @@ export default function Contact() {
               </div>
             <div className="ml-6 mt-4 flex items-center">
               <Phone className="h-6 w-6 mr-2" />
-             <p className='ml-2'>+90 (312) 473 59 48</p>
+             <p className='ml-2'>+90 (312) 474 03 85</p>
             </div>
             <div className="ml-6 mt-4 flex items-center">
               <Mail className="h-6 w-6 mr-2" />
