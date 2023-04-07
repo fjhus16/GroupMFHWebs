@@ -24,8 +24,8 @@ const TopPostPreview = ({
   return (
     <div className='h-[400px] flex flex-col items-center justify-center'>
      <Image fill style={{objectFit:"cover"}} priority loading='eager' src={coverImage} alt={title} className='-z-10'/>
-      <div className='flex flex-col items-center justify-center text-white'>
-      <h3 className="font-bold text-3xl mb-3 w-[85%] md:w-[65%] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)]">
+     <div className='flex mt-auto pb-6 w-[80%] flex-col items-center justify-center flex-end text-white'>
+      <h3 className="font-bold text-white text-2xl xl:text-3xl mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">
         <Link
           as={`${asPath.substring(0,3)}/posts/${slug}`}
           href={`${asPath.substring(0,3)}/posts/[slug]`}
@@ -36,7 +36,7 @@ const TopPostPreview = ({
       <Link
           as={`${asPath.substring(0,3)}/posts/${slug}`}
           href={`${asPath.substring(0,3)}/posts/[slug]`}
-          className="text-lg mb-4 w-[85%] md:w-[65%] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)]">{excerpt}</Link>
+          className="text-white text-md xl:text-lg [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)]">{excerpt}</Link>
     </div>
     </div>
   )

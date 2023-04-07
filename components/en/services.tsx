@@ -101,7 +101,7 @@ const Services = () => {
                 <button
                     key={index}
                     onClick={() => handleClick(index)}
-                    className={`py-2 px-4 my-2 mx-1 hover:bg-black hover:text-white transition-colors duration-500 ${selectedButton === index ? 'bg-black text-white' : 'text-black'}`}
+                    className={`py-2 px-4 font-bold my-2 mx-1 hover:bg-black hover:text-white transition-colors duration-500 ${selectedButton === index ? 'bg-black text-white' : 'text-black'}`}
                     style={{ boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.25)', transitionProperty: 'box-shadow, transform', transitionDuration: '0.5s', transformOrigin: 'center' }}
                 >
                     {service.title}

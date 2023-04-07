@@ -13,7 +13,7 @@ export default function AboutMenu() {
       <Menu as="div" className="relative inline-block text-left">
         <div>
           <Menu.Button className="inline-flex w-full justify-center hover:bg-black hover:text-white text-2xl lg:text-3xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000">
-            <p className={`${cormorantGaramond.className} whitespace-nowrap`}>About Us</p>
+            <p className={`${cormorantGaramond.className} whitespace-nowrap`}>Corporate</p>
           </Menu.Button>
         </div>
         <Transition
@@ -33,7 +33,7 @@ export default function AboutMenu() {
                     className={`${active ? 'bg-black text-white' : 'text-gray-900'
                       } duration-1000 group flex w-full items-center px-2 py-2 text-sm`}
                   >
-                    About MFH
+                    About Us
                   </button>
                 )}
               </Menu.Item>
