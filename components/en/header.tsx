@@ -33,7 +33,7 @@ const Header = () => {
       <div className='grow flex flex-row'>
         <div className='hidden ml-6 lg:flex font-bold items-center justify-start gap-2 lg:gap-8'>
           <AboutMenu />
-          <Link className='hover:bg-black hover:text-white text-2xl lg:text-3xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000 whitespace-nowrap' href=''><p className={cormorantGaramond.className}>Our Services</p></Link>
+          <Link className='hover:bg-black hover:text-white text-2xl lg:text-3xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000 whitespace-nowrap' href='#services-section'><p className={cormorantGaramond.className}>Our Services</p></Link>
           <Link className='hover:bg-black hover:text-white text-2xl lg:text-3xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/en/contact'><p className={cormorantGaramond.className}>Contact</p></Link>
         </div>
         <div className='hidden ml-[auto] lg:flex font-bold items-center justify-end gap-2 md:gap-8'>
@@ -64,9 +64,9 @@ const Header = () => {
               </Popover.Button>
             </div>
             <nav className='grid border-none ml-3 font-bold'>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/about'><p className={cormorantGaramond.className}>About us</p></Link>
+            <AboutMenu />
               {/*<Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/team'>Our team</Link>*/}
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/services'><p className={cormorantGaramond.className}>Our Services</p></Link>
+              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='#services-section'><p className={cormorantGaramond.className}>Our Services</p></Link>
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl mb-4' href=''><p className={cormorantGaramond.className}>Contact</p></Link>
             </nav>
           </div>

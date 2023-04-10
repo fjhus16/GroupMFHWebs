@@ -64,9 +64,9 @@ const Header = () => {
               </Popover.Button>
             </div>
             <nav className='grid border-none ml-3 font-bold'>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/about'><p className={cormorantGaramond.className}>Hakkımızda</p></Link>
+            <AboutMenu />
               {/*<Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/tr/team'>Kadromuz</Link>*/}
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href=''><p className={cormorantGaramond.className}>Hizmetlerimiz</p></Link>
+              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='#services-section'><p className={cormorantGaramond.className}>Hizmetlerimiz</p></Link>
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl mb-4' href='/tr/contact'><p className={cormorantGaramond.className}>İletişim</p></Link>
             </nav>
           </div>
