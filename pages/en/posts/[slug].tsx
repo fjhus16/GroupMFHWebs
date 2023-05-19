@@ -35,8 +35,12 @@ export default function Post({ post, allPosts }: Props) {
   }
   return (
     <Layout>
+      <Head>
+        <title>GroupMFH - {post.title}</title>
+        <meta name="description" content={post.keywords} />
+      </Head>
       <Container>
-      <div className="flex flex-col justify-center items-center lg:items-start lg:flex-row">
+        <div className="flex flex-col justify-center items-center lg:items-start lg:flex-row">
           <div>
             {router.isFallback ? (
               <PostTitle>Loading…</PostTitle>
@@ -75,8 +79,8 @@ export default function Post({ post, allPosts }: Props) {
                 </Typography>
               </CardContent>
               <CardActions sx={{ mt: "auto" }} className='flex flex-row items-center justify-between mt-auto'>
-           <Link className='hover:bg-black hover:text-white text-2xl pt-1 pb-1 pl-2 pr-2 mt-1 mb-3 duration-1000' href={'/en/posts/' + morePosts[0].slug}>Read article</Link>
-              <DateFormatter dateString={morePosts[0].date} />
+                <Link className='hover:bg-black hover:text-white text-2xl pt-1 pb-1 pl-2 pr-2 mt-1 mb-3 duration-1000' href={'/en/posts/' + morePosts[0].slug}>Read article</Link>
+                <DateFormatter dateString={morePosts[0].date} />
               </CardActions>
             </Card>
             <Card className='w-[300px] md:w-[400px] mt-10 mb-10 max-h-[500px]'>
@@ -94,8 +98,8 @@ export default function Post({ post, allPosts }: Props) {
                 </Typography>
               </CardContent>
               <CardActions sx={{ mt: "auto" }} className='flex flex-row items-center justify-between mt-auto'>
-           <Link className='hover:bg-black hover:text-white text-2xl pt-1 pb-1 pl-2 pr-2 mt-1 mb-3 duration-1000' href={'/en/posts/' + morePosts[1].slug}>Read article</Link>
-              <DateFormatter dateString={morePosts[1].date} />
+                <Link className='hover:bg-black hover:text-white text-2xl pt-1 pb-1 pl-2 pr-2 mt-1 mb-3 duration-1000' href={'/en/posts/' + morePosts[1].slug}>Read article</Link>
+                <DateFormatter dateString={morePosts[1].date} />
               </CardActions>
             </Card>
             <Card className='w-[300px] md:w-[400px] mt-10 mb-10 max-h-[500px]'>
@@ -113,8 +117,8 @@ export default function Post({ post, allPosts }: Props) {
                 </Typography>
               </CardContent>
               <CardActions sx={{ mt: "auto" }} className='flex flex-row items-center justify-between mt-auto'>
-           <Link className='hover:bg-black hover:text-white text-2xl pt-1 pb-1 pl-2 pr-2 mt-1 mb-3 duration-1000' href={'/en/posts/' + morePosts[2].slug}>Read article</Link>
-              <DateFormatter dateString={morePosts[2].date} />
+                <Link className='hover:bg-black hover:text-white text-2xl pt-1 pb-1 pl-2 pr-2 mt-1 mb-3 duration-1000' href={'/en/posts/' + morePosts[2].slug}>Read article</Link>
+                <DateFormatter dateString={morePosts[2].date} />
               </CardActions>
             </Card>
           </div>
@@ -141,6 +145,7 @@ export async function getStaticProps({ params }: Params) {
     'slug',
     'coverImage',
     'excerpt',
+    'keywords'
   ])
   const post = getPostBySlug(params.slug, [
     'title',
@@ -149,6 +154,7 @@ export async function getStaticProps({ params }: Params) {
     'content',
     'ogImage',
     'coverImage',
+    'keywords'
   ])
   const content = await markdownToHtml(post.content || '')
 

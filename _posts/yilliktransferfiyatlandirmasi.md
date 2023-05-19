@@ -5,6 +5,7 @@ title: 'Yıllık Transfer Fiyatlandırması Raporu Düzenleme Zorunluluğu'
 excerpt: 'Makalemizin konusunu “Yıllık Transfer Fiyatlandırması Raporu” düzenleme zorunluluğu ve bu zorunluluğa uymamanın yaptırımları ile bu yaptırımlara ilişkin öneriler oluşturmaktadır.'
 coverImage: '/assets/blog/images/yilliktransfer.jpg'
 date: '2022-12-29'
+keywords: 'Transfer fiyatlandırması, Yıllık Transfer Fiyatlandırması Raporu, Örtülü kazanç dağıtımı, Zorunluluk, Yaptırımlar'
 ogImage:
   url: '/assets/blog/images/yilliktransfer.jpg'
 ---

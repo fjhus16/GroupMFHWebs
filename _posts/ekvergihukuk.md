@@ -5,6 +5,7 @@ title: "7440 Sayılı Kanun İle Getirilen Ek Vergi'nin Hukuki Değerlendirilmes
 excerpt: "7440 sayılı kanun m.10/27 ile 2022 takvim yılına ilişkin kurumlar vergisi mükelleflerine Ek Vergi yükümlülüğü getirilmiştir."
 coverImage: '/assets/blog/images/ekvergihukuk.jpg'
 date: '2023-05-10'
+keywords: 'Ek vergi, Anayasa, Geriye yürümezlik, Öngörülebilirlik, Vergi adaleti, Vergi davası'
 ogImage:
   url: '/assets/blog/images/ekvergihukuk.jpg'
 ---

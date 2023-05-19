@@ -5,6 +5,7 @@ title: '6923 Sayılı Cumhurbaşkanı Kararı'
 excerpt: "Yatırımlarda Devlet Yardımları Hakkında Kararda Değişiklik Yapılmasına Dair 6923 Sayılı Cumhurbaşkanı Kararı 10.03.2023 Tarihli Resmi Gazete'de Yayımlandı."
 coverImage: '/assets/blog/images/excavator.jpg'
 date: '2023-03-13'
+keywords: '6923 sayılı karar, Yatırımlarda devlet yardımları, Yatırım teşvik'
 ogImage:
   url: '/assets/blog/images/excavator.jpg'
 ---

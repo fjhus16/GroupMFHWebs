@@ -6,6 +6,7 @@ type PostType = {
   date: string
   coverImage: string
   excerpt: string
+  keywords: string
   ogImage: {
     url: string
   }

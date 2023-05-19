@@ -5,6 +5,7 @@ title: 'Presidential Decree No. 6923'
 excerpt: "Presidential Decree No. 6923, amending the Decree on State Aid for Investments, was published in the Official Gazette dated March 10, 2023."
 coverImage: '/assets/blog/images/excavator.jpg'
 date: '2023-03-13'
+keywords: 'Decision No. 6923, Government aids for investments, Investment incentives'
 ogImage:
   url: '/assets/blog/images/excavator.jpg'
 ---

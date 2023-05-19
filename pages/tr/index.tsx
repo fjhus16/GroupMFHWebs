@@ -4,7 +4,6 @@ import Layout from '../../components/tr/layout'
 import { getAllPosts } from '../../lib/api'
 import Head from 'next/head'
 import Post from '../../interfaces/post'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -33,6 +32,7 @@ export default function Index({ allPosts }: Props) {
       <Layout>
         <Head>
           <title>GroupMFH</title>
+          <meta name="description" content="Vergi danışmanlığı, vergi davaları, yatırım, teşvik ve devlet desteği gibi konularda uzmanlaşmış bir kurumuz." />
         </Head>
         <div className='flex flex-col md:flex-row w-full top-[96px] z-10 md:fixed g-[800px] md:h-[400px]'>
           <div className='w-full h-[400px]'>

@@ -5,6 +5,7 @@ title: "7440 Sayılı Kanun İle Getirilen \"Ek Vergi\" Nedir?"
 excerpt: "7440 sayılı kanunun 10 uncu maddesinin 27 nci fıkrası ile getirilen \"Ek Vergi\" nedir? Nasıl hesaplanır? Kimlere uygulanır?"
 coverImage: '/assets/blog/images/7440ekvergi.jpg'
 date: '2023-04-26'
+keywords: 'Ek vergi, Ek vergi mükellefi, Ek verginin konusu, Ek vergi hesabı, Ek vergi beyanı'
 ogImage:
   url: '/assets/blog/images/7440ekvergi.jpg'
 ---
