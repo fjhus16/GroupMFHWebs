@@ -1,7 +1,7 @@
 ---
 lang: 'tr'
 cat: 'Gündem'
-title: "7440 SAYILI KANUN İLE GETİRİLEN EK VERGİ'NİN HUKUKİ DEĞERLENDİRMESİ"
+title: "7440 Sayılı Kanun İle Getirilen Ek Vergi'nin Hukuki Değerlendirilmesi"
 excerpt: "7440 sayılı kanun m.10/27 ile 2022 takvim yılına ilişkin kurumlar vergisi mükelleflerine Ek Vergi yükümlülüğü getirilmiştir."
 coverImage: '/assets/blog/images/ekvergihukuk.jpg'
 date: '2023-05-10'
@@ -9,7 +9,7 @@ ogImage:
   url: '/assets/blog/images/ekvergihukuk.jpg'
 ---
 
-## 7440 SAYILI KANUN İLE GETİRİLEN EK VERGİ’NİN HUKUKİ DEĞERLENDİRMESİ
+## 7440 Sayılı Kanun İle Getirilen Ek Vergi'nin Hukuki Değerlendirilmesi
 
 7440 sayılı “Bazı Alacakların Yeniden Yapılandırılması ile Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun” m.10/27 ile 2022 takvim yılına ilişkin kurumlar vergisi mükelleflerine Ek Vergi yükümlülüğü getirilmiştir. İşbu yazımızda, söz konusu Ek Vergi anayasal vergilendirme ilkeleri kapsamında irdelenerek hukuki olarak değerlendirilecektir.  
 
@@ -56,13 +56,13 @@ Ek verginin mükellefleri şunlardır;
 
 ‎  ‎  ‎  ‎ 5520 sayılı Kanun ile diğer kanunlarda yer alan ve ek verginin konusuna giren indirimler şunlardır:  
 
-‎  ‎  ‎  ‎ a) Yurtdışına Verilen Yazılım, Mühendislik, Eğitim ve Sağlık Hizmetleri Kazanç İndirimi (5520 sayılı Kanun Madde 10/1-ğ).
-‎  ‎  ‎  ‎ b) Nakdi Sermaye Artışından Kaynaklanan Faiz İndirimi (5520 sayılı Kanun Madde10/1-ı).
-‎  ‎  ‎  ‎ c) Yatırım İndirimi İstisnası (193 sayılı Kanun Geçici Madde 61 kapsamında tevkifata tabi olmayanlar).
-‎  ‎  ‎  ‎ ç) Ar-Ge ve Tasarım İndirimi (5746 sayılı Kanun).
-‎  ‎  ‎  ‎ d) Teknogirişim Sermaye Desteği İndirimi (5746 sayılı Kanun).
-‎  ‎  ‎  ‎ e) Teknokent Sermaye Desteği İndirimi (4691 sayılı Kanun).
-‎  ‎  ‎  ‎ f) Özel Kanunlarda Yer Alan ve Ek Vergi Matrahına Dâhil Edilmesi Gereken Diğer İndirimler.
+‎  ‎  ‎  ‎ a) Yurtdışına Verilen Yazılım, Mühendislik, Eğitim ve Sağlık Hizmetleri Kazanç İndirimi (5520 sayılı Kanun Madde 10/1-ğ).  
+‎  ‎  ‎  ‎ b) Nakdi Sermaye Artışından Kaynaklanan Faiz İndirimi (5520 sayılı Kanun Madde10/1-ı).  
+‎  ‎  ‎  ‎ c) Yatırım İndirimi İstisnası (193 sayılı Kanun Geçici Madde 61 kapsamında tevkifata tabi olmayanlar).  
+‎  ‎  ‎  ‎ ç) Ar-Ge ve Tasarım İndirimi (5746 sayılı Kanun).  
+‎  ‎  ‎  ‎ d) Teknogirişim Sermaye Desteği İndirimi (5746 sayılı Kanun).  
+‎  ‎  ‎  ‎ e) Teknokent Sermaye Desteği İndirimi (4691 sayılı Kanun).  
+‎  ‎  ‎  ‎ f) Özel Kanunlarda Yer Alan ve Ek Vergi Matrahına Dâhil Edilmesi Gereken Diğer İndirimler.  
 
 **Ek Verginin Hukuki Durumu**
 
