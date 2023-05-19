@@ -67,7 +67,7 @@ const Header = () => {
             <AboutMenu />
               {/*<Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='/en/team'>Our team</Link>*/}
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='#services-section'><p className={cormorantGaramond.className}>Our Services</p></Link>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl mb-4' href=''><p className={cormorantGaramond.className}>Contact</p></Link>
+              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl mb-4' href='/en/contact'><p className={cormorantGaramond.className}>Contact</p></Link>
             </nav>
           </div>
         </Popover.Panel>

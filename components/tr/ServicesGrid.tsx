@@ -75,9 +75,6 @@ const Grid = () => {
                                     {item.text}
                                 </Typography>
                             </CardContent>
-                            <CardActions sx={{ mt: "auto" }} className='flex flex-row items-center justify-between mt-auto'>
-                                <Link className='hover:bg-black hover:text-white text-lg pl-2 pr-2 mb-1 duration-1000' as={`${asPath.substring(0, 3)}${item.link}`} href={`${asPath.substring(0, 3)}${item.link}`}>{asPath.substring(0, 3) == '/en' ? 'More info' : 'Daha fazla bilgi'}</Link>
-                            </CardActions>
                         </Card>
                     </Link>
                 </div>

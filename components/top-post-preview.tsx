@@ -36,7 +36,7 @@ const TopPostPreview = ({
       <Link
           as={`${asPath.substring(0,3)}/posts/${slug}`}
           href={`${asPath.substring(0,3)}/posts/[slug]`}
-          className="text-white text-md xl:text-lg [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)]">{excerpt}</Link>
+          className="text-white text-md xl:text-lg mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)]">{excerpt}</Link>
     </div>
     </div>
   )
