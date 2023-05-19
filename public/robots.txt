@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://groupmfh.com
+
+# Sitemaps
+Sitemap: https://groupmfh.com/sitemap.xml
