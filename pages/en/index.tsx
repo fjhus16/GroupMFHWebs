@@ -38,7 +38,7 @@ export default function Index({ allPosts }: Props) {
         <div className='flex flex-col md:flex-row w-full top-[96px] z-10 md:fixed g-[800px] md:h-[400px]'>
           <div className='flex flex-col w-full md:w-[45%] h-[400px] items-center justify-center'>
             <Image src='/assets/homepage/WallStreet.jpg' priority loading='eager' className='-z-10' alt='WallStreet' fill style={{objectFit:"cover"}} />
-            <div className='flex mt-auto pb-6 flex-col mx-2 items-center justify-center flex-end text-white'>
+            <div className='flex mt-auto pb-6 px-2 flex-col items-center justify-center flex-end text-white'>
               <h3 className="font-bold text-white text-2xl xl:text-3xl mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">A goal, is the first step to success.</h3>
               <p className='text-white text-md xl:text-lg [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)]'>
                 Our team, made up of experts in their fields,<br />

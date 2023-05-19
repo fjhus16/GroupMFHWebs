@@ -9,9 +9,8 @@ import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import TopPostPreview from '../../components/top-post-preview'
-import SwiperCore, { Autoplay } from 'swiper';
-import Services from '../../components/tr/services'
-import SimpleAccordion from '../../components/tr/accordion'
+import SwiperCore, { Autoplay } from 'swiper'
+import ServicesGrid from '../../components/tr/ServicesGrid'
 
 type Props = {
   allPosts: Post[]
@@ -35,10 +34,10 @@ export default function Index({ allPosts }: Props) {
         <Head>
           <title>GroupMFH</title>
         </Head>
-        <div className='flex flex-col md:flex-row w-full top-[96px] z-10 md:fixed h-[800px] md:h-[400px]'>
-          <div className='flex flex-col mx-2 w-full md:w-[45%] h-[400px] items-center justify-center'>
+        <div className='flex flex-col md:flex-row w-full top-[96px] z-10 md:fixed g-[800px] md:h-[400px]'>
+          <div className='flex flex-col w-full md:w-[45%] h-[400px] items-center justify-center'>
             <Image src='/assets/homepage/WallStreet.jpg'  priority loading='eager' className='-z-10' alt='WallStreet' fill style={{objectFit:"cover"}} />
-            <div className='flex mt-auto pb-6 flex-col items-center justify-center flex-end text-white'>
+            <div className='flex mt-auto px-2 pb-6 flex-col items-center justify-center flex-end text-white'>
               <h3 className="font-bold text-white text-2xl xl:text-3xl mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">Hedef, başarının ilk adımıdır.</h3>
               <p className='text-white text-md xl:text-lg [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)]'>
                 Alanlarında uzman kişilerden oluşan ekibimiz,<br />
@@ -69,12 +68,11 @@ export default function Index({ allPosts }: Props) {
               <h2 className="mb-2 pt-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
                 Hizmetlerimiz
               </h2>
-              <Services />
-              <SimpleAccordion />
+              <ServicesGrid />
             </div>
             <div className='flex flex-col justify-center items-center'>
               {showPosts.length > 0 && <MoreStories posts={showPosts} />}
-              <Link href="/en/blog" className="text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6">
+              <Link href="/tr/blog" className="text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6">
                 Daha fazla yazı
               </Link>
             </div>
