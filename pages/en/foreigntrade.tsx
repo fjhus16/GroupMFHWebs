@@ -1,4 +1,5 @@
 import Container from '../../components/container'
+import ContactForm from '../../components/en/contactform'
 import Layout from '../../components/en/layout'
 import Head from 'next/head'
 
@@ -12,7 +13,8 @@ export default function Foreigntrade() {
       <Layout>
         <Container>
           <section className="flex-col flex items-center md:justify-between pt-6 pb-6">
-          <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">          Customs and Foreign Trade Legislation Consultancy
+          <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
+            Customs and Foreign Trade Legislation Consultancy
               </h2>
             <h4 className="text-left text-md md:pl-8">
               MFH Group offers the following services that its customers may need within the scope of Export, Import and Foreign Exchange Legislation and applications with a solution-oriented perspective:<br />
@@ -28,6 +30,7 @@ export default function Foreigntrade() {
               ✓ Customs litigation<br />
               ✓ Audit process (consultancy in the process of inspector review)<br /></h4>
           </section>
+          <ContactForm />
         </Container>
       </Layout>
     </>

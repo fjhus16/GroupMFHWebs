@@ -1,4 +1,5 @@
 import Container from '../../components/container'
+import ContactForm from '../../components/en/contactform'
 import Layout from '../../components/en/layout'
 import Head from 'next/head'
 
@@ -12,8 +13,8 @@ export default function Incentivesrd() {
       <Layout>
         <Container>
           <section className="flex-col flex items-center md:justify-between pt-6 pb-6">
-          <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">          Incentives and R&D Consultancy
-              </h2>
+            <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">Incentives and R&D Consultancy
+            </h2>
             <h4 className="text-left text-md md:pl-8">
               MFH Group offers the following services with a solutions-oriented perspective which clients may require for the resolution of technical and complex issues such as Taxes, Incentives, Exemptions and disputes arising from legislation related to these issues:<br />
               <br />
@@ -29,6 +30,7 @@ export default function Incentivesrd() {
               ✓ Other Tax Incentives
             </h4>
           </section>
+          <ContactForm />
         </Container>
       </Layout>
     </>

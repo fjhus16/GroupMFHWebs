@@ -3,6 +3,7 @@ import Layout from '../../components/tr/layout'
 import Head from 'next/head'
 import { TextField } from '@mui/material'
 import { Phone, Mail, Business } from '@mui/icons-material'
+import ContactForm from '../../components/tr/contactform'
 
 export default function Contact() {
   return (
@@ -59,6 +60,7 @@ export default function Contact() {
               <button className='w-[25%] py-2 px-2 rounded bg-gray-800 text-white' type="submit">Gönder</button>
             </form>
           </div>
+          <ContactForm />
         </Container>
       </Layout>
     </>
