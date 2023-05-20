@@ -1,15 +1,9 @@
 import { TextField } from '@mui/material'
 
 const ContactForm = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission logic here
-    // You can use the form data to make API requests or perform other actions
-  };
-
   return (
     <div className='my-2 pb-4 pt-2 border rounded-md mt-10 mx-auto md:w-[40vw]'>
-      <form className='flex pt-5 gap-5 flex-col md:w-[40vw] justify-center items-center' onSubmit={handleSubmit}>
+      <form className='flex pt-5 gap-5 flex-col md:w-[40vw] justify-center items-center' action="https://formsubmit.co/e4d7aa3a78d1dbb9a2517df63907c970" method="POST">
         <div className='flex flex-center flex-col justify-center'>
           <h2 className='text-2xl font-bold'>Contact Form</h2>
         </div>
