@@ -35,7 +35,7 @@ const Grid = () => {
         {
             id: 5,
             text: 'Customs and Foreign Trade Legislation Consultancy',
-            logo: '/assets/homepage/globe.jpg',
+            logo: '/assets/homepage/calcworld.jpg',
             link: '/foreigntrade',
         },
         {

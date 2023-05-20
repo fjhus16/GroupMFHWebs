@@ -35,7 +35,7 @@ const Grid = () => {
         {
             id: 5,
             text: 'Gümrük ve Dış Ticaret Mevzuatı Danışmalığı',
-            logo: '/assets/homepage/globe.jpg',
+            logo: '/assets/homepage/calcworld.jpg',
             link: '/foreigntrade',
         },
         {
