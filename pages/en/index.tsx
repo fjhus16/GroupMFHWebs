@@ -52,10 +52,10 @@ export default function Index({ allPosts }: Props) {
                   <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/documents.jpg' className='-z-10' alt={''} />
                   <div className='flex mt-auto pb-6 w-[80%] flex-col items-center justify-center flex-end text-white'>
                     <h3 className="font-bold text-white text-2xl xl:text-3xl mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">
-                      Expert Audits
+                      Expert Audit
                     </h3>
                     <h3 className="font-bold text-black bg-orange-500 text-2xl xl:text-3xl mr-auto px-1 pb-1">
-                      Forward-thinking Solutions
+                      Forward-thinking
                     </h3>
                   </div>
                 </div>
