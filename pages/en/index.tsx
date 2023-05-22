@@ -85,7 +85,7 @@ export default function Index({ allPosts }: Props) {
                     </h3>
                   </div>
                 </div>
-              </SwiperSlide> </Swiper>
+              </SwiperSlide> </Swiper>  
           </div>
         </div>
         <div className='z-20 relative md:mt-[350px]'>
