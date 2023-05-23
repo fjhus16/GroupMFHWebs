@@ -54,7 +54,7 @@ export default function Index({ allPosts }: Props) {
               Meet Corporate Management
             </h3>
           </div>
-          <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+          <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
             TAX | AUDIT | LEGAL | ADVISORY
           </h3>
         </div>
@@ -67,7 +67,7 @@ export default function Index({ allPosts }: Props) {
               Explore the Advantages of Growth
             </h3>
           </div>
-          <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+          <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
             TAX | AUDIT | LEGAL | ADVISORY
           </h3>
         </div>
@@ -80,7 +80,7 @@ export default function Index({ allPosts }: Props) {
               Reach Beyond Borders
             </h3>
           </div>
-          <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+          <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
             TAX | AUDIT | LEGAL | ADVISORY
           </h3>
         </div>
@@ -93,7 +93,7 @@ export default function Index({ allPosts }: Props) {
               Stay Informed About Investment Incentives
             </h3>
           </div>
-          <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+          <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
             TAX | AUDIT | LEGAL | ADVISORY
           </h3>
         </div>
@@ -106,7 +106,7 @@ export default function Index({ allPosts }: Props) {
               Don't Miss Tax Benefits
             </h3>
           </div>
-          <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+          <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
             TAX | AUDIT | LEGAL | ADVISORY
           </h3>
         </div>
@@ -119,7 +119,7 @@ export default function Index({ allPosts }: Props) {
               Benefit from Professional Solutions
             </h3>
           </div>
-          <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+          <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
             TAX | AUDIT | LEGAL | ADVISORY
           </h3>
         </div>

@@ -54,7 +54,7 @@ export default function Index({ allPosts }: Props) {
                       Kurumsal yönetimle tanışın
                     </h3>
                   </div>
-                    <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+                    <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
                     VERGİ | DENETİM | HUKUK | DANIŞMANLIK
                     </h3>
                 </div>
@@ -67,7 +67,7 @@ export default function Index({ allPosts }: Props) {
                     Büyümenin avantajlarını keşfedin
                     </h3>
                   </div>
-                    <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+                    <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
                     VERGİ | DENETİM | HUKUK | DANIŞMANLIK
                     </h3>
                 </div>
@@ -80,7 +80,7 @@ export default function Index({ allPosts }: Props) {
                     Sınırların ötesine uzanın
                     </h3>
                   </div>
-                    <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+                    <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
                     VERGİ | DENETİM | HUKUK | DANIŞMANLIK
                     </h3>
                 </div>
@@ -93,7 +93,7 @@ export default function Index({ allPosts }: Props) {
                     Yatırım teşviklerinden haberdar olun
                     </h3>
                   </div>
-                    <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+                    <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
                     VERGİ | DENETİM | HUKUK | DANIŞMANLIK
                     </h3>
                 </div>
@@ -106,7 +106,7 @@ export default function Index({ allPosts }: Props) {
                     Vergisel avantajları kaçırmayın
                     </h3>
                   </div>
-                    <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+                    <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
                     VERGİ | DENETİM | HUKUK | DANIŞMANLIK
                     </h3>
                 </div>
@@ -119,7 +119,7 @@ export default function Index({ allPosts }: Props) {
                     Profesyonel çözümlerden yararlanın
                     </h3>
                   </div>
-                    <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+                    <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
                     VERGİ | DENETİM | HUKUK | DANIŞMANLIK
                     </h3>
                 </div>
