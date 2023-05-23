@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Card from '@mui/material/Card';
@@ -54,15 +54,35 @@ const Grid = () => {
         },
     ];
 
-    const { asPath } = useRouter()
+    const { asPath } = useRouter();
 
     const [flippedCard, setFlippedCard] = useState(null);
+    const [isAnimating, setIsAnimating] = useState(false);
+    const flipTimeoutRef = useRef(null);
 
     const handleCardFlip = (id) => {
-        setFlippedCard(id);
+        if (isAnimating) {
+            return;
+        }
+
+        clearTimeout(flipTimeoutRef.current);
+
+        if (flippedCard !== id) {
+            setFlippedCard(id);
+            setIsAnimating(true);
+        } else {
+            setFlippedCard(null);
+            setIsAnimating(true);
+        }
+
+        flipTimeoutRef.current = setTimeout(() => {
+            setIsAnimating(false);
+        }, 300);
     };
 
     const handleCardLeave = () => {
+        clearTimeout(flipTimeoutRef.current);
+        setIsAnimating(false);
         setFlippedCard(null);
     };
 
@@ -84,13 +104,13 @@ const Grid = () => {
                                 height: '100%',
                                 display: 'flex',
                                 flexDirection: 'column',
-                                boxShadow: '1px 1px 3px 2px grey'
+                                boxShadow: '1px 1px 3px 2px grey',
                             }}
                             className=""
                         >
                             <div className="card-inner">
                                 <div className="card-front">
-                                <CardMedia sx={{ height: 80 }} title={item.text}>
+                                    <CardMedia sx={{ height: 80 }} title={item.text}>
                                         <div className="relative w-[full] mt-[25px] 2xl:mt-[75px] h-[90px]">
                                             <Image fill style={{ objectFit: 'contain' }} src={item.logo} alt={item.text} />
                                         </div>
@@ -117,66 +137,72 @@ const Grid = () => {
                 </div>
             ))}
             <style jsx>{`
-            .grid-container {
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: center;
-            }
-      
-            .grid-item {
-              flex: 0 0 auto;
-              padding: 3px;
-              text-align: center;
-              position: relative;
-              perspective: 1000px;
-            }
-      
-            .grid-item .card-inner {
-              width: 100%;
-              height: 100%;
-              transition: transform 0.5s;
-              transform-style: preserve-3d;
-            }
-      
-            .grid-item.flipped .card-inner {
-              transform: rotateY(180deg);
-            }
-      
-            .grid-item .card-front,
-            .grid-item .card-back {
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              backface-visibility: hidden;
-            }
-      
-            .grid-item .card-front {
-              z-index: 2;
-              transform: rotateY(0deg);
-            }
-      
-            .grid-item .card-back {
-              transform: rotateY(-180deg);
-            }
-      
-            .grid-item.flipped .card-front {
-              transform: rotateY(0deg);
-            }
-      
-            .grid-item.flipped .card-back {
-              transform: rotateY(180deg);
-            }
-      
-            .card-back {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-            }
+                .grid-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
 
-          `}</style>
+                .grid-item {
+                    transform: scaleX(1);
+                    transition: transform 0.5s;
+                    flex: 0 0 auto;
+                    padding: 3px;
+                    text-align: center;
+                    position: relative;
+                    perspective: 1000px;
+                }
+
+                .grid-item .card-inner {
+                    width: 100%;
+                    height: 100%;
+                    transition: transform 0.5s;
+                    transform-style: preserve-3d;
+                }
+
+                .grid-item.flipped {
+                    transform: scaleX(-1);
+                    transition: transform 0.5s;
+                }
+
+                .grid-item.flipped .card-inner {
+                    transform: rotateY(180deg);
+                }
+
+                .grid-item .card-front,
+                .grid-item .card-back {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                }
+
+                .grid-item .card-front {
+                    z-index: 2;
+                    transform: rotateY(0deg);
+                }
+
+                .grid-item .card-back {
+                    transform: rotateY(180deg) scaleX(-1);
+                }
+
+                .grid-item.flipped .card-front {
+                    transform: rotateY(0deg);
+                }
+
+                .grid-item.flipped .card-back {
+                    transform: rotateY(180deg) scaleX(-1);
+                }
+
+                .card-back {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            `}</style>
         </div>
     );
 };
