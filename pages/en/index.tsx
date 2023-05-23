@@ -36,59 +36,98 @@ export default function Index({ allPosts }: Props) {
           <title>GroupMFH</title>
           <meta name="description" content="We are a specialized institution in tax consultancy, tax litigation, investment, incentives, and government support." />
         </Head>
-        <div className='flex flex-col md:flex-row w-full top-[96px] z-10 md:fixed g-[800px] md:h-[350px]'>
-          <div className='w-full h-[350px]'>
-            <Swiper className='bg-white w-full h-full'
-              loop={true}
-              spaceBetween={0}
-              slidesPerView={1}
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: true,
-              }}>
-
-              <SwiperSlide>
-                <div className='h-[350px] flex flex-col items-center justify-center'>
-                  <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/documents.jpg' className='-z-10' alt={''} />
-                  <div className='flex mt-auto pb-6 w-[80%] flex-col items-center justify-center flex-end text-white'>
-                    <h3 className="font-bold text-white text-2xl xl:text-3xl mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">
-                      Expert Audit
-                    </h3>
-                    <h3 className="font-bold text-black bg-orange-500 text-2xl xl:text-3xl mr-auto px-1 pb-1">
-                      Forward-thinking
-                    </h3>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className='h-[350px] flex flex-col items-center justify-center'>
-                  <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/globe.jpg' className='-z-10' alt={''} />
-                  <div className='flex w-[80%] flex-col items-center justify-center flex-end text-white'>
-                    <h3 className="font-bold text-white text-2xl xl:text-3xl [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">
-                      Strategic Solutions for
-                    </h3>
-                    <h3 className="font-bold text-black bg-red-600 text-2xl xl:text-3xl px-1 pb-1">
-                      Global Expansion
-                    </h3>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className='h-[350px] flex flex-col items-center justify-center'>
-                  <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/businessDistrict.jpg' className='-z-10' alt={''} />
-                  <div className='flex mb-auto pt-6 w-[80%] flex-col items-center justify-center flex-end text-white'>
-                    <h3 className="font-bold bg-black text-white text-2xl xl:text-3xl ml-auto mr-14 px-1 pb-1">
-                      Unleash
-                    </h3>
-                    <h3 className="font-bold text-white bg-black text-2xl xl:text-3xl ml-auto px-1 pb-1 mb-6">
-                      Your Potential
-                    </h3>
-                  </div>
-                </div>
-              </SwiperSlide> </Swiper>  
+        <div className='flex flex-col md:flex-row w-full top-[96px] z-10 md:fixed gap-[800px] md:h-[450px]'>
+  <div className='w-full h-[450px]'>
+    <Swiper className='bg-white w-full h-full'
+      loop={true}
+      spaceBetween={0}
+      slidesPerView={1}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: true,
+      }}>
+      <SwiperSlide>
+        <div className='h-[450px] flex flex-col items-center justify-center'>
+          <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/1.jpg' className='-z-10' alt={''} />
+          <div className='flex mt-auto pb-6 w-[80%] flex-col items-center justify-center flex-end text-white'>
+            <h3 className="font-bold text-white text-2xl xl:text-3xl mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">
+              Meet Corporate Management
+            </h3>
           </div>
+          <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+            TAX | AUDIT | LEGAL | ADVISORY
+          </h3>
         </div>
-        <div className='z-20 relative md:mt-[350px]'>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className='h-[450px] flex flex-col items-center justify-center'>
+          <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/2.jpg' className='-z-10' alt={''} />
+          <div className='flex w-[80%] flex-col items-center justify-center flex-end text-white'>
+            <h3 className="font-bold mt-6 text-white text-2xl xl:text-3xl [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">
+              Explore the Advantages of Growth
+            </h3>
+          </div>
+          <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+            TAX | AUDIT | LEGAL | ADVISORY
+          </h3>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className='h-[450px] flex flex-col items-center justify-center'>
+          <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/3.jpg' className='-z-10' alt={''} />
+          <div className='flex mb-auto pt-6 w-[80%] flex-col items-center justify-center flex-end text-white'>
+            <h3 className="font-bold text-white text-2xl xl:text-3xl ml-auto px-1 pb-1 mb-6">
+              Reach Beyond Borders
+            </h3>
+          </div>
+          <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+            TAX | AUDIT | LEGAL | ADVISORY
+          </h3>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className='h-[450px] flex flex-col items-center justify-center'>
+          <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/4.jpg' className='-z-10' alt={''} />
+          <div className='flex mb-auto pt-6 w-[80%] flex-col items-center justify-center flex-end text-white'>
+            <h3 className="font-bold text-white text-2xl xl:text-3xl ml-auto px-1 pb-1 mb-6">
+              Stay Informed About Investment Incentives
+            </h3>
+          </div>
+          <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+            TAX | AUDIT | LEGAL | ADVISORY
+          </h3>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className='h-[450px] flex flex-col items-center justify-center'>
+          <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/5.jpg' className='-z-10' alt={''} />
+          <div className='flex mb-auto pt-6 w-[80%] flex-col items-center justify-center flex-end text-white'>
+            <h3 className="font-bold text-white text-2xl xl:text-3xl ml-auto px-1 pb-1 mb-6">
+              Don't Miss Tax Benefits
+            </h3>
+          </div>
+          <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+            TAX | AUDIT | LEGAL | ADVISORY
+          </h3>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className='h-[450px] flex flex-col items-center justify-center'>
+          <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/6.jpg' className='-z-10' alt={''} />
+          <div className='flex mb-auto pt-6 w-[80%] flex-col items-center justify-center flex-end text-white'>
+            <h3 className="font-bold text-white text-2xl xl:text-3xl ml-auto px-1 pb-1">
+              Benefit from Professional Solutions
+            </h3>
+          </div>
+          <h3 className="font-light text-opacity-80 text-white text-2xl xl:text-3xl ml-auto mt-auto mb-6 mr-6">
+            TAX | AUDIT | LEGAL | ADVISORY
+          </h3>
+        </div>
+      </SwiperSlide>
+    </Swiper>
+  </div>
+</div>
+        <div className='z-20 relative md:mt-[450px]'>
           <Container>
             <div className='flex pb-6 flex-col justify-center items-center'>
               <h2 className="mb-2 pt-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
