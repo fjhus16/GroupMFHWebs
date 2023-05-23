@@ -84,6 +84,7 @@ const Grid = () => {
                                 height: '100%',
                                 display: 'flex',
                                 flexDirection: 'column',
+                                boxShadow: '1px 1px 3px 2px grey'
                             }}
                             className=""
                         >
@@ -105,7 +106,7 @@ const Grid = () => {
                                         <Typography gutterBottom variant="h5" component="div" className="font-bold text-lg">
                                             {item.text}
                                         </Typography>
-                                        <Button className='hover:bg-black rounded-none text-black hover:text-white pt-1 pb-1 pl-2 pr-2 mt-1 mb-3 duration-1000'>
+                                        <Button size="small" color="primary" variant="outlined">
                                             Daha Fazla Bilgi
                                         </Button>
                                     </CardContent>

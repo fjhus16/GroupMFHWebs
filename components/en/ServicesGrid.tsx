@@ -84,6 +84,7 @@ const Grid = () => {
                                 height: '100%',
                                 display: 'flex',
                                 flexDirection: 'column',
+                                boxShadow: '1px 1px 3px 2px grey'
                             }}
                             className=""
                         >
