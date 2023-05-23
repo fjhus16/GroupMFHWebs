@@ -51,31 +51,37 @@ export default function Index({ allPosts }: Props) {
                   <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/1.jpg' className='-z-10' alt={''} />
                   <div className='flex mt-auto pb-6 w-[80%] flex-col items-center justify-center flex-end text-white'>
                     <h3 className="font-bold text-white text-4xl xl:text-5xl mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">
-                      Kurumsal
+                      KURUMSAL
                     </h3>
-                    <h3 className="font-bold bg-red-600 px-2 pb-2 text-white text-3xl xl:text-4xl mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)]">
+                    <h3 className="font-bold ml-12 bg-red-600 px-2 pb-2 text-white text-3xl xl:text-4xl mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)]">
                       yönetimle
                     </h3>
-                    <h3 className="font-bold text-white text-3xl xl:text-4xl ml-4 mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">
+                    <h3 className="font-bold text-white text-3xl xl:text-4xl ml-32 mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">
                       tanışın
                     </h3>
                   </div>
-                    <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
+                  <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
                     VERGİ | DENETİM | HUKUK | DANIŞMANLIK
-                    </h3>
+                  </h3>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className='h-[450px] flex flex-col items-center justify-center'>
                   <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/2.jpg' className='-z-10' alt={''} />
                   <div className='flex w-[80%] flex-col items-center justify-center flex-end text-white'>
-                    <h3 className="font-bold mt-6 text-white text-2xl xl:text-3xl [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">
-                    Büyümenin avantajlarını keşfedin
+                    <h3 className="font-bold text-white text-4xl xl:text-5xl [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3 mt-8">
+                      Büyümenin
+                    </h3>
+                    <h3 className="font-bold bg-orange-500 ml-12 px-2 pb-2 text-white text-3xl xl:text-4xl [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)]">
+                      avantajlarını
+                    </h3>
+                    <h3 className="font-bold text-white text-4xl ml-32 xl:text-5xl [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">
+                      KEŞFEDİN
                     </h3>
                   </div>
-                    <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
+                  <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
                     VERGİ | DENETİM | HUKUK | DANIŞMANLIK
-                    </h3>
+                  </h3>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -83,12 +89,12 @@ export default function Index({ allPosts }: Props) {
                   <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/3.jpg' className='-z-10' alt={''} />
                   <div className='flex mb-auto pt-6 w-[80%] flex-col items-center justify-center flex-end text-white'>
                     <h3 className="font-bold text-white text-2xl xl:text-3xl ml-auto px-1 pb-1 mb-6">
-                    Sınırların ötesine uzanın
+                      Sınırların ötesine uzanın
                     </h3>
                   </div>
-                    <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
+                  <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
                     VERGİ | DENETİM | HUKUK | DANIŞMANLIK
-                    </h3>
+                  </h3>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -96,12 +102,12 @@ export default function Index({ allPosts }: Props) {
                   <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/4.jpg' className='-z-10' alt={''} />
                   <div className='flex mb-auto pt-6 w-[80%] flex-col items-center justify-center flex-end text-white'>
                     <h3 className="font-bold text-white text-2xl xl:text-3xl ml-auto px-1 pb-1 mb-6">
-                    Yatırım teşviklerinden haberdar olun
+                      Yatırım teşviklerinden haberdar olun
                     </h3>
                   </div>
-                    <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
+                  <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
                     VERGİ | DENETİM | HUKUK | DANIŞMANLIK
-                    </h3>
+                  </h3>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -109,12 +115,12 @@ export default function Index({ allPosts }: Props) {
                   <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/5.jpg' className='-z-10' alt={''} />
                   <div className='flex mb-auto pt-6 w-[80%] flex-col items-center justify-center flex-end text-white'>
                     <h3 className="font-bold text-white text-2xl xl:text-3xl ml-auto px-1 pb-1 mb-6">
-                    Vergisel avantajları kaçırmayın
+                      Vergisel avantajları kaçırmayın
                     </h3>
                   </div>
-                    <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
+                  <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
                     VERGİ | DENETİM | HUKUK | DANIŞMANLIK
-                    </h3>
+                  </h3>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -122,15 +128,15 @@ export default function Index({ allPosts }: Props) {
                   <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/6.jpg' className='-z-10' alt={''} />
                   <div className='flex mb-auto pt-6 w-[80%] flex-col items-center justify-center flex-end text-white'>
                     <h3 className="font-bold text-white text-2xl xl:text-3xl ml-auto px-1 pb-1">
-                    Profesyonel çözümlerden yararlanın
+                      Profesyonel çözümlerden yararlanın
                     </h3>
                   </div>
-                    <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
+                  <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">
                     VERGİ | DENETİM | HUKUK | DANIŞMANLIK
-                    </h3>
+                  </h3>
                 </div>
               </SwiperSlide>
-              </Swiper>
+            </Swiper>
           </div>
         </div>
         <div className='z-20 relative md:mt-[450px]'>
