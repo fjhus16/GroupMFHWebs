@@ -116,14 +116,14 @@ const Grid = () => {
                                         </div>
                                     </CardMedia>
                                     <CardContent>
-                                        <Typography gutterBottom variant="body2" component="div" className="font-bold text-lg 2xl:text-2xl">
+                                        <Typography gutterBottom variant="body1" component="div" className="font-bold text-lg 2xl:text-2xl">
                                             {item.text}
                                         </Typography>
                                     </CardContent>
                                 </div>
                                 <div className="card-back">
                                     <CardContent>
-                                        <Typography gutterBottom variant="body2" component="div" className="font-bold text-lg 2xl:text-2xl">
+                                        <Typography gutterBottom variant="body1" component="div" className="font-bold text-lg 2xl:text-2xl">
                                             {item.text}
                                         </Typography>
                                         <Button className='hover:bg-black rounded-none text-black hover:text-white pt-1 pb-1 pl-2 pr-2 mt-1 mb-3 duration-1000'>
