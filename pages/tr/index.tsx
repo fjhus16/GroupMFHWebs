@@ -44,14 +44,20 @@ export default function Index({ allPosts }: Props) {
               slidesPerView={1}
               autoplay={{
                 delay: 5000,
-                disableOnInteraction: true,
+                disableOnInteraction: false,
               }}>
               <SwiperSlide>
                 <div className='h-[450px] flex flex-col items-center justify-center'>
                   <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/1.jpg' className='-z-10' alt={''} />
                   <div className='flex mt-auto pb-6 w-[80%] flex-col items-center justify-center flex-end text-white'>
-                    <h3 className="font-bold text-white text-2xl xl:text-3xl mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">
-                      Kurumsal yönetimle tanışın
+                    <h3 className="font-bold text-white text-4xl xl:text-5xl mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">
+                      Kurumsal
+                    </h3>
+                    <h3 className="font-bold bg-red-600 px-2 pb-2 text-white text-3xl xl:text-4xl mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)]">
+                      yönetimle
+                    </h3>
+                    <h3 className="font-bold text-white text-3xl xl:text-4xl ml-4 mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-3">
+                      tanışın
                     </h3>
                   </div>
                     <h3 className="font-light text-opacity-80 text-white text-md xl:text-2xl ml-auto mt-auto mb-6 mr-6">

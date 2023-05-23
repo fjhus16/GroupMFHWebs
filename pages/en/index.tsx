@@ -44,7 +44,7 @@ export default function Index({ allPosts }: Props) {
       slidesPerView={1}
       autoplay={{
         delay: 5000,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
       }}>
       <SwiperSlide>
         <div className='h-[450px] flex flex-col items-center justify-center'>
