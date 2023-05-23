@@ -13,43 +13,43 @@ const Grid = () => {
         {
             id: 1,
             text: 'Vergi Denetimi',
-            logo: '/assets/homepage/tax.jpg',
+            logo: '/assets/homepage/iconmonstr-coin-10.svg',
             link: '/taxaudit',
         },
         {
             id: 2,
             text: 'Muhasebe ve Mali Danışmanlık Hizmetleri',
-            logo: '/assets/homepage/calc.jpg',
+            logo: '/assets/homepage/iconmonstr-calculator-9.svg',
             link: '/accounting',
         },
         {
             id: 3,
             text: 'Teşvik Hizmetleri ve Ar-Ge Danışmalığı',
-            logo: '/assets/homepage/tablet.jpg',
+            logo: '/assets/homepage/iconmonstr-building-26.svg',
             link: '/incentivesrd',
         },
         {
             id: 4,
             text: 'Sosyal Güvenlik Danışmalığı',
-            logo: '/assets/homepage/receipts.jpg',
+            logo: '/assets/homepage/iconmonstr-construction-15.svg',
             link: '/socialsecurity',
         },
         {
             id: 5,
             text: 'Gümrük ve Dış Ticaret Mevzuatı Danışmalığı',
-            logo: '/assets/homepage/calcworld.jpg',
+            logo: '/assets/homepage/iconmonstr-delivery-13.svg',
             link: '/foreigntrade',
         },
         {
             id: 6,
             text: 'Yönetim, Kurumsal Finansman ve Teknoloji Danışmanlığı',
-            logo: '/assets/homepage/international.jpg',
+            logo: '/assets/homepage/iconmonstr-building-46.svg',
             link: '/corporateconsulting',
         },
         {
             id: 7,
             text: 'Şirketler Hukuku Mevzuatı Danışmanlığı',
-            logo: '/assets/homepage/factory.jpg',
+            logo: '/assets/homepage/iconmonstr-education-1.svg',
             link: '/legislations',
         },
     ];
@@ -68,13 +68,13 @@ const Grid = () => {
 
     return (
         <div className="grid-container">
-        {gridData.map((item) => (
-            <div
-                className={`grid-item w-[250px] 2xl:w-[300px] h-[250px] 2xl:h-[300px] ${flippedCard === item.id ? 'flipped' : ''}`}
-                key={item.id}
-                onMouseEnter={() => handleCardFlip(item.id)}
-                onMouseLeave={handleCardLeave}
-            >
+            {gridData.map((item) => (
+                <div
+                    className={`grid-item w-[250px] 2xl:w-[300px] h-[250px] 2xl:h-[300px] ${flippedCard === item.id ? 'flipped' : ''}`}
+                    key={item.id}
+                    onMouseEnter={() => handleCardFlip(item.id)}
+                    onMouseLeave={handleCardLeave}
+                >
                     <Link href={`${asPath.substring(0, 3)}${item.link}`}>
                         <Card
                             square
@@ -89,9 +89,9 @@ const Grid = () => {
                         >
                             <div className="card-inner">
                                 <div className="card-front">
-                                    <CardMedia sx={{ height: 140 }} title={item.text}>
-                                        <div className="relative w-full h-[140px]">
-                                            <Image fill style={{ objectFit: 'cover' }} src={item.logo} alt={item.text} />
+                                <CardMedia sx={{ height: 80 }} title={item.text}>
+                                        <div className="relative w-[full] mt-[25px] 2xl:mt-[75px] h-[90px]">
+                                            <Image fill style={{ objectFit: 'contain' }} src={item.logo} alt={item.text} />
                                         </div>
                                     </CardMedia>
                                     <CardContent>
@@ -105,7 +105,7 @@ const Grid = () => {
                                         <Typography gutterBottom variant="h5" component="div" className="font-bold text-lg">
                                             {item.text}
                                         </Typography>
-                                        <Button size="small" color="primary" variant="outlined">
+                                        <Button className='hover:bg-black rounded-none text-black hover:text-white pt-1 pb-1 pl-2 pr-2 mt-1 mb-3 duration-1000'>
                                             Daha Fazla Bilgi
                                         </Button>
                                     </CardContent>
@@ -174,10 +174,7 @@ const Grid = () => {
               justify-content: center;
               align-items: center;
             }
-      
-            .card-back .MuiCardContent-root {
-              margin-bottom: 16px;
-            }
+
           `}</style>
         </div>
     );

@@ -13,43 +13,43 @@ const Grid = () => {
         {
             id: 1,
             text: 'Tax Auditing',
-            logo: '/assets/homepage/tax.jpg',
+            logo: '/assets/homepage/iconmonstr-coin-10.svg',
             link: '/taxaudit',
         },
         {
             id: 2,
             text: 'Accounting and Financial Consultancy Services',
-            logo: '/assets/homepage/calc.jpg',
+            logo: '/assets/homepage/iconmonstr-calculator-9.svg',
             link: '/accounting',
         },
         {
             id: 3,
             text: 'Incentives and R&D Consultancy',
-            logo: '/assets/homepage/tablet.jpg',
+            logo: '/assets/homepage/iconmonstr-building-26.svg',
             link: '/incentivesrd',
         },
         {
             id: 4,
             text: 'Social Security Advisory',
-            logo: '/assets/homepage/receipts.jpg',
+            logo: '/assets/homepage/iconmonstr-construction-15.svg',
             link: '/socialsecurity',
         },
         {
             id: 5,
             text: 'Customs and Foreign Trade Legislation Consultancy',
-            logo: '/assets/homepage/calcworld.jpg',
+            logo: '/assets/homepage/iconmonstr-delivery-13.svg',
             link: '/foreigntrade',
         },
         {
             id: 6,
             text: 'Management, Corporate Finance and Technology Consulting',
-            logo: '/assets/homepage/international.jpg',
+            logo: '/assets/homepage/iconmonstr-building-46.svg',
             link: '/corporateconsulting',
         },
         {
             id: 7,
             text: 'Company Law Legislation Consultancy',
-            logo: '/assets/homepage/factory.jpg',
+            logo: '/assets/homepage/iconmonstr-education-1.svg',
             link: '/legislations',
         },
     ];
@@ -89,9 +89,9 @@ const Grid = () => {
                         >
                             <div className="card-inner">
                                 <div className="card-front">
-                                    <CardMedia sx={{ height: 140 }} title={item.text}>
-                                        <div className="relative w-full h-[140px]">
-                                            <Image fill style={{ objectFit: 'cover' }} src={item.logo} alt={item.text} />
+                                <CardMedia sx={{ height: 80 }} title={item.text}>
+                                        <div className="relative w-[full] mt-[25px] 2xl:mt-[75px] h-[90px]">
+                                            <Image fill style={{ objectFit: 'contain' }} src={item.logo} alt={item.text} />
                                         </div>
                                     </CardMedia>
                                     <CardContent>
@@ -174,10 +174,7 @@ const Grid = () => {
               justify-content: center;
               align-items: center;
             }
-      
-            .card-back .MuiCardContent-root {
-              margin-bottom: 16px;
-            }
+
           `}</style>
         </div>
     );
