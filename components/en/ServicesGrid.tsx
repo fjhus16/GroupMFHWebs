@@ -70,7 +70,7 @@ const Grid = () => {
         <div className="grid-container">
             {gridData.map((item) => (
                 <div
-                    className={`grid-item ${flippedCard === item.id ? 'flipped' : ''}`}
+                    className={`grid-item w-[250px] 2xl:w-[300px] h-[250px] 2xl:h-[300px] ${flippedCard === item.id ? 'flipped' : ''}`}
                     key={item.id}
                     onMouseEnter={() => handleCardFlip(item.id)}
                     onMouseLeave={handleCardLeave}
@@ -85,7 +85,7 @@ const Grid = () => {
                                 display: 'flex',
                                 flexDirection: 'column',
                             }}
-                            className="w-[250px] 2xl:w-[300px] h-[250px] 2xl:h-[300px]"
+                            className=""
                         >
                             <div className="card-inner">
                                 <div className="card-front">
