@@ -83,10 +83,15 @@ const Header = () => {
               </Popover.Button>
             </div>
             <nav className='grid border-none ml-3 font-bold'>
-            <AboutMenu />
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl' href='#services-section'><p className={cormorantGaramond.className}>Hizmetlerimiz</p></Link>
+              <AboutMenu />
+              <button
+                className='hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-2 duration-1000 whitespace-nowrap mr-auto'
+                onClick={handleScrollToServices}
+              >
+                <p className={cormorantGaramond.className}>Hizmetlerimiz</p>
+              </button>
               <PartnersMenu />
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl mb-4' href='/tr/contact'><p className={cormorantGaramond.className}>İletişim</p></Link>
+              <Link className='focus:outline-none focus:underline px-2 mt-4 text-xl lg:text-2xl mb-4' href='/tr/contact'><p className={cormorantGaramond.className}>İletişim</p></Link>
             </nav>
           </div>
         </Popover.Panel>

@@ -98,12 +98,13 @@ const Header = () => {
             <nav className='grid border-none ml-3 font-bold'>
               <AboutMenu />
               <button
-                className='focus:outline-none focus:underline px-2 mt-4 text-3xl'
+                className='focus:outline-none focus:underline px-2 mt-2 text-xl lg:text-2xl mr-auto'
                 onClick={handleScrollToServices}
               >
                 <p className={cormorantGaramond.className}>Our Services</p>
               </button>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-3xl mb-4' href='/en/contact'>
+              <PartnersMenu />
+              <Link className='focus:outline-none focus:underline px-2 mt-2 text-xl lg:text-2xl mb-2' href='/en/contact'>
                 <p className={cormorantGaramond.className}>Contact</p>
               </Link>
             </nav>
