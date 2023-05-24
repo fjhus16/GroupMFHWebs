@@ -161,6 +161,7 @@ export default function Index({ allPosts }: Props) {
                 </div>
               </SwiperSlide>
             </Swiper>
+            <div id='services-section'></div>
           </div>
         </div>
         <div className='z-20 relative md:mt-[450px]'>

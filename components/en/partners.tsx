@@ -8,13 +8,13 @@ const cormorantGaramond = Cormorant_Garamond({
     weight: '500'
 })
 
-export default function AboutMenu() {
+export default function PartnersMenu() {
     return (
         <div className="text-left">
             <Menu as="div" className="relative inline-block text-left">
                 <div>
-                    <Menu.Button className="inline-flex w-full justify-center hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000">
-                        <p className={cormorantGaramond.className}>Kurumsal</p>
+                    <Menu.Button className="inline-flex w-full whitespace-nowrap justify-center hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000">
+                        <p className={cormorantGaramond.className}>Overseas Representatives</p>
                     </Menu.Button>
                 </div>
                 <Transition as={Fragment} enter="transition ease-out duration-200" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-200" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
@@ -22,21 +22,14 @@ export default function AboutMenu() {
                         <div className="px-1 py-1">
                             <Menu.Item>
                                 {({ active }) => (
-                                    <Link className={`${active ? 'bg-black text-white' : 'text-gray-900'} duration-1000 group flex w-full items-center px-2 py-2 text-sm`} href='/tr/about'><p className={cormorantGaramond.className}>Hakkımızda</p></Link>
+                                    <Link className={`${active ? 'bg-black text-white' : 'text-gray-900'} duration-1000 group flex w-full items-center px-2 py-2 text-sm`} href='/en/london'><p className={cormorantGaramond.className}>London</p></Link>
                                 )}
                             </Menu.Item>
                         </div>
                         <div className="px-1 py-1">
                             <Menu.Item>
                                 {({ active }) => (
-                                    <Link className={`${active ? 'bg-black text-white' : 'text-gray-900'} duration-1000 group flex w-full items-center px-2 py-2 text-sm`} href='/tr/ourvalues'><p className={cormorantGaramond.className}>Değerlerimiz</p></Link>
-                                )}
-                            </Menu.Item>
-                        </div>
-                        <div className="px-1 py-1">
-                            <Menu.Item>
-                                {({ active }) => (
-                                    <Link className={`${active ? 'bg-black text-white' : 'text-gray-900'} duration-1000 group flex w-full items-center px-2 py-2 text-sm`} href='/tr/team'><p className={cormorantGaramond.className}>Ekibimiz</p></Link>
+                                    <Link className={`${active ? 'bg-black text-white' : 'text-gray-900'} duration-1000 group flex w-full items-center px-2 py-2 text-sm`} href='/en/belgrade'><p className={cormorantGaramond.className}>Belgrade</p></Link>
                                 )}
                             </Menu.Item>
                         </div>
