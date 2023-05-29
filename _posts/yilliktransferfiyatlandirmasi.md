@@ -1,6 +1,7 @@
 ---
 lang: 'tr'
 cat: 'Vergi Denetimi'
+sector: 'Default'
 title: 'Yıllık Transfer Fiyatlandırması Raporu Düzenleme Zorunluluğu'
 excerpt: 'Makalemizin konusunu “Yıllık Transfer Fiyatlandırması Raporu” düzenleme zorunluluğu ve bu zorunluluğa uymamanın yaptırımları ile bu yaptırımlara ilişkin öneriler oluşturmaktadır.'
 coverImage: '/assets/blog/images/yilliktransfer.jpg'

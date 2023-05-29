@@ -1,6 +1,7 @@
 ---
 lang: 'tr'
 cat: 'Gündem'
+sector: 'Default'
 title: "7440 Sayılı Kanun İle Getirilen \"Ek Vergi\" Nedir?"
 excerpt: "7440 sayılı kanunun 10 uncu maddesinin 27 nci fıkrası ile getirilen \"Ek Vergi\" nedir? Nasıl hesaplanır? Kimlere uygulanır?"
 coverImage: '/assets/blog/images/7440ekvergi.jpg'
@@ -23,9 +24,9 @@ tabi matrahlar üzerinden hesaplanmaktadır.
  ‎  ‎  ‎  ‎ Ek verginin mükellefleri, 5520 sayılı Kurumlar Vergisi Kanununda sayılan
 mükelleflerdir. Buna göre;
 
- ‎   ‎   ‎   ‎  a) Sermaye şirketleri,  
- ‎   ‎   ‎   ‎  b) Kooperatifler,  
- ‎   ‎   ‎   ‎  c) İktisadi kamu kuruluşları,  
+ ‎   ‎   ‎  a) Sermaye şirketleri,  
+ ‎   ‎   ‎  b) Kooperatifler,  
+ ‎   ‎   ‎  c) İktisadi kamu kuruluşları,  
  ‎  ‎  ‎  ‎  ç) Dernek veya vakıflara ait iktisadi işletmeler,  
  ‎  ‎  ‎  ‎  d) İş ortaklıkları,  
 

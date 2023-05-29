@@ -1,6 +1,7 @@
 ---
 lang: 'en'
 cat: 'Headlines'
+sector: 'Default'
 title: 'The Circular letter Number 70'
 excerpt: "The Circular letter Number 70 on the Extension of Export Periods for Export Registered Deliveries Due to Force Majeure has been published."
 coverImage: '/assets/blog/images/containership.jpg'
