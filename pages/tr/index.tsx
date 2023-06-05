@@ -209,12 +209,12 @@ if (showPosts.length % 2 !== 0) {
         <div className='z-20 relative md:mt-[450px]'>
           <Container>
             <div className='flex pb-6 flex-col justify-center items-center'>
-              <h2 className="mb-2 pt-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
+              <h2 className="mb-6 pt-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
                 Hizmetlerimiz
               </h2>
               <ServicesGrid />
             </div>
-            <h2 className="mb-2 text-5xl justify-center w-full flex font-bold">
+            <h2 className="mb-8 text-5xl justify-center w-full flex font-bold">
           Bülten
         </h2><div className='flex flex-wrap mt-4 mb-4 flex-center justify-center'>
           {Array.from(categories).map((category) => (

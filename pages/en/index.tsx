@@ -209,7 +209,7 @@ if (showPosts.length % 2 !== 0) {
         <div className='z-20 relative md:mt-[450px]'>
           <Container>
             <div className='flex pb-6 flex-col justify-center items-center'>
-              <h2 className="mb-2 pt-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
+              <h2 className="mb-6 pt-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
                 Our services
               </h2>
               <ServicesGrid />
