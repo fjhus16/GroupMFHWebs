@@ -27,24 +27,28 @@ export default function Post({ post, allPosts }: Props) {
   // Sort and filter the posts
   const sortedPosts = allPosts
     .filter((postM) => postM.lang === 'tr' && postM.slug !== post.slug)
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
   // Get the posts with matching category
-  const matchingCatPosts = sortedPosts.filter((postM) => postM.cat.includes(cat));
+  const matchingCatPosts = sortedPosts.filter((postM) => postM.cat.includes(cat))
 
   // Get the remaining posts
-  const remainingPosts = sortedPosts.filter((postM) => !postM.cat.includes(cat));
+  const remainingPosts = sortedPosts.filter((postM) => !postM.cat.includes(cat))
 
   // Combine the matching cat posts and remaining posts (up to 4 posts)
-  const morePosts = [
-    ...matchingCatPosts.slice(0, 1),
-    ...remainingPosts.slice(0, 4 - matchingCatPosts.length)
-  ];
+  let morePosts = []
+
+  // Add matching cat posts (up to 1 post)
+  if (matchingCatPosts.length > 0) {
+    morePosts = morePosts.concat(matchingCatPosts.slice(0, 1))
+  }
+
+  // Add remaining posts (up to 4 posts)
+  morePosts = morePosts.concat(remainingPosts.slice(0, 4 - morePosts.length))
 
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
-
   return (
     <Layout>
       <Head>
