@@ -6,7 +6,7 @@ title: 'Yıllık Transfer Fiyatlandırması Raporu Düzenleme Zorunluluğu'
 excerpt: 'Makalemizin konusunu “Yıllık Transfer Fiyatlandırması Raporu” düzenleme zorunluluğu ve bu zorunluluğa uymamanın yaptırımları ile bu yaptırımlara ilişkin öneriler oluşturmaktadır.'
 coverImage: '/assets/blog/images/yilliktransfer.jpg'
 date: '2022-12-29'
-keywords: 'Transfer fiyatlandırması, Yıllık Transfer Fiyatlandırması Raporu, Örtülü kazanç dağıtımı, Zorunluluk, Yaptırımlar'
+keywords: 'Transfer fiyatlandırması, Yıllık Transfer Fiyatlandırması Raporu, Örtülü kazanç dağıtımı, Zorunluluk, Yaptırımlar, İdari Yaptırım'
 ogImage:
   url: '/assets/blog/images/yilliktransfer.jpg'
 ---
@@ -16,8 +16,6 @@ ogImage:
 ## Özet
 
 5520 sayılı Kurumlar Vergisi Kanununun 13’üncü maddesinde transfer fiyatlandırması yoluyla örtülü kazanç dağıtımı konusu düzenlenmiştir. Söz konusu maddenin son fıkrasında transfer fiyatlandırması ile ilgili usullerin Cumhurbaşkanı tarafından belirleneceği hüküm altına alınmış olup, bu hükme istinaden çıkartılan 2007/12888 sayılı Bakanlar Kurulu Kararında transfer fiyatlandırması ile ilgili usuller belirlenmiş, 2151 sayılı Cumhurbaşkanı Kararı ile de söz konusu Bakanlar Kurulu Kararında değişiklikler yapılmıştır.  Bakanlar Kurulu Kararı ile bazı mükelleflere ilişkili kişilerle yaptıkları işlemleri “Yıllık Transfer Fiyatlandırması Raporu” ile belgelendirme zorunluluğu getirilmiş, ayrıca Kurumlar Vergisi Kanununun 13’üncü maddesini açıklama üzere çıkartılan tebliğlerde de Bakanlar Kurulu Kararına paralel şekilde “Yıllık Transfer Fiyatlandırması Raporu” düzenleme zorunluluğu açıklanmıştır. Rapor düzenleme zorunluluğu getirilmekle birlikte yasal düzenlemelerde zorunluluğa uymayan mükelleflere uygulanacak yaptırımlar öngörülmemiştir. Ayrıca uygulamada bazı mükelleflerin “Yıllık Transfer Fiyatlandırması Raporu” düzenleme zorunluluğu konusunda bilgi sahibi olmadıkları ve Rapor’u düzenlemedikleri görülmektedir.
-
-**Anahtar Kelimeler:** Transfer Fiyatlandırması,  Transfer Fiyatlandırması Raporu, İdari Yaptırım.
 
 ## 1. Giriş
 

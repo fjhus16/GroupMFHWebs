@@ -1,6 +1,7 @@
 ---
 lang: 'en'
 cat: 'Technology;Tax'
+sector: 'Default'
 title: "Taxation of Content Creators Broadcasting via Social Media"
 excerpt: "While technology advances rapidly, people's traditional lifestyles don't change as quickly. However, with the pandemic, people's interest in technology has significantly increased."
 coverImage: '/assets/blog/images/sosyalmedya.jpg'
