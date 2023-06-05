@@ -220,12 +220,13 @@ if (showPosts.length % 2 !== 0) {
           <div id='yazılar' className='pt-2 ism:pt-2 items-center justify-center'><div className='flex flex-wrap mt-4 mb-4 flex-center justify-center'>
           {Array.from(categories).map((category) => (
                 <Link
+                className='my-2'
                   key={category}
                   href={`/en/blog?category=${encodeURIComponent(category)}`}
                   passHref
                 >
                   <p
-                    className={` text-white text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 duration-200 mb-6}`}
+                    className={`text-white text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 duration-200}`}
                   >
                     {category}
                   </p>
