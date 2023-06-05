@@ -8,19 +8,18 @@ type Props = {
 const MoreStories = ({ posts }: Props) => {
   return (
     <section>
-      <h2 className="mb-8 text-5xl justify-center w-full flex font-bold">
-        Headlines
-      </h2>
-      <div className="grid justify-center grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 fhd:grid-cols-4 gap-4 mb-4">
+      <div className="flex flex-wrap justify-center mb-4">
         {posts.map((post) => (
-          <PostPreview
-            key={post.slug}
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            slug={post.slug}
-            excerpt={post.excerpt}
-          />
+          <div key={post.slug} className="px-4 mb-8">
+            <PostPreview
+              title={post.title}
+              coverImage={post.coverImage}
+              date={post.date}
+              slug={post.slug}
+              excerpt={post.excerpt}
+              cat={post.cat}
+            />
+          </div>
         ))}
       </div>
     </section>

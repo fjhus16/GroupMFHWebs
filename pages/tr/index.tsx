@@ -7,7 +7,6 @@ import Post from '../../interfaces/post'
 import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import TopPostPreview from '../../components/top-post-preview'
 import SwiperCore, { Autoplay } from 'swiper'
 import ServicesGrid from '../../components/tr/ServicesGrid'
 import Image from 'next/image'
@@ -20,15 +19,58 @@ export default function Index({ allPosts }: Props) {
 
   SwiperCore.use([Autoplay]);
 
-  const morePosts = []
-  const topPosts = []
+  const filteredPosts = allPosts
+  .filter((post) => post.lang === 'tr')
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  allPosts.forEach((post) => { post.lang === 'tr' ? morePosts.push(post) : null })
-  morePosts.forEach((post) => { post.cat === 'Gündem' ? topPosts.push(post) : null })
+const categories = new Set<string>();
+const postsByCategory: { [category: string]: Post } = {};
 
-  const showPosts = morePosts.slice(0, 4)
-  const showTopPosts = topPosts.slice(0, 4)
+filteredPosts.forEach((post) => {
+  const postCategories = post.cat.split(';');
+  postCategories.forEach((category) => {
+    if (!categories.has(category) && !Object.values(postsByCategory).includes(post)) {
+      categories.add(category);
+      postsByCategory[category] = post;
+    }
+  });
+});
 
+let showPosts = Object.values(postsByCategory);
+
+// Check if the number of posts is uneven
+if (filteredPosts.length % 2 !== 0) {
+  let latestPost = null;
+  filteredPosts.forEach((post) => {
+    if (
+      !Object.values(postsByCategory).includes(post) &&
+      !showPosts.includes(post) &&
+      latestPost === null
+    ) {
+      latestPost = post;
+    }
+  });
+  if (latestPost) {
+    showPosts.push(latestPost);
+  }
+}
+
+// Ensure that showPosts contains an even number of posts
+if (showPosts.length % 2 !== 0) {
+  let latestPost = null;
+  filteredPosts.forEach((post) => {
+    if (
+      !Object.values(postsByCategory).includes(post) &&
+      !showPosts.includes(post) &&
+      post !== latestPost
+    ) {
+      latestPost = post;
+    }
+  });
+  if (latestPost) {
+    showPosts.push(latestPost);
+  }
+}
   return (
     <>
       <Layout>
@@ -172,6 +214,22 @@ export default function Index({ allPosts }: Props) {
               </h2>
               <ServicesGrid />
             </div>
+            <h2 className="mb-2 text-5xl justify-center w-full flex font-bold">
+          Bülten
+        </h2><div className='flex flex-wrap mt-4 mb-4 flex-center justify-center'>
+          {Array.from(categories).map((category) => (
+                <Link
+                  key={category}
+                  href={`/tr/blog?category=${encodeURIComponent(category)}`}
+                  passHref
+                >
+                  <p
+                    className={` text-white text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 duration-200 mb-6}`}
+                  >
+                    {category}
+                  </p>
+                </Link>
+              ))}</div>
             <div className='flex flex-col justify-center items-center'>
               {showPosts.length > 0 && <MoreStories posts={showPosts} />}
               <Link href="/tr/blog" className="text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6">
@@ -190,6 +248,7 @@ export const getStaticProps = async () => {
   const allPosts = getAllPosts([
     'lang',
     'cat',
+    'sector',
     'title',
     'date',
     'slug',

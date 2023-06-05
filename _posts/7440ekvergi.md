@@ -1,6 +1,6 @@
 ---
 lang: 'tr'
-cat: 'Gündem'
+cat: 'Vergi'
 sector: 'Default'
 title: "7440 Sayılı Kanun İle Getirilen \"Ek Vergi\" Nedir?"
 excerpt: "7440 sayılı kanunun 10 uncu maddesinin 27 nci fıkrası ile getirilen \"Ek Vergi\" nedir? Nasıl hesaplanır? Kimlere uygulanır?"

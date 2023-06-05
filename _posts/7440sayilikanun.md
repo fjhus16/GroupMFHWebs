@@ -1,6 +1,6 @@
 ---
 lang: 'tr'
-cat: 'Gündem'
+cat: 'Vergi'
 sector: 'Default'
 title: '7440 Sayılı Kanun'
 excerpt: "\"Vergi Affı Yasası\", \"Matrah Artırımı Yasası\" veya \"Yapılandırma Yasası\" olarak ta bilinen 7440 Sayılı Bazı Alacakların Yeniden Yapılandırılması İle Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun Resmi Gazete'de yayımlandı."

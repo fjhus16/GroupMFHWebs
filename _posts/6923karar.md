@@ -1,6 +1,6 @@
 ---
 lang: 'tr'
-cat: 'Gündem'
+cat: 'Teşvik'
 sector: 'Default'
 title: '6923 Sayılı Cumhurbaşkanı Kararı'
 excerpt: "Yatırımlarda Devlet Yardımları Hakkında Kararda Değişiklik Yapılmasına Dair 6923 Sayılı Cumhurbaşkanı Kararı 10.03.2023 Tarihli Resmi Gazete'de Yayımlandı."

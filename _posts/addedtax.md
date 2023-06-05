@@ -1,6 +1,6 @@
 ---
 lang: 'en'
-cat: 'Headlines'
+cat: 'Law'
 sector: 'Default'
 title: "Legal Evaluation of the Additional Tax Introduced by Law No. 7440"
 excerpt: "Law No. 7440 has introduced the obligation of Additional Tax for corporate income taxpayers for the year 2022 under Article 10/27."

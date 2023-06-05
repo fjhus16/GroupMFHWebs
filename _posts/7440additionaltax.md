@@ -1,6 +1,6 @@
 ---
 lang: 'en'
-cat: 'Headlines'
+cat: 'Tax'
 sector: 'Default'
 title: "What is the \"Additional Tax\" introduced by Law No. 7440?"
 excerpt: "What is the \"Additional Tax\" introduced by Article 10, Paragraph 27 of Law No. 7440? How is it calculated and who does it apply to?"

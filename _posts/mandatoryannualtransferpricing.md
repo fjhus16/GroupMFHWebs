@@ -1,6 +1,6 @@
 ---
 lang: 'en'
-cat: 'Tax Audit'
+cat: 'Customs and Foreign Trade;Tax'
 sector: 'Default'
 title: 'Annual Transfer Pricing Report'
 excerpt: 'The topic of our article is the mandatory preparation of the "Annual Transfer Pricing Report" and the sanctions for non-compliance with this obligation, as well as recommendations regarding these sanctions.'
