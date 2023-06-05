@@ -26,7 +26,7 @@ export default function Post({ post, allPosts }: Props) {
 
   // Sort and filter the posts
   const sortedPosts = allPosts
-    .filter((postM) => postM.lang === 'tr' && postM.slug !== post.slug)
+    .filter((postM) => postM.lang === 'en' && postM.slug !== post.slug)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
   // Get the posts with matching category
