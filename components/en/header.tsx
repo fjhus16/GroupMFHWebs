@@ -100,7 +100,7 @@ const Header = () => {
               <Link className='focus:outline-none focus:underline px-2 mt-2 text-xl lg:text-2xl mb-2' href='/en/blog'>
                 <p className={cormorantGaramond.className}>Headlines</p>
               </Link>
-              <Link className='focus:outline-none focus:underline px-2 mt-2 text-xl lg:text-2xl mb-2' href='/en/contact'>
+              <Link className='focus:outline-none focus:underline px-2 text-xl lg:text-2xl mb-2' href='/en/contact'>
                 <p className={cormorantGaramond.className}>Contact</p>
               </Link>
             </nav>

@@ -87,7 +87,7 @@ const Grid = () => {
     };
 
     return (
-        <div className="grid-container">
+        <div className="grid-container overflow-x-auto w-[90vw] lg:flex-wrap lg:justify-center">
             {gridData.map((item) => (
                 <div
                     className={`grid-item w-[250px] 2xl:w-[270px] h-[250px] 2xl:h-[270px] ${flippedCard === item.id ? 'flipped' : ''}`}
@@ -95,52 +95,52 @@ const Grid = () => {
                     onMouseEnter={() => handleCardFlip(item.id)}
                     onMouseLeave={handleCardLeave}
                 >
-                    <Link href={`${asPath.substring(0, 3)}${item.link}`}>
-                        <Card
-                            square
-                            sx={{
-                                borderRadius: '50%',
-                                overflow: 'hidden',
-                                height: '100%',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                boxShadow: '1px 1px 3px 2px grey',
-                            }}
-                            className=""
-                        >
-                            <div className="card-inner">
-                                <div className="card-front">
-                                    <CardMedia sx={{ height: 80 }} title={item.text}>
-                                        <div className="relative w-[full] mt-[25px] 2xl:mt-[75px] h-[90px]">
-                                            <Image fill style={{ objectFit: 'contain' }} src={item.logo} alt={item.text} />
-                                        </div>
-                                    </CardMedia>
+
+                    <Card
+                        square
+                        sx={{
+                            borderRadius: '50%',
+                            overflow: 'hidden',
+                            height: '100%',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            boxShadow: '1px 1px 3px 2px grey',
+                        }}
+                        className=""
+                    >
+                        <div className="card-inner">
+                            <div className="card-front">
+                                <CardMedia sx={{ height: 80 }} title={item.text}>
+                                    <div className="relative w-[full] mt-[25px] 2xl:mt-[75px] h-[90px]">
+                                        <Image fill style={{ objectFit: 'contain' }} src={item.logo} alt={item.text} />
+                                    </div>
+                                </CardMedia>
+                                <CardContent>
+                                    <Typography gutterBottom variant="body1" component="div" className="font-bold text-lg 2xl:text-2xl">
+                                        {item.text}
+                                    </Typography>
+                                </CardContent>
+                            </div>
+                            <div className="card-back">
+                                <Link href={`${asPath.substring(0, 3)}${item.link}`}>
                                     <CardContent>
-                                    <Typography gutterBottom variant="body1" component="div" className="font-bold">
-                                            {item.text}
-                                        </Typography>
-                                    </CardContent>
-                                </div>
-                                <div className="card-back">
-                                    <CardContent>
-                                        <Typography gutterBottom variant="body1" component="div" className="font-bold">
+                                        <Typography gutterBottom variant="body1" component="div" className="font-bold text-lg 2xl:text-2xl">
                                             {item.text}
                                         </Typography>
                                         <Button className='hover:bg-black rounded-none text-black hover:text-white pt-1 pb-1 pl-2 pr-2 mt-1 mb-3 duration-1000'>
                                             Daha Fazla Bilgi
                                         </Button>
                                     </CardContent>
-                                </div>
+                                </Link>
                             </div>
-                        </Card>
-                    </Link>
+                        </div>
+                    </Card>
+
                 </div>
             ))}
             <style jsx>{`
                 .grid-container {
                     display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
                 }
 
                 .grid-item {

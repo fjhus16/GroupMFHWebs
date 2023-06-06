@@ -92,7 +92,7 @@ const Header = () => {
               </button>
               <PartnersMenu />
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-xl lg:text-2xl mb-4' href='/tr/blog'><p className={cormorantGaramond.className}>Makaleler</p></Link>
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-xl lg:text-2xl mb-4' href='/tr/contact'><p className={cormorantGaramond.className}>İletişim</p></Link>
+              <Link className='focus:outline-none focus:underline px-2 text-xl lg:text-2xl mb-4' href='/tr/contact'><p className={cormorantGaramond.className}>İletişim</p></Link>
             </nav>
           </div>
         </Popover.Panel>

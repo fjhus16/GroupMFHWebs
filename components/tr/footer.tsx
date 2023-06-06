@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="flex flex-col lg:flex-row items-center">
               <Link
                 href="/tr/contact"
-                className="text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
+                className="text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 transitions-colors duration-200 mb-6 lg:mb-0"
               >
                 Iletişime geçin
               </Link>

@@ -18,7 +18,7 @@ const ContactForm = () => {
         <input type="text" name="_honey" className="hidden" />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_template" value="box" />
-        <button className='w-[25%] py-2 px-2 rounded bg-gray-800 text-white' type="submit">Send</button>
+        <button className='w-[25%] py-2 px-2 text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 transitions-colors duration-200 mb-6 lg:mb-0' type="submit">Send</button>
       </form>
     </div>
   );

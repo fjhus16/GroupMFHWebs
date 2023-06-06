@@ -214,7 +214,7 @@ if (showPosts.length % 2 !== 0) {
               </h2>
               <ServicesGrid />
             </div>
-            <h2 className="mb-8 text-5xl justify-center w-full flex font-bold">
+            <h2 className="text-5xl justify-center w-full flex font-bold">
           Bülten
         </h2>
           <div id='yazılar' className='pt-2 ism:pt-2 items-center justify-center'><div className='flex flex-wrap mt-4 mb-4 flex-center justify-center'>
@@ -226,7 +226,7 @@ if (showPosts.length % 2 !== 0) {
                   passHref
                 >
                   <p
-                    className={`text-white text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 duration-200}`}
+                    className={`text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 transitions-colors duration-200`}
                   >
                     {category}
                   </p>
@@ -234,7 +234,7 @@ if (showPosts.length % 2 !== 0) {
               ))}</div></div>
             <div className='flex flex-col justify-center items-center'>
               {showPosts.length > 0 && <MoreStories posts={showPosts} />}
-              <Link href="/tr/blog" className="text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6">
+              <Link href="/tr/blog" className="text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 transitions-colors duration-200">
                 Daha fazla yazı
               </Link>
             </div>
