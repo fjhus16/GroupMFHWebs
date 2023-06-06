@@ -22,9 +22,6 @@ export default function Blog({ allPosts }: Props) {
     .filter((post) => post.lang === 'tr')
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-    if(searchQuery != '' && searchQuery != null) {
-      filteredPosts = filteredPosts.filter((post) => post.title.toLowerCase().includes(searchQuery.toLowerCase()))
-    }
 
   // Create a set of categories from the filtered posts
   const categories = new Set<string>();
@@ -39,6 +36,10 @@ export default function Blog({ allPosts }: Props) {
       postsByCategory[category].push(post);
     });
   });
+
+  if(searchQuery != '' && searchQuery != null) {
+    filteredPosts = filteredPosts.filter((post) => post.title.toLowerCase().includes(searchQuery.toLowerCase()))
+  }
 
   const filteredPostsByCategory = selectedCategory
     ? postsByCategory[selectedCategory] || []
