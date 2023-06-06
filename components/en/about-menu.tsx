@@ -11,14 +11,14 @@ const cormorantGaramond = Cormorant_Garamond({
 export default function AboutMenu() {
   return (
     <div className="text-left">
-      <Menu as="div" className="relative inline-block text-left">
+      <Menu as="div" className="relative z-[90] inline-block text-left">
         <div>
           <Menu.Button className="inline-flex justify-center hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000">
             <p className={`${cormorantGaramond.className} whitespace-nowrap`}>Corporate</p>
           </Menu.Button>
         </div>
         <Transition as={Fragment} enter="transition ease-out duration-200" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-200" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
-          <Menu.Items className="absolute left-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <Menu.Items className="absolute z-[90]  left-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
             <div className="px-1 py-1">
               <Menu.Item>
                 {({ active }) => (

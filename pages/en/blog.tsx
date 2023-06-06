@@ -15,11 +15,16 @@ export default function Blog({ allPosts }: Props) {
   const router = useRouter();
   const { query } = router;
   const selectedCategory = query.category as string;
+  const searchQuery = query.search as string;
 
   // Filter and sort the posts by language and date
-  const filteredPosts = allPosts
+  var filteredPosts = allPosts
     .filter((post) => post.lang === 'en')
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  if(searchQuery != '' && searchQuery != null) {
+    filteredPosts = filteredPosts.filter((post) => post.title.toLowerCase().includes(searchQuery.toLowerCase()))
+  }
 
   // Create a set of categories from the filtered posts
   const categories = new Set<string>();
@@ -79,7 +84,7 @@ export default function Blog({ allPosts }: Props) {
             {filteredPostsByCategory.length > 0 ? (
               <MoreStories posts={filteredPostsByCategory} />
             ) : (
-              <p>No posts found in the selected category.</p>
+              <p></p>
             )}
           </div>
         </Container>
