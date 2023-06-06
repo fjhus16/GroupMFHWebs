@@ -226,7 +226,7 @@ if (showPosts.length % 2 !== 0) {
                   passHref
                 >
                   <p
-                    className={`text-white text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 duration-200}`}
+                    className={`text-white text-sm ism:text-md mx-3 bg-gray-800 hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 duration-200}`}
                   >
                     {category}
                   </p>

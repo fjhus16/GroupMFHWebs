@@ -15,15 +15,15 @@ ogImage:
 
 **GİRİŞ**
 
-‎  ‎  ‎  ‎ Teknoloji her ne kadar hızlı bir şekilde gelişse de insanların geleneksel yaşam şekillerini değiştirmek o kadar hızlı olmuyor. Ancak pandemi süreciyle birlikte insanların teknolojiye olan ilgisi hızlı bir şekilde arttı. Birçok insan, daha önce var olan ancak pek çok kişi tarafından bilinmeyen canlı yayın platformlarıyla tanıştı. En yaygın canlı yayın platformları Twitch, YouTube ve Facebook'tur. Yayın içerikleri ise yayıncı tarafından belirlenmekte olup, gerek eğlenceli oyunlar oynayarak gerek sohbet ederek gerekse de kısa eğlenceli videolar izleyicileri ekranlara kilitlemektedirler. Bu platformlarda geleneksel TV anlayışından farklı olarak yayıncı ve izleyici anlık olarak etkileşime geçe bilmektedir. Yayıncıların gelirlerini abonelikler, reklamlar ve bağışlar oluşturmaktadır. Yayıncıların yayın yaparak elde etmiş olduğu kazançlar Gelir Vergisi Kanunun (GVK) 2'inci maddesinde yer alan kazanç unsurlarından hangi kazanç unsuru kapsamında değerlendirilmesi gerekmektedir? Yazımızda sosyal medya platformlarında nasıl yayın yapıldığı, nasıl kazanç elde edildiği ve elde edilen kazançların hangi gelir unsurunun konusuna girdiği hususları irdelenmiştir.
+Teknoloji her ne kadar hızlı bir şekilde gelişse de insanların geleneksel yaşam şekillerini değiştirmek o kadar hızlı olmuyor. Ancak pandemi süreciyle birlikte insanların teknolojiye olan ilgisi hızlı bir şekilde arttı. Birçok insan, daha önce var olan ancak pek çok kişi tarafından bilinmeyen canlı yayın platformlarıyla tanıştı. En yaygın canlı yayın platformları Twitch, YouTube ve Facebook'tur. Yayın içerikleri ise yayıncı tarafından belirlenmekte olup, gerek eğlenceli oyunlar oynayarak gerek sohbet ederek gerekse de kısa eğlenceli videolar izleyicileri ekranlara kilitlemektedirler. Bu platformlarda geleneksel TV anlayışından farklı olarak yayıncı ve izleyici anlık olarak etkileşime geçe bilmektedir. Yayıncıların gelirlerini abonelikler, reklamlar ve bağışlar oluşturmaktadır. Yayıncıların yayın yaparak elde etmiş olduğu kazançlar Gelir Vergisi Kanunun (GVK) 2'inci maddesinde yer alan kazanç unsurlarından hangi kazanç unsuru kapsamında değerlendirilmesi gerekmektedir? Yazımızda sosyal medya platformlarında nasıl yayın yapıldığı, nasıl kazanç elde edildiği ve elde edilen kazançların hangi gelir unsurunun konusuna girdiği hususları irdelenmiştir.
 
 **1. SOSYAL MEDYA ÜZERİNDEN YAYIN YAPARAK NASIL KAZANÇ ELDE EDİLİR?**
 
-‎  ‎  ‎  ‎ Yediden yetmişse herkes sosyal medya hesabından canlı yayın açabilir. Yayıncıların arasında eski sporcuları ve tv oyuncularını bile görmek mümkün. Sosyal medya platformları üzerinden yayın yapan yayıncıların kimi hobi için kimi ise kendini bu işe vermiş olup geçimlerini buradan elde ettikleri kazançlarla sağlıyor. Peki bu kazançlar nelerdir;
+Yediden yetmişse herkes sosyal medya hesabından canlı yayın açabilir. Yayıncıların arasında eski sporcuları ve tv oyuncularını bile görmek mümkün. Sosyal medya platformları üzerinden yayın yapan yayıncıların kimi hobi için kimi ise kendini bu işe vermiş olup geçimlerini buradan elde ettikleri kazançlarla sağlıyor. Peki bu kazançlar nelerdir;
 
-‎  ‎  ‎  ‎ Kazançlardan en önemlisi, sürekliliği olması durumunda sabit getirisi olduğu için abonelikler. İzleyiciler sevdikleri yayıncıları desteklemek için aylık yaklaşık 2-5$ arası abonelik ücreti ödüyorlar. Abonelik ücreti tahmini olup her platforma göre değişiklik göstermektedir. Abonelik ücreti, yayıncıyla yapılan belli anlaşmalar ile belirlenmekte olup bir kısmını ilgili platform kendisi alıp kalan kısmını yayıncının hesabına aktarıyor.
+Kazançlardan en önemlisi, sürekliliği olması durumunda sabit getirisi olduğu için abonelikler. İzleyiciler sevdikleri yayıncıları desteklemek için aylık yaklaşık 2-5$ arası abonelik ücreti ödüyorlar. Abonelik ücreti tahmini olup her platforma göre değişiklik göstermektedir. Abonelik ücreti, yayıncıyla yapılan belli anlaşmalar ile belirlenmekte olup bir kısmını ilgili platform kendisi alıp kalan kısmını yayıncının hesabına aktarıyor.
 
-‎  ‎  ‎  ‎ Bağışlar; yayın esnasında abone olsun olmasın izleyicilerin istedikleri miktarda bağış yaparak yayıncıyı destekledikleri bir sistemdir. Bağışlar yayıncının anlaşmış olduğu sistemler aracılığıyla gönderilmektedir. Ayrıca sosyal medya platformunun kendi belirlediği ve para karşılığı alınan simgeler animasyonlu bir şekilde sohbet penceresinden bağış şeklinde gönderilebilmektedir. Gerçek para karşılığı alınacak olan Bit'ler, Cheer adı verilen animasyonlu chat simgelerine dönüştürülebiliyor. Alınan Cheer'ler ise yayın esnasında sohbet ekranına gönderiliyor. Gönderilen her simgenin dolar ve euro cinsinden bir değeri oluyor ve otomatik olarak bağış yapılan kullanıcıya gönderiliyor. Bağış yapmayı sağlayan simgelerin fiyatlandırmasına ilişkin örnek verecek olursak:
+Bağışlar; yayın esnasında abone olsun olmasın izleyicilerin istedikleri miktarda bağış yaparak yayıncıyı destekledikleri bir sistemdir. Bağışlar yayıncının anlaşmış olduğu sistemler aracılığıyla gönderilmektedir. Ayrıca sosyal medya platformunun kendi belirlediği ve para karşılığı alınan simgeler animasyonlu bir şekilde sohbet penceresinden bağış şeklinde gönderilebilmektedir. Gerçek para karşılığı alınacak olan Bit'ler, Cheer adı verilen animasyonlu chat simgelerine dönüştürülebiliyor. Alınan Cheer'ler ise yayın esnasında sohbet ekranına gönderiliyor. Gönderilen her simgenin dolar ve euro cinsinden bir değeri oluyor ve otomatik olarak bağış yapılan kullanıcıya gönderiliyor. Bağış yapmayı sağlayan simgelerin fiyatlandırmasına ilişkin örnek verecek olursak:
 
 - 100 Bit: 1,4 Dolar  
 
@@ -39,19 +39,19 @@ ogImage:
 
 # 1
 
-‎  ‎  ‎  ‎ Sosyal medya platformlarında resmi bir açıklama yapılmasa da, yapılan bağışlardan belirli oranlarda kesinti yapıldığı düşünülmektedir.
+Sosyal medya platformlarında resmi bir açıklama yapılmasa da, yapılan bağışlardan belirli oranlarda kesinti yapıldığı düşünülmektedir.
 
-‎  ‎  ‎  ‎ Reklamlar; izleyicinin yayını açtığı esnada veya yayın akışı içerisinde birçok sosyal medya sitesinde olduğu gibi reklamlar çıkmakta bu reklamlar aracılığıyla yayıncılar kazanç elde etmektedir. Ayrıca yayıncı bazı firmalarla anlaşıp yayınlarında o firmaların ürünlerini tanıtarak kazanç elde etmektedir.
+Reklamlar; izleyicinin yayını açtığı esnada veya yayın akışı içerisinde birçok sosyal medya sitesinde olduğu gibi reklamlar çıkmakta bu reklamlar aracılığıyla yayıncılar kazanç elde etmektedir. Ayrıca yayıncı bazı firmalarla anlaşıp yayınlarında o firmaların ürünlerini tanıtarak kazanç elde etmektedir.
 
-‎  ‎  ‎  ‎ Yayıncıların elde etmiş olduğu kazançların belli başlılarını açıklanmış olup bunların dışında, sponsorluklar ve birçok etkinliğe katılarak buralardan da kazanç elde etmektedirler. Yayıncılığı hobi olarak yapan yayıncıların çalışmış oldukları yerlerden elde etmiş oldukları kazançları da mevcuttur.
+Yayıncıların elde etmiş olduğu kazançların belli başlılarını açıklanmış olup bunların dışında, sponsorluklar ve birçok etkinliğe katılarak buralardan da kazanç elde etmektedirler. Yayıncılığı hobi olarak yapan yayıncıların çalışmış oldukları yerlerden elde etmiş oldukları kazançları da mevcuttur.
 
 **2. YAYINCI GELİRLERİNİN VERGİLENDİRİLMESİ:**
 
 **2.1. Vergi Usul Kanunu Açısından:**
 
-‎  ‎  ‎  ‎ 213 sayılı Vergi Usul Kanunu'nun 156'ncı maddesinde işyerinin tanımı yapılmıştır. Söz konusu maddeye göre; ticari, sınaî, zirai ve mesleki faaliyette iş yeri; mağaza, yazıhane, idarehane, muayenehane, imalathane şube, depo, otel, kahvehane, eğlence ve spor yerleri, tarla, bağ, bahçe, çiftlik, hayvancılık tesisleri, dalyan ve voli mahalleri, madenler, taş ocakları, inşaat şantiyeleri, vapur büfeleri gibi ticari, sınaî, zirai veya mesleki bir faaliyetin icrasına tahsis edilen veya bu faaliyetlerde kullanılan yerdir.
+213 sayılı Vergi Usul Kanunu'nun 156'ncı maddesinde işyerinin tanımı yapılmıştır. Söz konusu maddeye göre; ticari, sınaî, zirai ve mesleki faaliyette iş yeri; mağaza, yazıhane, idarehane, muayenehane, imalathane şube, depo, otel, kahvehane, eğlence ve spor yerleri, tarla, bağ, bahçe, çiftlik, hayvancılık tesisleri, dalyan ve voli mahalleri, madenler, taş ocakları, inşaat şantiyeleri, vapur büfeleri gibi ticari, sınaî, zirai veya mesleki bir faaliyetin icrasına tahsis edilen veya bu faaliyetlerde kullanılan yerdir.
 
-‎  ‎  ‎  ‎ Vergi Usul Kanununda iş yerinin tanımını yaparken geniş bir tanımlama yapmış olup sosyal medya üzerinden canlı yayın yapan yayıncıların yayın yapmak için oluşturmuş oldukları ortamı iş yeri olarak değerlendirmek mümkündür. GVK 37'nci maddesi kapsamında da yayıncıların geliri ticari kazanç olarak değerlendirilmesi gerektiği belirtilmiştir.
+Vergi Usul Kanununda iş yerinin tanımını yaparken geniş bir tanımlama yapmış olup sosyal medya üzerinden canlı yayın yapan yayıncıların yayın yapmak için oluşturmuş oldukları ortamı iş yeri olarak değerlendirmek mümkündür. GVK 37'nci maddesi kapsamında da yayıncıların geliri ticari kazanç olarak değerlendirilmesi gerektiği belirtilmiştir.
 
 VUK'un 176'ncı maddesinde tüccarlar defter tutmak bakımından iki sınıfa ayrılmıştır.
 
@@ -61,7 +61,7 @@ II nci sınıf tüccarlar, işletme hesabı esasına göre;
 
 defter tutarlar.
 
-‎  ‎  ‎  ‎ VUK'un 229'uncu maddesinde faturanın tarifi yapılmıştır. Fatura, satılan emtia veya yapılan iş karşılığında müşterinin borçlandığı meblağı göstermek üzere emtiayı satan veya işi yapan tüccar tarafından müşteriye verilen ticari vesikadır. Mezkur kanunun 232'nci maddesinde ise birinci ve ikinci sınıf tüccarlar kazancı basit usulde tespit edilenlerle defter tutmak mecburiyetinde olan çiftçiler:
+VUK'un 229'uncu maddesinde faturanın tarifi yapılmıştır. Fatura, satılan emtia veya yapılan iş karşılığında müşterinin borçlandığı meblağı göstermek üzere emtiayı satan veya işi yapan tüccar tarafından müşteriye verilen ticari vesikadır. Mezkur kanunun 232'nci maddesinde ise birinci ve ikinci sınıf tüccarlar kazancı basit usulde tespit edilenlerle defter tutmak mecburiyetinde olan çiftçiler:
 
 - 1. Birinci ve ikinci sınıf tüccarlara;
 
@@ -73,11 +73,11 @@ defter tutarlar.
 
 - 5. Vergiden muaf esnafa.
 
-‎  ‎  ‎  ‎ Sattıkları emtia veya yaptıkları işler için fatura vermek ve bunlara da fatura istemek ve almak mecburiyetinde oldukları belirtilmiştir. Dolayısıyla yayıncıları yapmış oldukları işlerden dolayı fatura düzenlemek ve almak mecburiyetindedirler.
+Sattıkları emtia veya yaptıkları işler için fatura vermek ve bunlara da fatura istemek ve almak mecburiyetinde oldukları belirtilmiştir. Dolayısıyla yayıncıları yapmış oldukları işlerden dolayı fatura düzenlemek ve almak mecburiyetindedirler.
 
 **2.2. Gelir Vergisi Açısından:**
 
-‎  ‎  ‎  ‎ GVK'nın 1'inci maddesinde gerçek kişilerin gelirlerinin gelir vergisine tabi olduğu belirtilmiştir. Kanunun 2'inci maddesinde ise gelirin konusuna giren kazanç unsurları sayılmıştır. Yayın yapan gerçek kişilerin geliri gelir vergisinin konusuna girmekte olup kanunun 2'inci maddesinde sayılan yedi gelir unsurundan Ticari kazanç mı yoksa Serbest Meslek Kazancımı olduğunu tartışmak gerekmektedir.
+GVK'nın 1'inci maddesinde gerçek kişilerin gelirlerinin gelir vergisine tabi olduğu belirtilmiştir. Kanunun 2'inci maddesinde ise gelirin konusuna giren kazanç unsurları sayılmıştır. Yayın yapan gerçek kişilerin geliri gelir vergisinin konusuna girmekte olup kanunun 2'inci maddesinde sayılan yedi gelir unsurundan Ticari kazanç mı yoksa Serbest Meslek Kazancımı olduğunu tartışmak gerekmektedir.
 
 GVK'nın 37'inci maddesinde her türlü ticari faaliyetlerden doğan kazancın ticari kazanç oluğu hükmü yer almaktadır.
 
@@ -95,15 +95,15 @@ Bir faaliyetin ticari faaliyet olarak değerlendirilebilmesi için taşıması g
 
 # 2
 
-‎  ‎  ‎  ‎ Kanunda yer alan düzenlemeler ışığında sosyal medya üzerinden yayın yapan yayıncıların yayınlarına başlamadan iyi bir ekipmana ihtiyaç duymaktadırlar. Yayıncıların ihtiyaçları olan ekipmanları satın almak için ciddi paralar harcadığı görülmektedir bu da akla sermaye kavramını getirmektedir. Yayıncıların yayınlarını düzenli olarak haftanın belirli günlerinde yapmaktadırlar bu ise ticari kazancın devamlılık unsurunu oluşturmaktadır. Ayrıca faaliyetin organizasyon içerisinde yapılması konusunda ise yayıncıların yayın esnasında kendilerine yardım etmeleri için sürekli izleyicisi olan isimler arasından kendilerine yardımcılar görevlendirmektedir. Yayıncılar görevlendirmiş olduğu kişilere elde ettiği kazanca göre ücret ödediği görülmektedir. Yapılan açıklamalar çerçevesinde yayıncıların elde etmiş oldu kazançları ticari kazanç olarak değerlendirmek mümkündür.
+Kanunda yer alan düzenlemeler ışığında sosyal medya üzerinden yayın yapan yayıncıların yayınlarına başlamadan iyi bir ekipmana ihtiyaç duymaktadırlar. Yayıncıların ihtiyaçları olan ekipmanları satın almak için ciddi paralar harcadığı görülmektedir bu da akla sermaye kavramını getirmektedir. Yayıncıların yayınlarını düzenli olarak haftanın belirli günlerinde yapmaktadırlar bu ise ticari kazancın devamlılık unsurunu oluşturmaktadır. Ayrıca faaliyetin organizasyon içerisinde yapılması konusunda ise yayıncıların yayın esnasında kendilerine yardım etmeleri için sürekli izleyicisi olan isimler arasından kendilerine yardımcılar görevlendirmektedir. Yayıncılar görevlendirmiş olduğu kişilere elde ettiği kazanca göre ücret ödediği görülmektedir. Yapılan açıklamalar çerçevesinde yayıncıların elde etmiş oldu kazançları ticari kazanç olarak değerlendirmek mümkündür.
 
-‎  ‎  ‎  ‎ GVK'nın 85'inci maddesinde yer alan; *"mükellefler, ikinci maddede yazılı kaynaklardan bir takvim yılı içinde elde ettikleri kazanç ve iratları için bu kanunda aksine hüküm olmadıkça yıllık beyanname verirler. Bu kanuna göre beyanı gereken gelirlerin yıllık beyannamede toplanması zorunludur. Tacirlerle çiftçiler ve serbest meslek erbabı ticari, zirai ve mesleki faaliyetlerinden kazanç temin etmemiş olsalar bile, yıllık beyanname verirler."* hükmü gereğince yayıncıların kazançlarını beyan etmesi gerekmektedir.
+GVK'nın 85'inci maddesinde yer alan; *"mükellefler, ikinci maddede yazılı kaynaklardan bir takvim yılı içinde elde ettikleri kazanç ve iratları için bu kanunda aksine hüküm olmadıkça yıllık beyanname verirler. Bu kanuna göre beyanı gereken gelirlerin yıllık beyannamede toplanması zorunludur. Tacirlerle çiftçiler ve serbest meslek erbabı ticari, zirai ve mesleki faaliyetlerinden kazanç temin etmemiş olsalar bile, yıllık beyanname verirler."* hükmü gereğince yayıncıların kazançlarını beyan etmesi gerekmektedir.
 
-‎  ‎  ‎  ‎ Konuya ilişkin Gelir İdaresi Başkanlığı, Kayseri Vergi Dairesi Başkanlığı'nın vermiş olduğu 13.11.2019 tarih ve 50426076-120[37-2019/20-727]-E.129069 sayılı özelgede;
+Konuya ilişkin Gelir İdaresi Başkanlığı, Kayseri Vergi Dairesi Başkanlığı'nın vermiş olduğu 13.11.2019 tarih ve 50426076-120[37-2019/20-727]-E.129069 sayılı özelgede;
 
 # 3
 
-‎  ‎  ‎  ‎ "*İlgide kayıtlı özelge talep formlarınızın incelenmesinden; internet ortamında verilen reklam hizmetlerinden (Youtuber) gelir elde ettiğiniz, başka gelirinizin olmadığı, ödemelerin Google firması tarafından yapıldığı belirtilerek, internet ortamında reklam hizmeti veren veya bu hizmetin verilmesine aracılık edenlere yapılan ödemeler üzerinden stopaj yapılmasına yönelik 476 sayılı Cumhurbaşkanı Kararı ile yapılan düzenleme çerçevesinde söz konusu gelirinizle ilgili olarak mükellefiyet kaydınızın devam etmesinin gerekip gerekmediği ve gelirinizin nasıl beyan edileceği hususlarında Başkanlığımız görüşünün talep edildiği anlaşılmaktadır.*
+"*İlgide kayıtlı özelge talep formlarınızın incelenmesinden; internet ortamında verilen reklam hizmetlerinden (Youtuber) gelir elde ettiğiniz, başka gelirinizin olmadığı, ödemelerin Google firması tarafından yapıldığı belirtilerek, internet ortamında reklam hizmeti veren veya bu hizmetin verilmesine aracılık edenlere yapılan ödemeler üzerinden stopaj yapılmasına yönelik 476 sayılı Cumhurbaşkanı Kararı ile yapılan düzenleme çerçevesinde söz konusu gelirinizle ilgili olarak mükellefiyet kaydınızın devam etmesinin gerekip gerekmediği ve gelirinizin nasıl beyan edileceği hususlarında Başkanlığımız görüşünün talep edildiği anlaşılmaktadır.*
 
 *Buna göre, gerçek kişilerce internet ortamında reklam hizmeti verilmesi yahut reklam hizmeti verilmesine aracılık edilmesi halinde, 193 sayılı Gelir Vergisi Kanununun 94 üncü maddesine göre vergi kesintisi yapmakla sorumlu olup reklam hizmeti alanlar tarafından söz konusu gerçek kişilere yapılacak ödemeler üzerinden % 15 oranında gelir vergisi kesintisi yapılacak olup, şahsınıza ait internet sitesi alanında (Youtube) yayınlanan reklamlar nedeniyle Google firmasınca tarafınıza yapılan ödemelerin ise 476 sayılı Cumhurbaşkanı Kararına göre vergi kesintisine tabi olan ödemeler kapsamında değerlendirilmesi söz konusu değildir.*
 

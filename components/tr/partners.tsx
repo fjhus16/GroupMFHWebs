@@ -13,7 +13,7 @@ export default function PartnersMenu() {
         <div className="text-left">
             <Menu as="div" className="relative inline-block text-left">
                 <div>
-                    <Menu.Button className="inline-flex w-full whitespace-nowrap justify-center hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-2 duration-1000">
+                    <Menu.Button className="inline-flex w-full justify-center hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-2 duration-1000">
                         <p className={cormorantGaramond.className}>Yurtdışı Temsilciliklerimiz</p>
                     </Menu.Button>
                 </div>
@@ -22,15 +22,15 @@ export default function PartnersMenu() {
                         <div className="px-1 py-1">
                             <Menu.Item>
                                 {({ active }) => (
-                                     <Link className={`${active ? 'bg-black text-white' : 'text-gray-900'} duration-1000 group flex w-full items-center px-2 py-2 text-sm`} href='/tr/london'><p className={cormorantGaramond.className}>Londra</p></Link>
-                                     )}
-                                 </Menu.Item>
-                             </div>
-                             <div className="px-1 py-1">
-                                 <Menu.Item>
-                                     {({ active }) => (
-                                         <Link className={`${active ? 'bg-black text-white' : 'text-gray-900'} duration-1000 group flex w-full items-center px-2 py-2 text-sm`} href='/tr/belgrade'><p className={cormorantGaramond.className}>Belgrad</p></Link>
-                                    )}
+                                    <Link className={`${active ? 'bg-black text-white' : 'text-gray-900'} duration-1000 group flex w-full items-center px-2 py-2 text-sm`} href='/tr/london'><p className={cormorantGaramond.className}>Londra</p></Link>
+                                )}
+                            </Menu.Item>
+                        </div>
+                        <div className="px-1 py-1">
+                            <Menu.Item>
+                                {({ active }) => (
+                                    <Link className={`${active ? 'bg-black text-white' : 'text-gray-900'} duration-1000 group flex w-full items-center px-2 py-2 text-sm`} href='/tr/belgrade'><p className={cormorantGaramond.className}>Belgrad</p></Link>
+                                )}
                             </Menu.Item>
                         </div>
                     </Menu.Items>

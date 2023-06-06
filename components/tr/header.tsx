@@ -40,26 +40,26 @@ const Header = () => {
   };
 
   return (
-    <Popover className='z-50 bg-gradient-to-b from-slate-400 via-slate-200 to-slate-100 sticky top-0 flex items-center px-4 md:px-12 py-2 h-24 z-10'>
+    <Popover className='z-50 bg-gradient-to-b from-slate-400 via-slate-200 to-slate-100 sticky top-0 flex items-center px-4 md:px-8 py-2 h-24 z-10'>
       <Link href='/tr/'>
-        <Image src={'/assets/header/logo.png'} priority loading='eager' alt={'MFH Group Logo'} width={200} height={120}></Image></Link>
+        <Image src={'/assets/header/logo.png'} priority loading='eager' alt={'MFH Group Logo'} width={200} height={120} /></Link>
       <div className='grow flex flex-row'>
-        <div className='hidden ml-6 lg:flex font-bold items-center justify-start gap-2 lg:gap-8'>
+        <div className='hidden ml-4 mr-2 lg:flex font-bold items-center justify-start gap-2 lg:gap-6'>
           <AboutMenu />
           <button
-            className='hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000 whitespace-nowrap'
+            className='hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000'
             onClick={handleScrollToServices}
           >
             <p className={cormorantGaramond.className}>Hizmetlerimiz</p>
           </button>
           <PartnersMenu />
+          <Link className='hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/tr/blog'><p className={cormorantGaramond.className}>Makaleler</p></Link>
           <Link className='hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/tr/contact'><p className={cormorantGaramond.className}>İletişim</p></Link>
         </div>
         <div className='hidden ml-[auto] lg:flex font-bold items-center justify-end gap-2 md:gap-8'>
           <CssTextField id="standard-search" label="Arama" type="search" className='mb-4' variant="standard" />
-          <Link className='flex flex-row' href={asPath.replace('/tr', '/en')}><img
-            alt="Flag of the United Kingdom"
-            src="https://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg" className='h-10 w-10 mr-1' /></Link>
+          <Link className='flex flex-row' href={asPath.replace('/tr', '/en')}>
+            <img alt="Flag of the United Kingdom" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg" className='h-10 w-10 mr-1' /></Link>
           <Link href={'/tr/contact'} aria-label='İletişim'><Phone /></Link>
         </div>
       </div>
@@ -85,12 +85,13 @@ const Header = () => {
             <nav className='grid border-none ml-3 font-bold'>
               <AboutMenu />
               <button
-                className='hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-2 duration-1000 whitespace-nowrap mr-auto'
+                className='hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-2 duration-1000 mr-auto'
                 onClick={handleScrollToServices}
               >
                 <p className={cormorantGaramond.className}>Hizmetlerimiz</p>
               </button>
               <PartnersMenu />
+              <Link className='focus:outline-none focus:underline px-2 mt-4 text-xl lg:text-2xl mb-4' href='/tr/blog'><p className={cormorantGaramond.className}>Makaleler</p></Link>
               <Link className='focus:outline-none focus:underline px-2 mt-4 text-xl lg:text-2xl mb-4' href='/tr/contact'><p className={cormorantGaramond.className}>İletişim</p></Link>
             </nav>
           </div>

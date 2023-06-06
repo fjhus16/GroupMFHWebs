@@ -191,7 +191,7 @@ if (showPosts.length % 2 !== 0) {
                       Profesyonel
                     </h3>
                     <h3 className="font-bold text-white text-3xl ml-24 xl:text-5xl [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mt-3">
-                      CÖZÜMLERDEN
+                      ÇÖZÜMLERDEN
                     </h3>
                     <h3 className="font-bold text-white text-2xl ml-28 xl:text-5xl [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mt-3 mb-3">
                       yararlanın
