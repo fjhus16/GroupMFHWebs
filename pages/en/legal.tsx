@@ -10,6 +10,7 @@ export default function Legal() {
           <title>GroupMFH</title>
         </Head>
         <Container>
+          <div className='text-justify'>
           <p>Privacy Policy</p>
           <p><br /></p>
           <p>Your security is important to us. For this reason, the personal data you share with us is carefully protected.</p>
@@ -49,7 +50,9 @@ export default function Legal() {
           <p><br /></p>
           <p>Contact</p>
           <p><br /></p>
-          <p>In order to be able to provide you with services and perform analyses, only your necessary personal data will be processed in accordance with this privacy and personal data processing policy, and you are completely free to accept or reject this. If you continue to use the site, it will be assumed that you have accepted it by us, and please do not hesitate to contact us via the email address <a data-fr-linked="true" href="mailto:kvkk@groupmfh.com">kvkk@groupmfh.com</a> for more detailed information.</p>   </Container>
+          <p>In order to be able to provide you with services and perform analyses, only your necessary personal data will be processed in accordance with this privacy and personal data processing policy, and you are completely free to accept or reject this. If you continue to use the site, it will be assumed that you have accepted it by us, and please do not hesitate to contact us via the email address <a data-fr-linked="true" href="mailto:kvkk@groupmfh.com">kvkk@groupmfh.com</a> for more detailed information.</p>
+          </div>
+          </Container>
       </Layout>
     </>
   )

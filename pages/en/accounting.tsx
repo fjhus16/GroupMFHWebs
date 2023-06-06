@@ -12,11 +12,11 @@ export default function Accounting() {
       </Head>
       <Layout>
         <Container>
-          <section className="flex-col flex items-center md:justify-between pt-6 pb-6">
+          <section className="flex-col text-justify flex items-center md:justify-between pt-6 pb-6">
             <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
               Accounting and Financial Consultancy Services
             </h2>
-            <h4 className="text-left text-md md:pl-8">
+            <h4 className="text-justify text-md md:pl-8">
               MFH Group provides the following services that clients may require during financial, administrative and legal events they face with a solution-oriented perspective:<br />
               <br />
               ✓ Financial Consulting<br />

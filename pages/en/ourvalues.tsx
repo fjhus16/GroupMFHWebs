@@ -15,7 +15,7 @@ export default function OurValues() {
             <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
               Our Values
             </h2>
-            <h4 className="text-left text-md md:pl-8">
+            <h4 className="text-justify text-md md:pl-8">
               1. Customer Focus: We strive to understand our customers' needs and provide them with the highest level of service. Their success is our success, and customer satisfaction is our top priority.<br/>
               2. Expertise and Quality: As a team of specialized professionals, we aim to deliver high-quality services. We adhere to international quality standards and continuously strive to improve ourselves.<br/>
               3. Commitment to Ethical Values: We conduct our business with honesty, transparency, and adherence to ethical principles. We are committed to building trust with our customers and stakeholders and fostering long-term relationships.<br/>

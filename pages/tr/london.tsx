@@ -18,7 +18,7 @@ export default function London() {
             <h3 className="font-bold text-2xl xl:text-3xl mb-3">
               Başka bir ülkede yaşarken İngiltere'de bir iş kurabilir miyim?
             </h3>
-            <p>
+            <p className='text-justify'>
               Evet, başka bir ülkede yaşarken İngiltere'de bir iş kurabilirsiniz.<br />
               İngiltere'de ikamet etmeyen kişiler, İngiltere şirketlerinin yönetim kurulu üyesi olabilirler. Ancak, her şirket en az bir doğal kişi (yani başka bir şirket veya hukuki bir varlık değil) yöneticisi olmalıdır ve yönetici olarak atanabilecek kişilerde bazı kısıtlamalar vardır.<br />
               İngiltere'de bir iş kurmak için birkaç adımı izlemeniz gerekecektir:<br /><br />

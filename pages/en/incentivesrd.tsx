@@ -15,7 +15,7 @@ export default function Incentivesrd() {
           <section className="flex-col flex items-center md:justify-between pt-6 pb-6">
             <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">Incentives and R&D Consultancy
             </h2>
-            <h4 className="text-left text-md md:pl-8">
+            <h4 className="text-justify text-md text-justify md:pl-8">
               MFH Group offers the following services with a solutions-oriented perspective which clients may require for the resolution of technical and complex issues such as Taxes, Incentives, Exemptions and disputes arising from legislation related to these issues:<br />
               <br />
               ✓ Consultancy on Investment Incentive Legislation (Investment Discount Exemption, VAT Exemption, Tax-Duty Fee Exemption, etc.)<br />

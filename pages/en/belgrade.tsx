@@ -15,7 +15,7 @@ export default function Belgrade() {
             <h2 className="mb-2 pt-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
               Information About Company Esatblishment in Serbia
             </h2>
-            <p>
+            <p className='text-justify'>
               <p className='font-bold'>1. Types of Companies</p>
               The Serbian Company Law regulates companies under four categories, and both domestic and foreign individuals or legal entities interested in doing business in Serbia have the right to establish any of these company types or become a partner in an existing company.
               <ul>

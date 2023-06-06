@@ -31,16 +31,16 @@ const PostPreview = ({
         display: "flex",
         flexDirection: "column"
       }}
-        className='w-[320px] md:w-[400px] min-h-[360px]'>
+        className='w-[320px] md:w-[400px] min-h-[370px]'>
         <CardMedia
           sx={{ height: 140 }}
           title={title}
         ><div className='relative w-full h-[140px]'><Image fill style={{ objectFit: "cover" }} src={coverImage} alt={title} /></div></CardMedia>
         <CardContent>
-          <Typography gutterBottom variant='h5' component="div" className='font-bold text-lg'>
+          <Typography gutterBottom variant='h6' component="div">
             {title}
           </Typography>
-          <Typography variant="body2" className='text-black max-h-[110px]'>
+          <Typography variant="body2" className='text-black text-justify max-h-[110px]'>
             {excerpt}
           </Typography>
         </CardContent>

@@ -15,7 +15,7 @@ export default function Belgrade() {
             <h2 className="mb-2 pt-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
               Sırbistan'da Şirket Kuruluşu İle İlgili Bilgiler
             </h2>
-           <p> 
+           <p className='text-justify'> 
             <p className='font-bold'>1. Şirket Türleri</p>         
             Sırbistan Şirketler Kanunu, şirketleri dört başlıkta düzenlemekte olup Sırbistan’da iş yapmak isteyen yerli veya yabancı uyruklu tüm gerçek ve tüzel kişiler, bu şirket türlerinden herhangi birini kurma veya kurulu olan bir şirkete ortak olma hakkına sahiptirler.<br /><br />
             <ul>

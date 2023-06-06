@@ -16,7 +16,7 @@ export default function Foreigntrade() {
           <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
             Customs and Foreign Trade Legislation Consultancy
               </h2>
-            <h4 className="text-left text-md md:pl-8">
+            <h4 className="text-md text-justify md:pl-8">
               MFH Group offers the following services that its customers may need within the scope of Export, Import and Foreign Exchange Legislation and applications with a solution-oriented perspective:<br />
               <br />
               ✓ Customs legislation<br />

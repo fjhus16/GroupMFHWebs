@@ -15,7 +15,7 @@ export default function OurValues() {
             <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
               Değerlerimiz
             </h2>
-            <h4 className="text-left text-md md:pl-8">
+            <h4 className="text-justify text-md md:pl-8">
               1. Müşteri Odaklılık: Müşterilerimizin ihtiyaçlarını anlamak ve onlara en üst düzeyde hizmet sunmak için çaba sarf ediyoruz. Onların başarısı bizim başarımızdır ve müşteri memnuniyeti en önemli önceliğimizdir.<br/>
               2. Uzmanlık ve Kalite: Alanında uzmanlaşmış bir kadro olarak, yüksek kaliteli hizmet sunmayı hedefliyoruz. Uluslararası kalite standartlarına uymak ve sürekli olarak kendimizi geliştirmek için çaba gösteriyoruz.<br/>
               3. Etik Değerlere Bağlılık: İşimizi dürüstlük, şeffaflık ve etik değerlere uygun bir şekilde yürütüyoruz. Müşterilerimize ve paydaşlarımıza karşı güven oluşturmak ve uzun vadeli ilişkiler inşa etmek için etik ilkelerimize sıkı sıkıya bağlıyız.<br/>

@@ -16,10 +16,12 @@ export default function Legislations() {
             <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
               Şirketler Hukuku Mevzuatı Danışmanlığı
             </h2>
-            <h4 className="text-left text-md md:pl-8">
-              6102 sayılı Türk Ticaret Kanunu ve bu Kanuna ilişkin çıkarılan tali mevzuata göre ticari<br />
-              işletmelerin ve şirketlerin tür değişikliği; şirketlerin birleşme veya bölünme işlemleri vergi<br />
-              mevzuatıyla uyumlu olarak yapılmasında gerekli hizmetler sunulmaktadır.</h4></section>
+            <h4 className="text-justify text-md md:pl-8">
+              6102 sayılı Türk Ticaret Kanunu ve bu Kanuna ilişkin çıkarılan tali mevzuata göre ticari
+              işletmelerin ve şirketlerin tür değişikliği; şirketlerin birleşme veya bölünme işlemleri vergi
+              mevzuatıyla uyumlu olarak yapılmasında gerekli hizmetler sunulmaktadır.
+              </h4>
+              </section>
           <ContactForm />
         </Container>
       </Layout>

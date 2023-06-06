@@ -16,7 +16,7 @@ export default function Foreigntrade() {
             <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
               Gümrük ve Dış Ticaret Mevzuatı Danışmalığı
             </h2>
-            <h4 className="text-left text-md md:pl-8">
+            <h4 className="text-justify text-md md:pl-8">
               MFH Group, müşterilerinin İhracat, İthalat ve Kambiyo Mevzuatı ve Uygulamaları kapsamında ihtiyaç duyabileceği aşağıdaki hizmetleri çözüm odaklı bir bakış açısıyla sunmaktadır:<br /><br />
               ✓ Gümrük mevzuatı<br />
               ✓ Dış ticaret mevzuatı<br />

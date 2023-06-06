@@ -16,7 +16,7 @@ export default function Legislations() {
             <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
               Company Law Legislation Consultancy
             </h2>
-            <h4 className="text-left text-md md:pl-8">
+            <h4 className="text-left text-md text-justify md:pl-8">
               Pursuant to the Turkish Commercial Code No. 6102 and the secondary legislation issued in relation to this Code, necessary services are provided for the change of type of commercial enterprises and companies, mergers or divisions of companies in accordance with the tax legislation.</h4></section>
           <ContactForm />
         </Container>

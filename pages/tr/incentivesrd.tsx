@@ -16,7 +16,7 @@ export default function Incentivesrd() {
             <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
               Teşvik Hizmetleri ve Ar-Ge Danışmalığı
             </h2>
-            <h4 className="text-left text-md md:pl-8">
+            <h4 className="text-justify text-md md:pl-8">
               MFH Group, müşterilerinin Vergi, Teşvik, İstisna gibi teknik ve karmaşık bir yapıya sahip konuları ve bu konulara ilişkin mevzuatlardan kaynaklı uyuşmazlıklarının çözümüne ilişkin ihtiyaç duyabileceği aşağıdaki hizmetleri çözüm odaklı bakış açılarıyla sunmaktadır:<br /><br />
               ✓ Yatırım Teşvik Mevzuatı (Yatırım İndirimi İstisnası, KDV İstisnası, Vergi-Resim, Harç İstisnası vb.) ile İlgili Danışmanlık<br />
               ✓ Doğrudan Yabancı Yatırımlar Kanunu Çerçevesindeki Uygulamalar ile İlgili Danışmanlık<br />

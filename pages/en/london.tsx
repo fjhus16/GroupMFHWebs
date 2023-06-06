@@ -18,7 +18,7 @@ export default function London() {
             <h3 className="font-bold text-2xl xl:text-3xl mb-3">
               Can I start up a business in the UK while I live in another country?
             </h3>
-            <p>
+            <p className='text-justify'>
               Yes, you can start a business in the UK while living in another country.<br />
               Non-UK residents are allowed to be directors of UK companies. However, every company must have at least one director who is a natural person (i.e., not another company or legal entity), and there are some restrictions on people who can be directors.<br />
               To set up a business in the UK, you'll need to go through several steps:<br /><br />

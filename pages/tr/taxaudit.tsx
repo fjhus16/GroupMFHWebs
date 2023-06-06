@@ -16,7 +16,7 @@ export default function Taxaudit() {
             <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
               Vergi Denetimi
             </h2>
-            <h4 className="text-left text-md md:pl-8">
+            <h4 className="text-justify text-md md:pl-8">
               MFH Group, gerçek ve tüzel kişilerin (şirket, dernek ve vakıfların, bunların işletme veya teşebbüslerinin) bilanço ve gelir tablolarını, vergi kanunlarına göre verilmiş beyanlarını, vergi kanunlarıyla ilgili taleplerini, vergi kanunları ve genel kabul görmüş muhasebe standartlarına uygunluğu açısından denetler ve tasdik eder. Hazırlanan tasdik raporları müşterilerin ve resmi mercilerin istifadesine sunulur. Kanunlar gereğince resmi mercilere verilen ve Yeminli Mali Müşavirler tarafından tasdik edilmiş tablolar, kamu idarelerince devletin denetim elemanlarınca tasdikin kapsamı ölçüsünde incelenmiş bir belge olarak kabul edilir.
             </h4>
           </section>

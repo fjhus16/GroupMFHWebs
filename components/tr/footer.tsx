@@ -6,28 +6,25 @@ const Footer = () => {
     <footer className="bg-neutral-50 border-t border-neutral-200 z-40 absolute botton-0 w-full">
       <Container>
         <div className='flex flex-col'>
-        <div className="py-8 flex flex-col lg:flex-row items-center">
-          <h3 className="text-4xl lg:text-[2.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            Hızlı menu
-          </h3>
-          <div className="flex flex-col lg:flex-row justify-end items-center lg:pl-4 lg:w-1/2">
-            <Link
-              href="/tr/contact"
-              className="text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
-            >
-              Iletişime geçin
-            </Link>
-            <Link
-              href={`/tr/legal`}
-              className="text-sm ism:text-md mx-3 font-bold hover:underline"
-            >
-              Yasal bilgiler
-            </Link>
+          <div className="py-8 flex flex-col items-center">
+            <div className="flex flex-col lg:flex-row items-center">
+              <Link
+                href="/tr/contact"
+                className="text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
+              >
+                Iletişime geçin
+              </Link>
+              <Link
+                href={`/tr/legal`}
+                className="text-sm ism:text-md mx-3 font-bold hover:underline"
+              >
+                Yasal bilgiler
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className='flex flex-col justify-center items-center pb-12'>
-        <h3 className=''>Copyright © {(new Date()).getFullYear()} MFH Group</h3>
-        </div>
+          <div className='flex flex-col justify-center items-center pb-12'>
+            <h3 className=''>Copyright © {(new Date()).getFullYear()} MFH Group</h3>
+          </div>
         </div>
       </Container>
     </footer>

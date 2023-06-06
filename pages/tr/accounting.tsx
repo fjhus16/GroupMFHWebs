@@ -16,7 +16,7 @@ export default function Accounting() {
             <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
               Muhasebe ve Mali Danışmanlık Hizmetleri
             </h2>
-            <h4 className="text-left text-md md:pl-8">
+            <h4 className="text-justify text-md md:pl-8">
               MFH Group, müşterilerinin karşılaştığı mali, idari ve hukuki olaylara ilişkin ihtiyaç duyabileceği aşağıdaki hizmetleri çözüm odaklı bir bakış açısıyla sunmaktadır:<br /><br />
               ✓ Mali Danışmanlık<br />
               ✓ Vergi Planlaması<br />

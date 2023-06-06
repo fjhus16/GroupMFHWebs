@@ -62,7 +62,7 @@ export default function Post({ post, allPosts }: Props) {
               <PostTitle>Loading…</PostTitle>
             ) : (
               <>
-                <article className="pb-16 flex flex-col justify-center items-center">
+                <article className="pb-16 flex flex-col text-justify justify-center items-center">
                   <Head>
                     <title>{title}</title>
                     <meta property="og:image" content={post.ogImage.url} />
@@ -90,7 +90,7 @@ export default function Post({ post, allPosts }: Props) {
                 <Typography gutterBottom variant='h5' component="div" className='font-bold text-lg'>
                   {morePosts[0].title}
                 </Typography>
-                <Typography variant="body2" className='text-black max-h-[110px]'>
+                <Typography variant="body2" className='text-black text-justify max-h-[110px]'>
                   {morePosts[0].excerpt}
                 </Typography>
               </CardContent>
@@ -109,7 +109,7 @@ export default function Post({ post, allPosts }: Props) {
                 <Typography gutterBottom variant='h5' component="div" className='font-bold text-lg'>
                   {morePosts[1].title}
                 </Typography>
-                <Typography variant="body2" className='text-black max-h-[110px]'>
+                <Typography variant="body2" className='text-black text-justify max-h-[110px]'>
                   {morePosts[1].excerpt}
                 </Typography>
               </CardContent>
@@ -128,7 +128,7 @@ export default function Post({ post, allPosts }: Props) {
                 <Typography gutterBottom variant="h5" component="div" className='text-lg font-bold'>
                   {morePosts[2].title}
                 </Typography>
-                <Typography variant="body2" className='text-black max-h-[110px]'>
+                <Typography variant="body2" className='text-black text-justify max-h-[110px]'>
                   {morePosts[2].excerpt}
                 </Typography>
               </CardContent>
