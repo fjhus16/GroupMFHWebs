@@ -55,7 +55,7 @@ const Grid = () => {
  id: 8, 
  text: 'Competition Law and Compliance Services', 
  logo: '/assets/homepage/iconmonstr-marketing-14.svg', link: '/competition', },  
-     ];
+     
     ];
 
     const { asPath } = useRouter();
