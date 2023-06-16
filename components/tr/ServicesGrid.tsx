@@ -53,7 +53,9 @@ const Grid = () => {
             link: '/legislations',
         },
 {
-id: 8, text: 'Rekabet', logo: '/assets/homepage/iconmonstr-marketing-14.svg', link: '/competition', }, 
+id: 8,
+text: 'Rekabet Hukuku ve Uyum Hizmetleri',
+logo: '/assets/homepage/iconmonstr-marketing-14.svg', link: '/competition', }, 
     ];
 
     const { asPath } = useRouter();
