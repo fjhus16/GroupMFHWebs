@@ -53,7 +53,7 @@ const Grid = () => {
             link: '/legislations',
         },{ 
  id: 8, 
- text: 'Rekabet Hukuku ve Uyum Hizmetleri', 
+ text: 'Competition Law and Compliance Services', 
  logo: '/assets/homepage/iconmonstr-marketing-14.svg', link: '/competition', },  
      ];
     ];
