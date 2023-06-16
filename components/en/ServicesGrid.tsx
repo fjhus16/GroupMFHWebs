@@ -51,7 +51,11 @@ const Grid = () => {
             text: 'Company Law Legislation Consultancy',
             logo: '/assets/homepage/iconmonstr-education-1.svg',
             link: '/legislations',
-        },
+        },{ 
+ id: 8, 
+ text: 'Rekabet Hukuku ve Uyum Hizmetleri', 
+ logo: '/assets/homepage/iconmonstr-marketing-14.svg', link: '/competition', },  
+     ];
     ];
 
     const { asPath } = useRouter();
