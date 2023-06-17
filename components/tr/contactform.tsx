@@ -2,7 +2,7 @@ import { TextField } from '@mui/material'
 
 const ContactForm = () => {
    return (
-    <div className='pb-4 pt-2 border rounded-md mt-6 mb-6 mx-auto md:w-[40vw]'>
+    <div className='pb-4 pt-2 border rounded-md mt-6 mx-auto md:w-[40vw]'>
       <form className='flex pt-5 gap-5 flex-col md:w-[40vw] justify-center items-center' action="https://formsubmit.co/e4d7aa3a78d1dbb9a2517df63907c970" method="POST">
         <div className='flex flex-center flex-col justify-center'>
           <h2 className='text-2xl font-bold'>İletişim Formu</h2>
