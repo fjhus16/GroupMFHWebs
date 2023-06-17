@@ -11,7 +11,7 @@ const Layout = ({ children }: Props) => {
     <>
       <Meta />
       <Header />
-      <div className="">
+      <div className="bg-white pb-6">
         <main>{children}</main>
       </div>
       <Footer />
