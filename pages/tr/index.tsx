@@ -165,7 +165,7 @@ if (showPosts.length % 2 !== 0) {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className='h-[450px] flex flex-col items-center bg-white justify-center'>
+                <div className='h-[450px] flex flex-col items-center justify-center'>
                   <Image fill style={{ objectFit: "cover" }} priority loading='eager' src='/assets/homepage/5.jpg' className='-z-10' alt={''} />
                   <div className='flex mb-auto pt-6 w-[81%] flex-col items-center justify-center flex-end text-white'>
                     <h3 className="font-bold text-white text-2xl xl:text-4xl mt-8 mr-auto [text-shadow:_3px_3px_3px_rgb(0_0_0_/_80%)] mb-2">
