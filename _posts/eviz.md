@@ -7,7 +7,7 @@ trsslug: 'e-viz'
 title: 'Elektronik Denetim ve Teknolojik Gelişmeler'
 excerpt: "Vergi Usul Kanununun mükerrer 242’nci maddesinde yer alan yetkiye istinaden yapılan mevzuat değişiklikleri neticesinde; elektronik verilerin elektronik ortamda ibrazını sağlayan “Elektronik Veri İbraz Sistemi (e-Viz)” geliştirilmiştir."
 coverImage: '/assets/blog/images/eviz.jpg'
-date: '2023-06-12'
+date: '2023-06-16'
 keywords: 'Elektronik denetim, Vergi Denetimi, Elektronik defter, eViz, Elektronik fatura'
 ogImage:
   url: '/assets/blog/images/eviz.jpg'

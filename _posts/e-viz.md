@@ -7,7 +7,7 @@ trsslug: 'eviz'
 title: 'Electronic Audit and Technological Developments'
 excerpt: 'As a result of the legislative changes made in accordance with the authority provided in Article 242 of the Tax Procedure Law, the "Electronic Data Submission System (e-Viz)" has been developed to enable the electronic submission of data in electronic format.'
 coverImage: '/assets/blog/images/eviz.jpg'
-date: '2023-06-12'
+date: '2023-06-16'
 keywords: 'Electronic audit, Tax Audit, Electronic ledger, eViz, Electronic invoice'
 ogImage:
   url: '/assets/blog/images/eviz.jpg'
