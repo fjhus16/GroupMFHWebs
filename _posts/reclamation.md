@@ -2,6 +2,8 @@
 lang: 'en'
 cat: 'Tax'
 sector: 'Default'
+serv: 'Tax Auditing'
+trsslug: 'pismanlik'
 title: "Repentance and Reclamation in Tax Law"
 excerpt: "Taxpayers who commit the acts that require tax loss penalty in taxes based on declaration and the persons who participate in the commission of these acts shall not be subject to tax loss penalty if they spontaneously notify the administration with a petition and meet the other conditions."
 coverImage: '/assets/blog/images/reclamation.jpg'

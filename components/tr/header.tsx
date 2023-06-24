@@ -60,14 +60,14 @@ const Header = () => {
         <div className='hidden ml-4 mr-2 lg:flex font-bold items-center justify-start gap-2 lg:gap-6'>
           <AboutMenu />
           <button
-            className='hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000'
+            className='hover:bg-black hover:text-white text-xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000'
             onClick={handleScrollToServices}
           >
             <p className={cormorantGaramond.className}>Hizmetlerimiz</p>
           </button>
           <PartnersMenu />
-          <Link className='hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/tr/blog'><p className={cormorantGaramond.className}>Makaleler</p></Link>
-          <Link className='hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/tr/contact'><p className={cormorantGaramond.className}>İletişim</p></Link>
+          <Link className='hover:bg-black hover:text-white text-xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/tr/blog'><p className={cormorantGaramond.className}>Bülten</p></Link>
+          <Link className='hover:bg-black hover:text-white text-xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/tr/contact'><p className={cormorantGaramond.className}>İletişim</p></Link>
         </div>
         <div className='hidden ml-[auto] lg:flex font-bold items-center justify-end gap-2 md:gap-8'>
         <form onSubmit={handleSearchSubmit} className="flex">
@@ -117,7 +117,7 @@ const Header = () => {
                 <p className={cormorantGaramond.className}>Hizmetlerimiz</p>
               </button>
               <PartnersMenu />
-              <Link className='focus:outline-none focus:underline px-2 mt-4 text-xl lg:text-2xl mb-4' href='/tr/blog'><p className={cormorantGaramond.className}>Makaleler</p></Link>
+              <Link className='focus:outline-none focus:underline px-2 mt-4 text-xl lg:text-2xl mb-4' href='/tr/blog'><p className={cormorantGaramond.className}>Bülten</p></Link>
               <Link className='focus:outline-none focus:underline px-2 text-xl lg:text-2xl mb-4' href='/tr/contact'><p className={cormorantGaramond.className}>İletişim</p></Link>
             </nav>
           </div>

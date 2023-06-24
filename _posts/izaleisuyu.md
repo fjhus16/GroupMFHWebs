@@ -2,6 +2,8 @@
 lang: 'tr'
 cat: 'Hukuk;Vergi'
 sector: 'Default'
+serv: 'Vergi Denetimi'
+trsslug: 'terminationofcoownership'
 title: "İzale-i Şüyu"
 excerpt: "İzale-i Şüyu (Ortaklığın Giderilmesi) İle Satışlarda Hissedarlar Alıcı Olursa KDV Ödenir mi?"
 coverImage: '/assets/blog/images/izaleisuyu.jpg'

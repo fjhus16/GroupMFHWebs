@@ -2,6 +2,8 @@
 lang: 'tr'
 cat: 'Vergi'
 sector: 'Default'
+serv: 'Vergi Denetimi'
+trsslug: 'earthquakezone'
 title: "Deprem Bölgesinde Damga Vergisi"
 excerpt: "Afet Bölgesi'nin Yeniden İnşa Edilmesine veya Onarılmasına İlişkin İhalelerde Damga Vergisi Ödenir mi?"
 coverImage: '/assets/blog/images/deprembolgesi.jpg'

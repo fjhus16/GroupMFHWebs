@@ -2,6 +2,8 @@
 lang: 'tr'
 cat: 'Vergi'
 sector: 'Default'
+serv: 'Vergi Denetimi'
+trsslug: 'repetitionofseizure'
 title: "Tekrar Haciz Tatbiki"
 excerpt: "Kamu Alacaklarının Zamanaşımına Uğramasını Engellemeye Yönelik Tekraren Uygulanan Hacizler Zamanaşımını Keser mi?"
 coverImage: '/assets/blog/images/tekrarhaciz.jpg'

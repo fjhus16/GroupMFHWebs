@@ -13,7 +13,7 @@ export default function AboutMenu() {
         <div className="text-left">
             <Menu as="div" className="relative z-[90] inline-block text-left">
                 <div>
-                    <Menu.Button className="inline-flex justify-center hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000">
+                    <Menu.Button className="inline-flex justify-center hover:bg-black hover:text-white text-xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000">
                         <p className={cormorantGaramond.className}>Kurumsal</p>
                     </Menu.Button>
                 </div>

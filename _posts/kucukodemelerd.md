@@ -2,6 +2,8 @@
 lang: 'tr'
 cat: 'Hukuk;Vergi'
 sector: 'Default'
+serv: 'Vergi Denetimi'
+trsslug: 'smallpayments'
 title: "Küçük Ödemelerde Zamanaşımı"
 excerpt: "Vergi Memurları Tarafından Yapılan Küçük Ödemeler Vergi Borcunun Zamanaşımına Uğramasını Engeller mi?"
 coverImage: '/assets/blog/images/kucukodemeler.jpg'

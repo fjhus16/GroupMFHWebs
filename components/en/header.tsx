@@ -59,14 +59,14 @@ const Header = () => {
         <div className='hidden ml-4 mr-2 lg:flex font-bold items-center justify-start gap-2 lg:gap-6'>
           <AboutMenu />
           <button
-            className='hover:bg-black whitespace-nowrap hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000'
+            className='hover:bg-black whitespace-nowrap hover:text-white text-xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000'
             onClick={handleScrollToServices}
           >
             <p className={cormorantGaramond.className}>Our Services</p>
           </button>
           <PartnersMenu />
-          <Link className='hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/en/blog'><p className={cormorantGaramond.className}>Headlines</p></Link>
-          <Link className='hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/en/contact'><p className={cormorantGaramond.className}>Contact</p></Link>
+          <Link className='hover:bg-black hover:text-white text-xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/en/blog'><p className={cormorantGaramond.className}>Headlines</p></Link>
+          <Link className='hover:bg-black hover:text-white text-xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000' href='/en/contact'><p className={cormorantGaramond.className}>Contact</p></Link>
         </div>
         <div className='hidden ml-[auto] lg:flex font-bold items-center justify-end gap-2 md:gap-8'>
           <form onSubmit={handleSearchSubmit} className="flex">

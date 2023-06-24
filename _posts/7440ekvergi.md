@@ -2,6 +2,8 @@
 lang: 'tr'
 cat: 'Vergi'
 sector: 'Default'
+serv: 'Vergi Denetimi'
+trsslug: '7440additionaltax'
 title: "7440 Sayılı Kanun İle Getirilen \"Ek Vergi\" Nedir?"
 excerpt: "7440 sayılı kanunun 10 uncu maddesinin 27 nci fıkrası ile getirilen \"Ek Vergi\" nedir? Nasıl hesaplanır? Kimlere uygulanır?"
 coverImage: '/assets/blog/images/7440ekvergi.jpg'

@@ -20,57 +20,57 @@ export default function Index({ allPosts }: Props) {
   SwiperCore.use([Autoplay]);
 
   const filteredPosts = allPosts
-  .filter((post) => post.lang === 'tr')
-  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    .filter((post) => post.lang === 'tr')
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-const categories = new Set<string>();
-const postsByCategory: { [category: string]: Post } = {};
+  const categories = new Set<string>();
+  const postsByCategory: { [category: string]: Post } = {};
 
-filteredPosts.forEach((post) => {
-  const postCategories = post.cat.split(';');
-  postCategories.forEach((category) => {
-    if (!categories.has(category) && !Object.values(postsByCategory).includes(post)) {
-      categories.add(category);
-      postsByCategory[category] = post;
-    }
-  });
-});
-
-let showPosts = Object.values(postsByCategory);
-
-// Check if the number of posts is uneven
-if (filteredPosts.length % 2 !== 0) {
-  let latestPost = null;
   filteredPosts.forEach((post) => {
-    if (
-      !Object.values(postsByCategory).includes(post) &&
-      !showPosts.includes(post) &&
-      latestPost === null
-    ) {
-      latestPost = post;
-    }
+    const postCategories = post.cat.split(';');
+    postCategories.forEach((category) => {
+      if (!categories.has(category) && !Object.values(postsByCategory).includes(post)) {
+        categories.add(category);
+        postsByCategory[category] = post;
+      }
+    });
   });
-  if (latestPost) {
-    showPosts.push(latestPost);
-  }
-}
 
-// Ensure that showPosts contains an even number of posts
-if (showPosts.length % 2 !== 0) {
-  let latestPost = null;
-  filteredPosts.forEach((post) => {
-    if (
-      !Object.values(postsByCategory).includes(post) &&
-      !showPosts.includes(post) &&
-      post !== latestPost
-    ) {
-      latestPost = post;
+  let showPosts = Object.values(postsByCategory);
+
+  // Check if the number of posts is uneven
+  if (filteredPosts.length % 2 !== 0) {
+    let latestPost = null;
+    filteredPosts.forEach((post) => {
+      if (
+        !Object.values(postsByCategory).includes(post) &&
+        !showPosts.includes(post) &&
+        latestPost === null
+      ) {
+        latestPost = post;
+      }
+    });
+    if (latestPost) {
+      showPosts.push(latestPost);
     }
-  });
-  if (latestPost) {
-    showPosts.push(latestPost);
   }
-}
+
+  // Ensure that showPosts contains an even number of posts
+  if (showPosts.length % 2 !== 0) {
+    let latestPost = null;
+    filteredPosts.forEach((post) => {
+      if (
+        !Object.values(postsByCategory).includes(post) &&
+        !showPosts.includes(post) &&
+        post !== latestPost
+      ) {
+        latestPost = post;
+      }
+    });
+    if (latestPost) {
+      showPosts.push(latestPost);
+    }
+  }
   return (
     <>
       <Layout>
@@ -215,12 +215,12 @@ if (showPosts.length % 2 !== 0) {
               <ServicesGrid />
             </div>
             <h2 className="text-5xl justify-center w-full flex font-bold">
-          Bülten
-        </h2>
-          <div id='yazılar' className='pt-2 ism:pt-2 items-center justify-center'><div className='flex flex-wrap mt-4 mb-4 flex-center justify-center'>
-          {Array.from(categories).map((category) => (
+              Bülten
+            </h2>
+            <div id='yazılar' className='pt-2 ism:pt-2 items-center justify-center'><div className='flex flex-wrap mt-4 mb-4 flex-center justify-center'>
+              {Array.from(categories).map((category) => (
                 <Link
-                className='my-2'
+                  className='my-2'
                   key={category}
                   href={`/tr/blog?category=${encodeURIComponent(category)}`}
                   passHref

@@ -2,6 +2,8 @@
 lang: 'tr'
 cat: 'Teknoloji;Vergi'
 sector: 'Default'
+serv: 'Vergi Denetimi;Muhasebe ve Mali Danışmanlık Hizmetleri;Yönetim, Kurumsal Finansman ve Teknoloji Danışmanlığı'
+trsslug: 'socialmedia'
 title: "Sosyal Medya Yayıncılarının Vergilendirilmesi"
 excerpt: "Yazımızda sosyal medya platformlarında nasıl yayın yapıldığı, nasıl kazanç elde edildiği ve elde edilen kazançların nasıl vergilendirildiği hususları irdelenmiştir."
 coverImage: '/assets/blog/images/sosyalmedya.jpg'

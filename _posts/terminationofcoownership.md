@@ -2,6 +2,8 @@
 lang: 'en'
 cat: 'Law;Tax'
 sector: 'Default'
+serv: 'Tax Auditing'
+trsslug: 'izaleisuyu'
 title: "Termination of Co-ownership"
 excerpt: "Termination of Co-ownership: Is VAT Paid When Shareholders are Buyers in Sales?"
 coverImage: '/assets/blog/images/izaleisuyu.jpg'

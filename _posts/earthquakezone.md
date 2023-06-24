@@ -2,6 +2,8 @@
 lang: 'en'
 cat: 'Tax'
 sector: 'Default'
+serv: 'Tax Auditing'
+trsslug: 'deprembolgesi'
 title: "Stamp Duty in Earthquake Zone"
 excerpt: "Is Stamp Duty Paid for Tenders Related to the Reconstruction or Repair of Disaster Areas?"
 coverImage: '/assets/blog/images/deprembolgesi.jpg'

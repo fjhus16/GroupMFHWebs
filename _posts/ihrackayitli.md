@@ -2,6 +2,8 @@
 lang: 'tr'
 cat: 'Gümrük ve Dış Ticaret;Vergi'
 sector: 'Default'
+serv: 'Vergi Denetimi;Gümrük ve Dış Ticaret'
+trsslug: 'exportregistered'
 title: "İhraç Kayıtlı Satışlarda Dövizle Ödeme Yasağı"
 excerpt: "11/8/1989 tarih ve 20249 sayılı Resmî Gazete'de yayımlanan Türk Parası Kıymetini Koruma Hakkında 32 sayılı Kararın 4'üncü maddesi"
 coverImage: '/assets/blog/images/ihrackayitli.jpg'

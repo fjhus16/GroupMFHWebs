@@ -2,6 +2,8 @@
 lang: 'en'
 cat: 'Customs and Foreign Trade;Tax'
 sector: 'Default'
+serv: 'Tax Auditing;Customs and Foreign Trade Legislation Consultancy'
+trsslug: 'ihrackayitli'
 title: "Restriction on Payment in Foreign Currency in Export Registered Sales"
 excerpt: "Article 4 of the Decision Numbered 32 on the Protection of the Value of Turkish Currency published in the Official Gazette dated 11/8/1989 and numbered 20249"
 coverImage: '/assets/blog/images/ihrackayitli.jpg'

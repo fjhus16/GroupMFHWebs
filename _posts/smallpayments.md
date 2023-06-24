@@ -2,6 +2,8 @@
 lang: 'en'
 cat: 'Law;Tax'
 sector: 'Default'
+serv: 'Tax Auditing'
+trsslug: 'kucukodemelerd'
 title: "Statute of Limitations on Small Payments"
 excerpt: "Do Small Payments Made by Tax Officials Prevent the Statute of Limitations on Tax Debt?"
 coverImage: '/assets/blog/images/kucukodemeler.jpg'

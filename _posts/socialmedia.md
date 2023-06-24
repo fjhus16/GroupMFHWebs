@@ -2,6 +2,8 @@
 lang: 'en'
 cat: 'Technology;Tax'
 sector: 'Default'
+serv: 'Tax Auditing;Accounting and Financial Consultancy Services;Management, Corporate Finance and Technology Consulting'
+trsslug: 'sosyalmedya'
 title: "Taxation of Content Creators Broadcasting via Social Media"
 excerpt: "In our article, we have examined how content is published on social media platforms, how income is generated, and how the resulting earnings are taxed."
 coverImage: '/assets/blog/images/sosyalmedya.jpg'

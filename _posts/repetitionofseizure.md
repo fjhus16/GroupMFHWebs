@@ -2,6 +2,8 @@
 lang: 'en'
 cat: 'Tax'
 sector: 'Default'
+serv: 'Tax Auditing'
+trsslug: 'tekrarhaciz'
 title: "Repetition of Seizure Implementation"
 excerpt: "Do Repetitive Seizures Applied to Prevent the Statute of Limitations on Public Debts Interrupt the Statute of Limitations?"
 coverImage: '/assets/blog/images/tekrarhaciz.jpg'

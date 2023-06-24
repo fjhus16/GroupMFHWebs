@@ -2,6 +2,8 @@
 lang: 'tr'
 cat: 'Hukuk'
 sector: 'Default'
+serv: 'Vergi Denetimi'
+trsslug: 'addedtax'
 title: "7440 Sayılı Kanun İle Getirilen Ek Vergi'nin Hukuki Değerlendirilmesi"
 excerpt: "7440 sayılı kanun m.10/27 ile 2022 takvim yılına ilişkin kurumlar vergisi mükelleflerine Ek Vergi yükümlülüğü getirilmiştir."
 coverImage: '/assets/blog/images/ekvergihukuk.jpg'

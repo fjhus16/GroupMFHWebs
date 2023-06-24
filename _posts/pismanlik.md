@@ -2,11 +2,13 @@
 lang: 'tr'
 cat: 'Vergi'
 sector: 'Default'
+serv: 'Vergi Denetimi'
+trsslug: 'izaleisuyu'
 title: "Vergi Hukukunda Pişmanlık ve Islah"
 excerpt: "Beyana dayanan vergilerde vergi ziyaı cezasını gerektiren fiilleri işleyen mükellefler ve bunların işlenişine iştirak eden kişilerin durumu kendiliğinden idareye dilekçe ile haber vermesi ve diğer şartları karşılaması halinde vergi ziyaı cezası kesilmez."
 coverImage: '/assets/blog/images/reclamation.jpg'
 date: '2023-06-08'
-keywords: 'Vergi, Pişmanlık, Islah, Vergi zıyaı cezası, Re'sen Tarhiyat'
+keywords: "Vergi, Pişmanlık, Islah, Vergi zıyaı cezası, Re'sen Tarhiyat"
 ogImage:
   url: '/assets/blog/images/reclamation.jpg'
 ---

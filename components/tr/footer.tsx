@@ -12,7 +12,7 @@ const Footer = () => {
                 href="/tr/contact"
                 className="text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 transitions-colors duration-200 mb-6 lg:mb-0"
               >
-                Iletişime geçin
+                İletişime geçin
               </Link>
               <Link
                 href={`/tr/legal`}

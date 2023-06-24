@@ -2,6 +2,8 @@ type PostType = {
   slug: string
   lang: string
   cat: string
+  serv: string
+  trsslug: string
   sector: String
   title: string
   date: string

@@ -2,6 +2,8 @@
 lang: 'tr'
 cat: 'Gümrük ve Dış Ticaret;Vergi'
 sector: 'Default'
+serv: 'Vergi Denetimi;Gümrük ve Dış Ticaret'
+trsslug: 'mandatoryannualtransferpricing'
 title: 'Yıllık Transfer Fiyatlandırması Raporu Düzenleme Zorunluluğu'
 excerpt: 'Makalemizin konusunu “Yıllık Transfer Fiyatlandırması Raporu” düzenleme zorunluluğu ve bu zorunluluğa uymamanın yaptırımları ile bu yaptırımlara ilişkin öneriler oluşturmaktadır.'
 coverImage: '/assets/blog/images/yilliktransfer.jpg'

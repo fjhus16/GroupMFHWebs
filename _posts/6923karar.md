@@ -2,6 +2,8 @@
 lang: 'tr'
 cat: 'Teşvik'
 sector: 'Default'
+serv: 'Teşvik Hizmetleri ve Ar-Ge Danışmalığı'
+trsslug: '6923decree'
 title: '6923 Sayılı Cumhurbaşkanı Kararı'
 excerpt: "Yatırımlarda Devlet Yardımları Hakkında Kararda Değişiklik Yapılmasına Dair 6923 Sayılı Cumhurbaşkanı Kararı 10.03.2023 Tarihli Resmi Gazete'de Yayımlandı."
 coverImage: '/assets/blog/images/excavator.jpg'

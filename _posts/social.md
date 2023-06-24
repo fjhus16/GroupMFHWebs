@@ -2,6 +2,8 @@
 lang: 'en'
 cat: 'Tax'
 sector: 'Default'
+serv: 'Tax Auditing;Accounting and Financial Consultancy Services;Management, Corporate Finance and Technology Consulting'
+trsslug: 'sosyal'
 title: "Income Tax of Those Who Earn Income on Social Media"
 excerpt: "There are obligations that you must fulfill as someone who earns income through social media. If you are making any amount of income, small or large, through social media platforms, make sure to read our article."
 coverImage: '/assets/blog/images/sosyal.jpg'

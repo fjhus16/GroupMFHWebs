@@ -2,6 +2,8 @@
 lang: 'tr'
 cat: 'Vergi'
 sector: 'Default'
+serv: 'Vergi Denetimi;Muhasebe ve Mali Danışmanlık Hizmetleri;Yönetim, Kurumsal Finansman ve Teknoloji Danışmanlığı'
+trsslug: 'social'
 title: "Sosyal Medya Üzerinden Kazanç Elde Edenlerin Gelir Vergisi Yükümlülükleri"
 excerpt: "Sosyal medya üzerinden kazanç elde edenleri yerine getirmek zorunda olduğunuz yükümlülükler bulunmaktadır. Eğer sosyal medya platformları üzerinden az ya da çok kazanç elde diyorsanız yazımızı mutlaka okuyun."
 coverImage: '/assets/blog/images/sosyal.jpg'

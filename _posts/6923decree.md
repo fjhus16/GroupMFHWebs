@@ -2,6 +2,8 @@
 lang: 'en'
 cat: 'Incentive'
 sector: 'Default'
+serv: 'Incentives and R&D Consultancy'
+trsslug: '6923karar'
 title: 'Presidential Decree No. 6923'
 excerpt: "Presidential Decree No. 6923, amending the Decree on State Aid for Investments, was published in the Official Gazette dated March 10, 2023."
 coverImage: '/assets/blog/images/excavator.jpg'
