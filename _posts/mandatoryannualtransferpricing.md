@@ -2,7 +2,7 @@
 lang: 'en'
 cat: 'Customs and Foreign Trade;Tax'
 sector: 'Default'
-serv: 'Vergi Denetimi;Gümrük ve Dış Ticaret'
+serv: 'Tax Auditing;Customs and Foreign Trade Legislation Consultancy'
 trsslug: 'yilliktransferfiyatlandirmasi'
 title: 'Annual Transfer Pricing Report'
 excerpt: 'The topic of our article is the mandatory preparation of the "Annual Transfer Pricing Report" and the sanctions for non-compliance with this obligation, as well as recommendations regarding these sanctions.'
