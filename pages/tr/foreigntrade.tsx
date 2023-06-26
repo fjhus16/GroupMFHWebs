@@ -15,7 +15,7 @@ type Props = {
 
 export default function Foreigntrade({ allPosts }: Props) {
   const filteredPosts = allPosts
-    .filter((post) => post.lang === 'tr' && post.serv.includes('Gümrük ve Dış Ticaret Mevzuatı Danışmalığı'))
+    .filter((post) => post.lang === 'tr' && post.serv.includes('Gümrük ve Dış Ticaret'))
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   
   let showPosts = filteredPosts.slice(0,4);
