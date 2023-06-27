@@ -13,7 +13,7 @@ export default function PartnersMenu() {
         <div className="text-left">
             <Menu as="div" className="relative inline-block text-left">
                 <div>
-                    <Menu.Button className="inline-flex w-full justify-center whitespace-nowrap hover:bg-black hover:text-white text-xl pt-1 pb-1 pl-2 pr-2 mt-2 duration-1000">
+                    <Menu.Button className="inline-flex w-full justify-center whitespace-nowrap hover:bg-black hover:text-white text-xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000">
                         <p className={cormorantGaramond.className}>Overseas Representatives</p>
                     </Menu.Button>
                 </div>

@@ -13,8 +13,8 @@ export default function PartnersMenu() {
         <div className="text-left">
             <Menu as="div" className="relative inline-block text-left">
                 <div>
-                    <Menu.Button className="inline-flex w-full justify-center hover:bg-black hover:text-white text-xl pt-1 pb-1 pl-2 pr-2 mt-2 duration-1000">
-                        <p className={cormorantGaramond.className}>Yurtdışı Temsilciliklerimiz</p>
+                <Menu.Button className="inline-flex w-full justify-center whitespace-nowrap hover:bg-black hover:text-white text-xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000">
+                          <p className={cormorantGaramond.className}>Yurtdışı Temsilciliklerimiz</p>
                     </Menu.Button>
                 </div>
                 <Transition as={Fragment} enter="transition ease-out duration-200" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-200" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
