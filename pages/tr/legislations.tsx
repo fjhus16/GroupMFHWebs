@@ -38,8 +38,8 @@ export default function Legislations({ allPosts }: Props) {
               </h4>
               </section> <div className='flex flex-col justify-center items-center'>
               {showPosts.length > 0 && <MoreStories posts={showPosts} /> }
-              {showPosts.length > 0 && <Link href="/en/blog" className="text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6">
-                More posts
+              {showPosts.length > 0 && <Link href="/tr/blog" className="text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6">            
+Daha fazla yazı
               </Link> }              
             </div>
           <ContactForm />
