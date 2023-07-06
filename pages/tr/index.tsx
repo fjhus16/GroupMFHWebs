@@ -218,6 +218,13 @@ export default function Index({ allPosts }: Props) {
               Bülten
             </h2>
             <div id='yazılar' className='pt-2 ism:pt-2 items-center justify-center'><div className='flex flex-wrap mt-4 mb-4 flex-center justify-center'>
+            <Link className='my-2' href={`/en/blog`} passHref>
+                <p
+                  className={`text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 transitions-colors duration-200`}
+                >
+                  Hepsi
+                </p>
+              </Link>
               {Array.from(categories).map((category) => (
                 <Link
                   className='my-2'

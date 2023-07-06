@@ -22,8 +22,6 @@ export default function Blog({ allPosts }: Props) {
     .filter((post) => post.lang === 'en')
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  
-
   // Create a set of categories from the filtered posts
   const categories = new Set<string>();
   const postsByCategory: { [category: string]: Post[] } = {};

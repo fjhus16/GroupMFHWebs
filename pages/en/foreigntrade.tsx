@@ -1,74 +1,104 @@
-import Container from '../../components/container'
-import ContactForm from '../../components/en/contactform'
-import Layout from '../../components/en/layout'
-import Head from 'next/head'
-import { getAllPosts } from '../../lib/api'
-import Post from '../../interfaces/post'
-import MoreStories from '../../components/en/more-stories'
-import Link from 'next/link'
+import Container from "../../components/container";
+import ContactForm from "../../components/en/contactform";
+import Layout from "../../components/en/layout";
+import Head from "next/head";
+import { getAllPosts } from "../../lib/api";
+import Post from "../../interfaces/post";
+import MoreStories from "../../components/en/more-stories";
+import Link from "next/link";
 
 type Props = {
-  allPosts: Post[]
-}
-
+  allPosts: Post[];
+};
 
 export default function Foreigntrade({ allPosts }: Props) {
   const filteredPosts = allPosts
-    .filter((post) => post.lang === 'en' && post.serv.includes('Customs and Foreign Trade Legislation Consultancy'))
+    .filter(
+      (post) =>
+        post.lang === "en" &&
+        post.serv.includes("Customs and Foreign Trade Legislation Consultancy")
+    )
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-  
-  let showPosts = filteredPosts.slice(0,4);
+
+  let showPosts = filteredPosts.slice(0, 4);
   return (
     <>
       <Head>
-        <title>Customs and Foreign Trade Legislation Consultancy - GroupMFH</title>
-        <meta name="description" content="MFH Group: Export, import, and foreign exchange solutions. We cover customs, tax, and trade legislation. Trust us for comprehensive support." />
+        <title>
+          Customs and Foreign Trade Legislation Consultancy - GroupMFH
+        </title>
+        <meta
+          name="description"
+          content="MFH Group: Export, import, and foreign exchange solutions. We cover customs, tax, and trade legislation. Trust us for comprehensive support."
+        />
       </Head>
       <Layout>
         <Container>
           <section className="flex-col flex items-center md:justify-between pt-6 pb-6">
-          <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
-            Customs and Foreign Trade Legislation Consultancy
-              </h2>
+            <h2 className="mb-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">
+              Customs and Foreign Trade Legislation Consultancy
+            </h2>
             <h4 className="text-md text-justify md:pl-8">
-              MFH Group offers the following services that its customers may need within the scope of Export, Import and Foreign Exchange Legislation and applications with a solution-oriented perspective:<br />
+              MFH Group offers the following services that its customers may
+              need within the scope of Export, Import and Foreign Exchange
+              Legislation and applications with a solution-oriented perspective:
               <br />
-              ✓ Customs legislation<br />
-              ✓ Foreign trade legislation<br />
-              ✓ Tax legislation related to foreign trade (GMSI, SMK, withholding tax, VAT, stamp tax)<br />
-              ✓ Consultancy on the Legislation on the Protection of the Value of Turkish Currency<br />
-              ✓ VAT-Tax legislation and refund transactions<br />
-              ✓ Export transactions<br />
-              ✓ Inward processing regime<br />
-              ✓ Customs reconciliation (counseling in the reconciliation process)<br />
-              ✓ Customs litigation<br />
-              ✓ Audit process (consultancy in the process of inspector review)<br /></h4>
+              <br /><p className="text-left">
+              ✓ Customs legislation
+              <br />
+              ✓ Foreign trade legislation
+              <br />
+              ✓ Tax legislation related to foreign trade (GMSI, SMK, withholding
+              tax, VAT, stamp tax)
+              <br />
+              ✓ Consultancy on the Legislation on the Protection of the Value of
+              Turkish Currency
+              <br />
+              ✓ VAT-Tax legislation and refund transactions
+              <br />
+              ✓ Export transactions
+              <br />
+              ✓ Inward processing regime
+              <br />
+              ✓ Customs reconciliation (counseling in the reconciliation
+              process)
+              <br />
+              ✓ Customs litigation
+              <br />
+              ✓ Audit process (consultancy in the process of inspector review)
+              </p>
+              <br />
+            </h4>
           </section>
-          <div className='flex flex-col justify-center items-center'>
-              {showPosts.length > 0 && <MoreStories posts={showPosts} /> }
-              {showPosts.length > 0 && <Link href="/en/blog" className="text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6">
+          <div className="flex flex-col justify-center items-center">
+            {showPosts.length > 0 && <MoreStories posts={showPosts} />}
+            {showPosts.length > 0 && (
+              <Link
+                href="/en/blog"
+                className="text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6"
+              >
                 More posts
-              </Link> }              
-            </div>
+              </Link>
+            )}
+          </div>
           <ContactForm />
         </Container>
       </Layout>
     </>
-  )
+  );
 }
-
 
 export const getStaticProps = async () => {
   const allPosts = getAllPosts([
-    'lang',
-    'cat',
-    'serv',
-    'sector',
-    'title',
-    'date',
-    'slug',
-    'coverImage',
-    'excerpt',
+    "lang",
+    "cat",
+    "serv",
+    "sector",
+    "title",
+    "date",
+    "slug",
+    "coverImage",
+    "excerpt",
   ]);
 
   return {
