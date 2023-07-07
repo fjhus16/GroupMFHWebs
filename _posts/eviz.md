@@ -4,7 +4,7 @@ cat: 'Elektronik Denetim;Vergi'
 sector: 'Default'
 serv: 'Vergi Denetimi;Muhasebe ve Mali Danışmanlık Hizmetleri;Yönetim, Kurumsal Finansman ve Teknoloji Danışmanlığı'
 trsslug: 'e-viz'
-title: 'Elektronik Denetim ve Teknolojik Gelişmeler'
+title: 'Elektronik Veri İbraz Sistemi (e-Viz)'
 excerpt: "Vergi Usul Kanununun mükerrer 242’nci maddesinde yer alan yetkiye istinaden yapılan mevzuat değişiklikleri neticesinde; elektronik verilerin elektronik ortamda ibrazını sağlayan “Elektronik Veri İbraz Sistemi (e-Viz)” geliştirilmiştir."
 coverImage: '/assets/blog/images/eviz.jpg'
 date: '2023-06-16'
