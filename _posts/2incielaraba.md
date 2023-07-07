@@ -13,7 +13,7 @@ ogImage:
   url: "/assets/blog/images/2ndhandcar.jpg"
 ---
 
-# "İkinci El Motorlu Kara Taşıtlarının Ticareti Hakkında Yönetmelikte Değişiklik Yapılmasına Dair Yönetmelik" 06.07.2023 tarihli Resmi Gazetede yayımlandı.
+## "İkinci El Motorlu Kara Taşıtlarının Ticareti Hakkında Yönetmelikte Değişiklik Yapılmasına Dair Yönetmelik" 06.07.2023 tarihli Resmi Gazetede yayımlandı.
 
 Yönetmelik değişikliklerinin yürürlük tarihi 15.07.2023 olup, ilan yoluyla ikinci el kara taşıtı satışı yapanlara yönelik önemli düzenlemeler içermektedir.
 

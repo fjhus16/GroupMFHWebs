@@ -13,7 +13,7 @@ ogImage:
   url: "/assets/blog/images/vergiguncellemeleri.jpg"
 ---
 
-# 07.07.2023 Tarih ve 32241 Sayılı Resmi Gazete'de Yayımlanan Cumhurbaşkanı Kararları İle Bazı Vergi ve Harç Tutarları İle Oranları Değiştirilmiştir.
+## 07.07.2023 Tarih ve 32241 Sayılı Resmi Gazete'de Yayımlanan Cumhurbaşkanı Kararları İle Bazı Vergi ve Harç Tutarları İle Oranları Değiştirilmiştir.
 
 - 24.12.2007/13033 sayılı Bakanlar Kurulu Kararı ile yürürlüğe konulan Mal ve Hizmetlere Uygulanacak KDV Oranlarının Tespitine İlişkin Karar'ın birinci maddesinde yer alan oranlar artırıldı.
 

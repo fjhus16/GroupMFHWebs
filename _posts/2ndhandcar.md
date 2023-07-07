@@ -13,7 +13,7 @@ ogImage:
   url: "/assets/blog/images/2ndhandcar.jpg"
 ---
 
-# The "Regulation Amending the Regulation on the Trade of Second Hand Motor Land Vehicles" was published in the Official Gazette dated 06.07.2023.
+## The "Regulation Amending the Regulation on the Trade of Second Hand Motor Land Vehicles" was published in the Official Gazette dated 06.07.2023.
 
 The date of the enter into force of the amendments to the Regulation is 15.07.2023 and includes important regulations for those who sell second-hand motor vehicles through advertisements.
 

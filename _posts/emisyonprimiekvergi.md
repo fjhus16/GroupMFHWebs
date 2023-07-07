@@ -13,7 +13,7 @@ ogImage:
   url: "/assets/blog/images/emisyonprimi.jpg"
 ---
 
-# 7440 Sayılı Kanun İle Getirilen Ek Vergilerde Emisyon Priminin Vergilendirilmesi
+## 7440 Sayılı Kanun İle Getirilen Ek Vergilerde Emisyon Priminin Vergilendirilmesi
 
 **Emisyon Primi Kazanç Mıdır?**
 

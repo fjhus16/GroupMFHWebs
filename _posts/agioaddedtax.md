@@ -13,7 +13,7 @@ ogImage:
   url: "/assets/blog/images/emisyonprimi.jpg"
 ---
 
-# Taxation Of Agio Under The Additional Taxes Introduced By Law Numbered 7440
+## Taxation Of Agio Under The Additional Taxes Introduced By Law Numbered 7440
 
 **Is Agio A Gain?**
 

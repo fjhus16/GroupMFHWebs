@@ -13,7 +13,7 @@ ogImage:
   url: "/assets/blog/images/vergiguncellemeleri.jpg"
 ---
 
-# With The Presidential Decrees Published İn The Official Gazette Dated 07.07.2023 And Numbered 32241, Some Tax And Fee Amounts And Rates Have Been Changed.
+## With The Presidential Decrees Published İn The Official Gazette Dated 07.07.2023 And Numbered 32241, Some Tax And Fee Amounts And Rates Have Been Changed.
 
 - The rates in the first article of the Decree on the Determination of VAT Rates Applicable to Goods and Services, which was put into effect with the Council of Ministers Decree No. 24.12.2007/13033, have been increased.
 
