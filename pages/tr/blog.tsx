@@ -1,11 +1,11 @@
-import { useRouter } from 'next/router';
-import Link from 'next/link';
-import Container from '../../components/container';
-import MoreStories from '../../components/tr/more-stories';
-import Layout from '../../components/tr/layout';
-import { getAllPosts } from '../../lib/api';
-import Head from 'next/head';
-import Post from '../../interfaces/post';
+import { useRouter } from "next/router";
+import Link from "next/link";
+import Container from "../../components/container";
+import MoreStories from "../../components/tr/more-stories";
+import Layout from "../../components/tr/layout";
+import { getAllPosts } from "../../lib/api";
+import Head from "next/head";
+import Post from "../../interfaces/post";
 
 type Props = {
   allPosts: Post[];
@@ -19,15 +19,21 @@ export default function Blog({ allPosts }: Props) {
 
   // Filter and sort the posts by language and date
   var filteredPosts = allPosts
-    .filter((post) => post.lang === 'tr')
+    .filter((post) => post.lang === "tr")
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
 
   // Create a set of categories from the filtered posts
   const categories = new Set<string>();
+
+  categories.add("Güncel");
+  categories.add("Hukuk");
+  categories.add("Teşvik");
+  categories.add("Teknoloji");
+  categories.add("Yabanılar Hukuku");
+
   const postsByCategory: { [category: string]: Post[] } = {};
   filteredPosts.forEach((post) => {
-    const postCategories = post.cat.split(';');
+    const postCategories = post.cat.split(";");
     postCategories.forEach((category) => {
       categories.add(category);
       if (!postsByCategory[category]) {
@@ -37,8 +43,10 @@ export default function Blog({ allPosts }: Props) {
     });
   });
 
-  if(searchQuery != '' && searchQuery != null) {
-    filteredPosts = filteredPosts.filter((post) => post.title.toLowerCase().includes(searchQuery.toLowerCase()))
+  if (searchQuery != "" && searchQuery != null) {
+    filteredPosts = filteredPosts.filter((post) =>
+      post.title.toLowerCase().includes(searchQuery.toLowerCase())
+    );
   }
 
   const filteredPostsByCategory = selectedCategory
@@ -52,15 +60,19 @@ export default function Blog({ allPosts }: Props) {
           <title>GroupMFH</title>
         </Head>
         <Container>
-        <h2 className="mb-2 text-5xl justify-center w-full flex font-bold">
-          Bülten
-        </h2>
-          <div id='yazılar' className='pt-2 ism:pt-2 items-center justify-center'>
-            <div className='flex flex-wrap mt-4 flex-center justify-center'>
+          <h2 className="mb-2 text-5xl justify-center w-full flex font-bold">
+            Bülten
+          </h2>
+          <div
+            id="yazılar"
+            className="pt-2 ism:pt-2 items-center justify-center"
+          >
+            <div className="flex flex-wrap mt-4 flex-center justify-center">
               <Link href={`/tr/blog`} passHref>
                 <p
-                  className={`text-white text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black  font-bold py-3 px-10 lg:px-8 duration-200 mb-6 ${!selectedCategory ? 'bg-gray-600 text-black' : 'bg-black'
-                    }`}
+                  className={`text-white text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black  font-semibold py-3 px-3 lg:px-8 duration-200 mb-3 ${
+                    !selectedCategory ? "bg-gray-600 text-black" : "bg-black"
+                  }`}
                 >
                   Hepsi
                 </p>
@@ -72,8 +84,11 @@ export default function Blog({ allPosts }: Props) {
                   passHref
                 >
                   <p
-                    className={` text-white text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 duration-200 mb-6 ${selectedCategory === category ? 'bg-gray-600 text-black' : 'bg-black'
-                      }`}
+                    className={` text-white text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black font-semibold py-3 px-3 lg:px-8 duration-200 mb-3 ${
+                      selectedCategory === category
+                        ? "bg-gray-600 text-black"
+                        : "bg-black"
+                    }`}
                   >
                     {category}
                   </p>
@@ -96,13 +111,13 @@ export default function Blog({ allPosts }: Props) {
 
 export const getStaticProps = async () => {
   const allPosts = getAllPosts([
-    'lang',
-    'cat',
-    'title',
-    'date',
-    'slug',
-    'coverImage',
-    'excerpt',
+    "lang",
+    "cat",
+    "title",
+    "date",
+    "slug",
+    "coverImage",
+    "excerpt",
   ]);
 
   return {

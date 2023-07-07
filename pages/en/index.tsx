@@ -33,6 +33,10 @@ export default function Index({ allPosts }: Props) {
   const postsByCategory: { [category: string]: Post } = {};
 
   categories.add("Current");
+  categories.add("Law");
+  categories.add("Incentive");
+  categories.add("Technology");
+  categories.add("Immigration Law");
 
   filteredPosts.forEach((post) => {
     const postCategories = post.cat.split(";");
@@ -317,10 +321,10 @@ export default function Index({ allPosts }: Props) {
               id="yazılar"
               className="pt-2 ism:pt-2 items-center justify-center"
             >
-              <div className="flex flex-wrap mt-4 mb-4 flex-center justify-center">
+              <div className="flex flex-wrap mt-2 mb-4 flex-center justify-center">
                 <Link className="my-2" href={`/en/blog`} passHref>
                   <p
-                    className={`text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 transitions-colors duration-200`}
+                    className={`text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-semibold py-3 px-3 lg:px-8 transitions-colors duration-200`}
                   >
                     All
                   </p>
@@ -333,7 +337,7 @@ export default function Index({ allPosts }: Props) {
                     passHref
                   >
                     <p
-                      className={`text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 transitions-colors duration-200`}
+                      className={`text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-semibold py-3 px-3 lg:px-8 transitions-colors duration-200`}
                     >
                       {category}
                     </p>
