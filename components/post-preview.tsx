@@ -31,7 +31,7 @@ const PostPreview = ({
         display: "flex",
         flexDirection: "column"
       }}
-        className='w-[320px] md:w-[400px] min-h-[370px]'>
+        className='w-[320px] md:w-[400px] min-h-[445px]'>
         <CardMedia
           sx={{ height: 140 }}
           title={title}

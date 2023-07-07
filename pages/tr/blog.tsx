@@ -22,26 +22,42 @@ export default function Blog({ allPosts }: Props) {
     .filter((post) => post.lang === "tr")
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  // Create a set of categories from the filtered posts
-  const categories = new Set<string>();
+    const categories = new Set<string>();
 
-  categories.add("Güncel");
-  categories.add("Hukuk");
-  categories.add("Teşvik");
-  categories.add("Teknoloji");
-  categories.add("Yabancılar Hukuku");
-
-  const postsByCategory: { [category: string]: Post[] } = {};
-  filteredPosts.forEach((post) => {
-    const postCategories = post.cat.split(";");
-    postCategories.forEach((category) => {
-      categories.add(category);
-      if (!postsByCategory[category]) {
-        postsByCategory[category] = [];
-      }
-      postsByCategory[category].push(post);
+    categories.add("Güncel");
+    
+    const postsByCategory: { [category: string]: Post[] } = {};
+    filteredPosts.forEach((post) => {
+      const postCategories = post.cat.split(";");
+      postCategories.forEach((category) => {
+        categories.add(category);
+        if (!postsByCategory[category]) {
+          postsByCategory[category] = [];
+        }
+        postsByCategory[category].push(post);
+      });
     });
-  });
+    
+    // Convert the set of categories to an array
+    const sortedCategories = Array.from(categories);
+    
+    // Sort the array by category name length
+    sortedCategories.sort((a, b) => a.length - b.length);
+    
+    // Move "Güncel" category to the first position
+    const index = sortedCategories.indexOf("Güncel");
+    if (index !== -1) {
+      sortedCategories.splice(index, 1);
+      sortedCategories.unshift("Güncel");
+    }
+    
+    // Clear the categories set
+    categories.clear();
+    
+    // Add the sorted categories back into the set
+    sortedCategories.forEach((category) => {
+      categories.add(category);
+    });    
 
   if (searchQuery != "" && searchQuery != null) {
     filteredPosts = filteredPosts.filter((post) =>
@@ -67,7 +83,7 @@ export default function Blog({ allPosts }: Props) {
             id="yazılar"
             className="pt-2 ism:pt-2 items-center justify-center"
           >
-            <div className="flex flex-wrap mt-4 flex-center justify-center">
+            <div className="flex flex-wrap mt-2 flex-center justify-center">
               <Link href={`/tr/blog`} passHref>
                 <p
                   className={`text-white text-sm ism:text-md mx-3 bg-black hover:bg-white hover:text-black border border-black  font-semibold py-3 px-3 lg:px-8 duration-200 mb-3 ${

@@ -22,6 +22,8 @@ export default function Index({ allPosts }: Props) {
     .filter((post) => post.lang === "tr")
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
+  const showPosts = filteredPosts.slice(0, 6);
+
   const currentPosts = allPosts
     .filter((post) => {
       const postCategories = post.cat.split(";");
@@ -30,62 +32,36 @@ export default function Index({ allPosts }: Props) {
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   const categories = new Set<string>();
-  const postsByCategory: { [category: string]: Post } = {};
 
   categories.add("Güncel");
-  categories.add("Hukuk");
-  categories.add("Teşvik");
-  categories.add("Teknoloji");
-  categories.add("Yabancılar Hukuku");
 
   filteredPosts.forEach((post) => {
     const postCategories = post.cat.split(";");
     postCategories.forEach((category) => {
-      if (
-        !categories.has(category) &&
-        !Object.values(postsByCategory).includes(post)
-      ) {
+      if (!categories.has(category)) {
         categories.add(category);
-        postsByCategory[category] = post;
       }
     });
   });
 
-  let showPosts = Object.values(postsByCategory);
+  const sortedCategories = Array.from(categories).sort(
+    (a, b) => a.length - b.length
+  );
 
-  // Check if the number of posts is uneven
-  if (filteredPosts.length % 2 !== 0) {
-    let latestPost = null;
-    filteredPosts.forEach((post) => {
-      if (
-        !Object.values(postsByCategory).includes(post) &&
-        !showPosts.includes(post) &&
-        latestPost === null
-      ) {
-        latestPost = post;
-      }
-    });
-    if (latestPost) {
-      showPosts.push(latestPost);
-    }
+  const index = sortedCategories.indexOf("Güncel");
+  if (index !== -1) {
+    sortedCategories.splice(index, 1);
+    sortedCategories.unshift("Güncel");
   }
 
-  // Ensure that showPosts contains an even number of posts
-  if (showPosts.length % 2 !== 0) {
-    let latestPost = null;
-    filteredPosts.forEach((post) => {
-      if (
-        !Object.values(postsByCategory).includes(post) &&
-        !showPosts.includes(post) &&
-        post !== latestPost
-      ) {
-        latestPost = post;
-      }
-    });
-    if (latestPost) {
-      showPosts.push(latestPost);
-    }
-  }
+  // Clear the categories set
+  categories.clear();
+
+  // Add the sorted categories back into the set
+  sortedCategories.forEach((category) => {
+    categories.add(category);
+  });
+
   return (
     <>
       <Layout>
@@ -277,9 +253,9 @@ export default function Index({ allPosts }: Props) {
         <div className="z-20 relative bg-white md:mt-[450px]">
           <div className="border-t-8 border-t-white h-[92px] bg-gradient-to-b from-slate-300 to-slate-100 w-full flex gap-1 pr-2 items-start md:items-center">
             <Link
-              href={`/tr/blog?category=Current`}
+              href={`/tr/blog?category=Güncel`}
               passHref
-              className="font-bold md:text-xl mb-auto md:mb-[0] pl-1 md:pl-6"
+              className="font-bold md:text-xl mb-auto text-red-600 md:mb-[0] pl-1 md:pl-6"
             >
               GÜNCEL:
             </Link>

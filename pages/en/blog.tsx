@@ -22,26 +22,42 @@ export default function Blog({ allPosts }: Props) {
     .filter((post) => post.lang === "en")
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  // Create a set of categories from the filtered posts
-  const categories = new Set<string>();
+    const categories = new Set<string>();
 
-  categories.add("Current");
-  categories.add("Law");
-  categories.add("Incentive");
-  categories.add("Technology");
-  categories.add("Immigration Law");
-
-  const postsByCategory: { [category: string]: Post[] } = {};
-  filteredPosts.forEach((post) => {
-    const postCategories = post.cat.split(";");
-    postCategories.forEach((category) => {
-      categories.add(category);
-      if (!postsByCategory[category]) {
-        postsByCategory[category] = [];
-      }
-      postsByCategory[category].push(post);
+    categories.add("Current");
+    
+    const postsByCategory: { [category: string]: Post[] } = {};
+    filteredPosts.forEach((post) => {
+      const postCategories = post.cat.split(";");
+      postCategories.forEach((category) => {
+        categories.add(category);
+        if (!postsByCategory[category]) {
+          postsByCategory[category] = [];
+        }
+        postsByCategory[category].push(post);
+      });
     });
-  });
+    
+    // Convert the set of categories to an array
+    const sortedCategories = Array.from(categories);
+    
+    // Sort the array by category name length
+    sortedCategories.sort((a, b) => a.length - b.length);
+    
+    // Move "Current" category to the first position
+    const index = sortedCategories.indexOf("Current");
+    if (index !== -1) {
+      sortedCategories.splice(index, 1);
+      sortedCategories.unshift("Current");
+    }
+    
+    // Clear the categories set
+    categories.clear();
+    
+    // Add the sorted categories back into the set
+    sortedCategories.forEach((category) => {
+      categories.add(category);
+    });   
 
   if (searchQuery != "" && searchQuery != null) {
     filteredPosts = filteredPosts.filter((post) =>
