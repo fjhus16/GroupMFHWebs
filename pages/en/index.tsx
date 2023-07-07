@@ -271,7 +271,7 @@ export default function Index({ allPosts }: Props) {
           </div>
         </div>
         <div className="z-20 bg-white relative md:mt-[450px]">
-          <div className="border-t-8 border-t-white h-[82px] bg-gradient-to-b from-slate-300 to-slate-100 w-full flex gap-1 pr-2 items-start md:items-center">
+          <div className="border-t-8 border-t-white h-[92px] bg-gradient-to-b from-slate-300 to-slate-100 w-full flex gap-1 pr-2 items-start md:items-center">
             <Link
               href={`/en/blog?category=Current`}
               passHref
