@@ -3,14 +3,14 @@ lang: "en"
 cat: "Tax;Current"
 sector: "Default"
 serv: "Tax Auditing"
-trsslug: "vergicuncellemeri"
+trsslug: "vergiguncellemeri"
 title: "With The Presidential Decrees Published İn The Official Gazette dated 07.07.2023, Some Tax And Fee Amounts And Rates Have Been Changed."
 excerpt: "With the Presidential Decrees published on 07.07.2023 And Numbered 32241, important changes were made in the amounts and rates of some taxes and fees."
-coverImage: "/assets/blog/images/vergicuncellemeri.jpg"
+coverImage: "/assets/blog/images/vergiguncellemeleri.jpg"
 date: "2023-07-07"
 keywords: "Tax Increase, VAT Rate Change, Raise, Telephone Usage Permission Fee, Games of Chance Tax Rate Increase, BSMV Rate Increase,Withholding"
 ogImage:
-  url: "/assets/blog/images/vergicuncellemeri.jpg"
+  url: "/assets/blog/images/vergiguncellemeleri.jpg"
 ---
 
 # With The Presidential Decrees Published İn The Official Gazette Dated 07.07.2023 And Numbered 32241, Some Tax And Fee Amounts And Rates Have Been Changed.

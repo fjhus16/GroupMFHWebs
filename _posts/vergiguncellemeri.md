@@ -6,11 +6,11 @@ serv: "Vergi Denetimi"
 trsslug: "taxrevisions"
 title: "07.07.2023 Tarih ve 32241 Sayılı Resmi Gazete’de Yayımlanan Cumhurbaşkanı Kararları İle Bazı Vergi ve Harç Tutarları İle Oranları Değiştirilmiştir."
 excerpt: "07.07.2023 tarihinde Yayımlanan Cumhurbaşkanı Kararları ile bazı vergi ve harç tutarları ile oranları tutar ve oranlarında önemli değişiklikler yapıldı."
-coverImage: "/assets/blog/images/vergicuncellemeri.jpg"
+coverImage: "/assets/blog/images/vergiguncellemeleri.jpg"
 date: "2023-07-07"
 keywords: "Vergi Artışı, KDV Oran Değişikliği, Zam, Telefon Kullanım İzin Harcı, BSMV Artışı, Tevkifat"
 ogImage:
-  url: "/assets/blog/images/vergicuncellemeri.jpg"
+  url: "/assets/blog/images/vergiguncellemeleri.jpg"
 ---
 
 # 07.07.2023 Tarih ve 32241 Sayılı Resmi Gazete'de Yayımlanan Cumhurbaşkanı Kararları İle Bazı Vergi ve Harç Tutarları İle Oranları Değiştirilmiştir.
