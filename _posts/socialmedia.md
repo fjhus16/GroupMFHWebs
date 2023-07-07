@@ -1,16 +1,16 @@
 ---
-lang: 'en'
-cat: 'Technology;Tax'
-sector: 'Default'
-serv: 'Tax Auditing;Accounting and Financial Consultancy Services;Management, Corporate Finance and Technology Consulting'
-trsslug: 'sosyalmedya'
+lang: "en"
+cat: "Technology;Tax"
+sector: "Default"
+serv: "Tax Auditing;Accounting and Financial Consultancy Services;Management, Corporate Finance and Technology Consulting"
+trsslug: "sosyalmedya"
 title: "Taxation of Content Creators Broadcasting via Social Media"
 excerpt: "In our article, we have examined how content is published on social media platforms, how income is generated, and how the resulting earnings are taxed."
-coverImage: '/assets/blog/images/sosyalmedya.jpg'
-date: '2023-05-30'
-keywords: 'Twitch, YouTube, Facebook, Subscription, Advertisement, Donation, Twitter'
+coverImage: "/assets/blog/images/sosyalmedya.jpg"
+date: "2023-05-30"
+keywords: "Twitch, YouTube, Facebook, Subscription, Advertisement, Donation, Twitter"
 ogImage:
-  url: '/assets/blog/images/sosyalmedya.jpg'
+  url: "/assets/blog/images/sosyalmedya.jpg"
 ---
 
 **TAXATION OF BROADCASTERS BROADCASTING LIVE ON SOCIAL MEDIA PLATFORMS**
@@ -37,7 +37,7 @@ Donations are a system where viewers, whether subscribed or not, support the bro
 
 - 10000 Bits: 126 Dollars
 
-- 25000 Bits: $308 (Shiftdelete.Net. "New Donation System for Turks from Twitch!" (https://shiftdelete.net/twitch-yeni-bagis-sistemi-72933) Access Date: September 10, 2020)
+- 25000 Bits: $308 (Shiftdelete.Net. ["New Donation System for Turks from Twitch!"](https://shiftdelete.net/twitch-yeni-bagis-sistemi-72933) Access Date: September 10, 2020)
 
 Although there is no official statement on social media platforms, it is thought that certain deductions are made from the donations made.
 
@@ -133,11 +133,11 @@ In Article 17/4-a of Law No. 3065, deliveries and services subject to the earnin
 
 **References:**
 
-1-Hürriyet.com.tr. "What is Twitch? How does Twitch.tv work?" (http://www.hurriyet.com.tr/teknoloji/ twitch-nedir-twitch-tv-nasil-isliyor-40831885) Access Date: July 18, 2020
+1-Hürriyet.com.tr. "What is Twitch? How does Twitch.tv work?" ["Twitch nedir? Twitch.tv nasıl işliyor?"](http://www.hurriyet.com.tr/teknoloji/twitch-nedir-twitch-tv-nasil-isliyor-40831885) Access Date: July 18, 2020
 
-2-Shiftdelete.Net. "New Donation System for Turks from Twitch!" (https://shiftdelete.net/twitch-yeni-bagis-sistemi-72933) Access Date: September 10, 2020
+2-Shiftdelete.Net. "New Donation System for Turks from Twitch!" ["Twitch'ten Türkler için Yeni Bağış Sistemi!"](https://shiftdelete.net/twitch-yeni-bagis-sistemi-72933) Access Date: September 10, 2020
 
-3-Revenue Administration. "Tax Guide for Commercial Taxpayers 2018" (https: //www.gib.gov.tr/sites/default/files/fileadmin/beyannamerehberi/2018\_ticarikazanc.pdf) Access Date: September 05, 11.2020
+3-Revenue Administration. "Tax Guide for Commercial Taxpayers 2018" ["Ticari Kazanç Elde Eden Mükellefler İçin Vergi Rehberi 2018"](https://www.gib.gov.tr/sites/default/files/fileadmin/beyannamerehberi/2018\_ticarikazanc.pdf) Access Date: September 05, 11.2020
 
 4- Volkan GÜZEL. "Self-Employment Income." Tax Report Magazine. Issue 162. 2013. p.89.
 

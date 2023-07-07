@@ -271,16 +271,16 @@ export default function Index({ allPosts }: Props) {
           </div>
         </div>
         <div className="z-20 relative bg-white md:mt-[450px]">
-          <div className="border-t-8 border-t-white h-[82px] bg-gradient-to-b from-slate-300 to-slate-100 w-full flex items-center">
+          <div className="border-t-8 border-t-white h-[82px] bg-gradient-to-b from-slate-300 to-slate-100 w-full flex items-start md:items-center">
             <Link
               href={`/tr/blog?category=Current`}
               passHref
-              className="font-bold text-lg md:text-xl mb-auto md:mb-[0] pl-2 md:pl-6"
+              className="font-bold md:text-xl mb-auto md:mb-[0] pl-2 md:pl-6"
             >
               GÜNCEL:
             </Link>
             <Swiper
-              className="w-[90%]"
+              className="w-[90%] mt-[2px]"
               loop={true}
               spaceBetween={0}
               slidesPerView={1}
@@ -294,7 +294,7 @@ export default function Index({ allPosts }: Props) {
                   <Link
                     href={`/en/posts/${encodeURIComponent(post.slug)}`}
                     passHref
-                    className="font-bold text-lg"
+                    className="font-bold text-sm md:text-lg"
                   >
                     <p>{post.title}</p>
                   </Link>
@@ -302,6 +302,7 @@ export default function Index({ allPosts }: Props) {
               ))}
             </Swiper>
           </div>
+
           <Container>
             <div className="flex pb-6 flex-col justify-center items-center">
               <h2 className="mb-6 pt-6 text-5xl md:text-5xl font-bold tracking-tighter leading-tight">

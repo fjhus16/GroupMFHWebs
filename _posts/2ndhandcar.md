@@ -1,19 +1,19 @@
 ---
-lang: 'en'
-cat: 'Tax;Current'
-sector: 'Default'
-serv: 'Tax Auditing'
-trsslug: '2incielaraba'
+lang: "en"
+cat: "Tax;Current"
+sector: "Default"
+serv: "Tax Auditing"
+trsslug: "2incielaraba"
 title: 'The "Regulation Amending the Regulation on the Trade of Second Hand Motor Land Vehicles" was published.'
 excerpt: "With the regulation published in the Official Gazette dated 06.07.2023, important amendments were made to the Regulation on the Trade of Second Hand Motor Land Vehicles to enter into force on 15.07.2023."
-coverImage: '/assets/blog/images/2ndhandcar.jpg'
-date: '2023-07-06'
-keywords: 'Used vehicle, Second hand vehicle, Used car advertisement, second hand vehicle trade, prohibition on second-hand vehicle trade, second-hand vehicle trade fine'
+coverImage: "/assets/blog/images/2ndhandcar.jpg"
+date: "2023-07-06"
+keywords: "Used vehicle, Second hand vehicle, Used car advertisement, second hand vehicle trade, prohibition on second-hand vehicle trade, second-hand vehicle trade fine"
 ogImage:
-  url: '/assets/blog/images/2ndhandcar.jpg'
+  url: "/assets/blog/images/2ndhandcar.jpg"
 ---
 
-**The "Regulation Amending the Regulation on the Trade of Second Hand Motor Land Vehicles" was published in the Official Gazette dated 06.07.2023.**
+# The "Regulation Amending the Regulation on the Trade of Second Hand Motor Land Vehicles" was published in the Official Gazette dated 06.07.2023.
 
 The date of the enter into force of the amendments to the Regulation is 15.07.2023 and includes important regulations for those who sell second-hand motor vehicles through advertisements.
 
@@ -25,7 +25,7 @@ With Article 2 of the Regulation, the phrase "the first paragraph of Article 11 
 
 On the other hand, with Article 3 of the Regulation, Provisional Article 3 titled "Advertisement restriction" has been added to the Regulation on the Trade of Second Hand Motor Land Vehicles. The text of the article is as follows:
 
-"Advertisement restriction
+**Advertisement restriction**
 
 PROVISIONAL ARTICLE 3- (1) Marketing of second-hand motor vehicles through advertisement at a price above the current sales price recommended by the manufacturer or distributor shall be considered as second-hand motor vehicle trade in terms of the application of this article.
 
@@ -41,4 +41,4 @@ As it is known, in paragraph (1) of Article 5 of the Regulation on the Trade of 
 
 Pursuant to Paragraph (2) of the Provisional Article 3, the marketing of second-hand motor vehicles through advertisements at a price above the current sales price recommended by the manufacturer or distributor is prohibited until 1/1/2024, and with Paragraph (3), obligations are imposed on real or legal persons who mediate the advertisement of second-hand motor vehicles for sale.
 
-To access the relevant regulation: [https://www.resmigazete.gov.tr/eskiler/2023/07/20230706-1.htm](https://www.resmigazete.gov.tr/eskiler/2023/07/20230706-1.htm)
+To access the relevant regulation: ["İKİNCİ EL MOTORLU KARA TAŞITLARININ TİCARETİ HAKKINDA YÖNETMELİKTE DEĞİŞİKLİK YAPILMASINA DAİR YÖNETMELİK"](https://www.resmigazete.gov.tr/eskiler/2023/07/20230706-1.htm)
