@@ -32,7 +32,6 @@ export default function Index({ allPosts }: Props) {
   const categories = new Set<string>();
   const postsByCategory: { [category: string]: Post } = {};
 
-
   categories.add("Current");
 
   filteredPosts.forEach((post) => {
@@ -272,8 +271,12 @@ export default function Index({ allPosts }: Props) {
           </div>
         </div>
         <div className="z-20 bg-white relative md:mt-[450px]">
-          <div className="border-t-8 border-t-white h-[58px] bg-gradient-to-b from-slate-300 to-slate-100 w-full flex items-center">
-            <Link href={`/en/blog?category=Current`} passHref className="font-bold text-lg md:text-xl pl-2 md:pl-6">
+          <div className="border-t-8 border-t-white h-[82px] bg-gradient-to-b from-slate-300 to-slate-100 w-full flex items-center">
+            <Link
+              href={`/en/blog?category=Current`}
+              passHref
+              className="font-bold text-lg md:text-xl mb-auto md:mb-[0] pl-2 md:pl-6"
+            >
               CURRENT:
             </Link>
             <Swiper

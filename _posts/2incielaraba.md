@@ -4,7 +4,7 @@ cat: 'Vergi;Güncel'
 sector: 'Default'
 serv: 'Vergi Denetimi'
 trsslug: '2ndhandcar'
-title: '"İkinci El Motorlu Kara Taşıtlarının Ticareti Hakkında Yönetmelikte Değişiklik Yapılmasına Dair Yönetmelik" yayımlandı'
+title: '"İkinci El Motorlu Kara Taşıtlarının Ticareti Hakkında Yönetmelikte Değişiklik Yapılmasına Dair Yönetmelik" yayımlandı.'
 excerpt: "06.07.2023 tarihli Resmi Gazetede yayımlanan yönetmelik ile, 15.07.2023 tarihinde yürürlüğe girmek üzere İkinci El Motorlu Kara Taşıtlarının Ticareti Hakkında Yönetmelikte önemli değişiklikler yapılmıştır."
 coverImage: '/assets/blog/images/2ndhandcar.jpg'
 date: '2023-07-06'
