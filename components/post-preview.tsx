@@ -58,7 +58,7 @@ const PostPreview = ({
           <CardContent>
             <Typography
               gutterBottom
-              variant="h5"
+              variant="h6"
               component="div"
               className="font-bold text-lg"
             >
