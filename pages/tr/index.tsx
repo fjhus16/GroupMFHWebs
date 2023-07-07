@@ -36,7 +36,7 @@ export default function Index({ allPosts }: Props) {
   categories.add("Hukuk");
   categories.add("Teşvik");
   categories.add("Teknoloji");
-  categories.add("Yabanılar Hukuku");
+  categories.add("Yabancılar Hukuku");
 
   filteredPosts.forEach((post) => {
     const postCategories = post.cat.split(";");

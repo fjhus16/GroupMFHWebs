@@ -29,7 +29,7 @@ export default function Blog({ allPosts }: Props) {
   categories.add("Hukuk");
   categories.add("Teşvik");
   categories.add("Teknoloji");
-  categories.add("Yabanılar Hukuku");
+  categories.add("Yabancılar Hukuku");
 
   const postsByCategory: { [category: string]: Post[] } = {};
   filteredPosts.forEach((post) => {
