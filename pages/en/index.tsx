@@ -11,12 +11,35 @@ import SwiperCore, { Autoplay } from "swiper";
 import ServicesGrid from "../../components/en/ServicesGrid";
 import Image from "next/image";
 import ContactForm from "../../components/en/contactform";
+import { useState, useEffect } from "react";
 
 type Props = {
   allPosts: Post[];
 };
 export default function Index({ allPosts }: Props) {
   SwiperCore.use([Autoplay]);
+  
+  const [slidesPerView, setSlidesPerView] = useState(4);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (typeof window !== 'undefined') {
+        setSlidesPerView(window.innerWidth < 1000 ? 2 : 4);
+      }
+    };
+  
+    handleResize(); // Initial calculation
+  
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', handleResize);
+    }
+  
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('resize', handleResize);
+      }
+    };
+  }, []);
 
   const filteredPosts = allPosts
     .filter((post) => post.lang === "en")
@@ -297,27 +320,43 @@ export default function Index({ allPosts }: Props) {
               className="pt-2 ism:pt-2 items-center justify-center"
             >
               <div className="flex flex-wrap mt-2 mb-4 flex-center justify-center">
-                <Link className="my-2" href={`/en/blog`} passHref>
+               
+                <Swiper
+                  className="mt-2 mb-4"
+                  loop={true}
+                  spaceBetween={-20}
+                  slidesPerView={slidesPerView}
+                  autoplay={{
+                    delay: 2000,
+                    disableOnInteraction: false,
+                  }}
+                >
+                  <SwiperSlide key={"all"}>
+                  <Link className="my-2" href={`/en/blog`} passHref>
                   <p
-                    className={`text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-semibold py-3 px-3 lg:px-8 transitions-colors duration-200`}
+                    className={`text-center text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-semibold py-3 px-3 lg:px-8 transitions-colors duration-200`}
                   >
                     All
                   </p>
                 </Link>
-                {Array.from(categories).map((category) => (
-                  <Link
-                    className="my-2"
-                    key={category}
-                    href={`/en/blog?category=${encodeURIComponent(category)}`}
-                    passHref
-                  >
-                    <p
-                      className={`text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-semibold py-3 px-3 lg:px-8 transitions-colors duration-200`}
-                    >
-                      {category}
-                    </p>
-                  </Link>
-                ))}
+                    </SwiperSlide>
+                  {Array.from(categories).map((category) => (
+                    <SwiperSlide key={category}>
+                      <Link
+                        className="my-2"
+                        key={category}
+                        href={`/en/blog?category=${encodeURIComponent(category)}`}
+                        passHref
+                      >
+                        <p
+                          className={`text-center text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-semibold py-3 px-3 lg:px-8 transitions-colors duration-200`}
+                        >
+                          {category}
+                        </p>
+                      </Link>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
               </div>
             </div>
             <div className="flex flex-col justify-center items-center">
