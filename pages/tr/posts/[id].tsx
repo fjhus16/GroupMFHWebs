@@ -403,7 +403,7 @@ export async function getStaticProps({ params }: Params) {
   return {
     props: {
       allArticles,
-      article,
+      ...article,
     },
     revalidate: 600,
   };
@@ -413,14 +413,11 @@ export async function getStaticPaths() {
   const articles = await getAllArticles();
 
   return {
-    paths: articles.map((article) => {
-      return {
-        params: {
-          id: String(article.data.id),
-        },
-      };
-    }),
-    fallback: false,
+    paths: articles.map((article) => ({
+      params: {
+        id: String(article.data.id),
+      },
+    })),
+    fallback: true,
   };
 }
-
