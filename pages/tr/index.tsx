@@ -1,9 +1,9 @@
 import Container from "../../components/container";
 import MoreStories from "../../components/tr/more-stories";
 import Layout from "../../components/tr/layout";
-import { getAllPosts } from "../../lib/api";
+import { getAllArticles } from "../../lib/api";
 import Head from "next/head";
-import Post from "../../interfaces/post";
+import { Article } from "../../interfaces/post";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -14,73 +14,55 @@ import ContactForm from "../../components/tr/contactform";
 import { useState, useEffect } from "react";
 
 type Props = {
-  allPosts: Post[];
+  allArticles: Article[];
 };
-export default function Index({ allPosts }: Props) {
+
+export default function Index({ allArticles }: Props) {
   SwiperCore.use([Autoplay]);
-
   const [slidesPerView, setSlidesPerView] = useState(4);
-
   useEffect(() => {
     const handleResize = () => {
       if (typeof window !== 'undefined') {
         setSlidesPerView(window.innerWidth < 1000 ? 2 : 4);
       }
-    };
-  
-    handleResize(); // Initial calculation
-  
+    };  
+    handleResize();  
     if (typeof window !== 'undefined') {
       window.addEventListener('resize', handleResize);
-    }
-  
+    }  
     return () => {
       if (typeof window !== 'undefined') {
         window.removeEventListener('resize', handleResize);
       }
     };
   }, []);
-
-  const filteredPosts = allPosts
-    .filter((post) => post.lang === "tr")
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
-  const showPosts = filteredPosts.slice(0, 6);
-
-  const currentPosts = allPosts
-    .filter((post) => {
-      const postCategories = post.cat.split(";");
+  const filteredArticles = allArticles
+    .filter((article) => article.data.attributes.locale === "tr");
+  const showArticles = filteredArticles.slice(0, 6);
+    const currentArticles = filteredArticles
+    .filter((article) => {
+      const postCategories = article.data.attributes.category.split(";");
       return postCategories.some((category) => category.includes("Güncel"));
-    })
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
+    });
   const categories = new Set<string>();
-
   categories.add("Güncel");
-
-  filteredPosts.forEach((post) => {
-    const postCategories = post.cat.split(";");
+  filteredArticles.forEach((article) => {
+    const postCategories = article.data.attributes.category.split(";");
     postCategories.forEach((category) => {
       if (!categories.has(category)) {
         categories.add(category);
       }
     });
   });
-
   const sortedCategories = Array.from(categories).sort(
     (a, b) => a.length - b.length
   );
-
   const index = sortedCategories.indexOf("Güncel");
   if (index !== -1) {
     sortedCategories.splice(index, 1);
     sortedCategories.unshift("Güncel");
   }
-
-  // Clear the categories set
   categories.clear();
-
-  // Add the sorted categories back into the set
   sortedCategories.forEach((category) => {
     categories.add(category);
   });
@@ -292,14 +274,14 @@ export default function Index({ allPosts }: Props) {
                 disableOnInteraction: false,
               }}
             >
-              {Array.from(currentPosts).map((post) => (
-                <SwiperSlide key={post.slug}>
+             {Array.from(currentArticles).map((article) => (
+                <SwiperSlide key={article.data.id}>
                   <Link
-                    href={`/tr/posts/${encodeURIComponent(post.slug)}`}
+                    href={`/en/posts/${encodeURIComponent(article.data.id)}`}
                     passHref
                     className="font-bold text-sm md:text-lg"
                   >
-                    <p>{post.title}</p>
+                    <p>{article.data.attributes.title}</p>
                   </Link>
                 </SwiperSlide>
               ))}
@@ -361,7 +343,7 @@ export default function Index({ allPosts }: Props) {
               </div>
             </div>
             <div className="flex flex-col justify-center items-center">
-              {showPosts.length > 0 && <MoreStories posts={showPosts} />}
+              {showArticles.length > 0 && <MoreStories allArticles={showArticles} />}
               <Link
                 href="/tr/blog"
                 className="text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 transitions-colors duration-200"
@@ -378,17 +360,9 @@ export default function Index({ allPosts }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    "lang",
-    "cat",
-    "sector",
-    "title",
-    "date",
-    "slug",
-    "coverImage",
-    "excerpt",
-  ]);
+  const allArticles = await getAllArticles();
+
   return {
-    props: { allPosts },
+    props: { allArticles },
   };
 };

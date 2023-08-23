@@ -1,23 +1,23 @@
 import PostPreview from '../post-preview'
-import type Post from '../../interfaces/post'
+import Article from '../../interfaces/post'
 
 type Props = {
-  posts: Post[]
+  allArticles: Article[]
 }
 
-const MoreStories = ({ posts }: Props) => {
+const MoreStories = ({ allArticles }: Props) => {
   return (
     <section>
       <div className="flex flex-wrap justify-center mb-4">
-        {posts.map((post) => (
-          <div key={post.slug} className="px-4 mb-8">
+        {allArticles.map((article) => (
+          <div key={article.data.id} className="px-4 mb-8">
             <PostPreview
-              title={post.title}
-              coverImage={post.coverImage}
-              date={post.date}
-              slug={post.slug}
-              excerpt={post.excerpt}
-              cat={post.cat}
+              title={article.data.attributes.title}
+              coverImageUrl={"https://api.groupmfh.com"+article.data.attributes.coverImage.data.attributes.url}
+              date={article.data.attributes.date.toString()}
+              excerpt={article.data.attributes.excerpt}
+              category={article.data.attributes.category}
+              id={article.data.id.toString()}
             />
           </div>
         ))}

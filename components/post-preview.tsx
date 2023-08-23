@@ -12,28 +12,28 @@ import Image from "next/image";
 
 type Props = {
   title: string;
-  coverImage: string;
+  coverImageUrl: string;
   date: string;
   excerpt: string;
-  slug: string;
-  cat: string;
+  category: string;
+  id: string;
 };
 
 const PostPreview = ({
   title,
-  coverImage,
+  coverImageUrl,
   date,
   excerpt,
-  slug,
-  cat,
+  category,
+  id,
 }: Props) => {
   const { asPath } = useRouter();
 
   return (
     <Link
       className=""
-      as={`${asPath.substring(0, 3)}/posts/${slug}`}
-      href={`${asPath.substring(0, 3)}/posts/[slug]`}
+      as={`${asPath.substring(0, 3)}/posts/${id}`}
+      href={`${asPath.substring(0, 3)}/posts/[id]`}
     >
       <div>
         <Card
@@ -50,7 +50,7 @@ const PostPreview = ({
               <Image
                 fill
                 style={{ objectFit: "cover" }}
-                src={coverImage}
+                src={coverImageUrl}
                 alt={title}
               />
             </div>
@@ -75,7 +75,7 @@ const PostPreview = ({
             sx={{ mt: "auto" }}
             className="flex flex-row items-center justify-between mt-auto font-bold text-lg"
           >
-            {cat.replace(";", ", ")}
+            {category.replace(";", ", ")}
             <DateFormatter dateString={date} />
           </CardActions>
         </Card>

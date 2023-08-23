@@ -1,47 +1,35 @@
-import fs from 'fs'
-import { join } from 'path'
-import matter from 'gray-matter'
+import { Convert, Article } from "../interfaces/post";
 
-const postsDirectory = join(process.cwd(), '_posts')
+const API_URL = "https://api.groupmfh.com/api/articles";
 
-export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory)
+export async function getArticleByID(id: string) {
+  
+    const response = await fetch(
+      `${API_URL}/${id}?populate=*`
+    );
+    const data = await response.json();
+    const jsonString = JSON.stringify(data);
+    const Article = Convert.toArticle(jsonString);
+    return Article;
+  
 }
 
-export function getPostBySlug(slug: string, fields: string[] = []) {
-  const realSlug = slug.replace(/\.md$/, '')
-  const fullPath = join(postsDirectory, `${realSlug}.md`)
-  const fileContents = fs.readFileSync(fullPath, 'utf8')
-  const { data, content } = matter(fileContents)
+export async function getAllArticles() {
+  
+    const response = await fetch(`${API_URL}?sort[0]=date:desc&fields[0]=id&locale=all`);
+    const data = await response.json();
+    const ids = data.data.map(item => item.id);
+    const Articles: Article[] = await Promise.all(ids.map((id) => getArticleByID(id)));
+    return Articles;
 
-  type Items = {
-    [key: string]: string
-  }
-
-  const items: Items = {}
-
-  // Ensure only the minimal needed data is exposed
-  fields.forEach((field) => {
-    if (field === 'slug') {
-      items[field] = realSlug
-    }
-    if (field === 'content') {
-      items[field] = content
-    }
-
-    if (typeof data[field] !== 'undefined') {
-      items[field] = data[field]
-    }
-  })
-
-  return items
 }
 
-export function getAllPosts(fields: string[] = []) {
-  const slugs = getPostSlugs()
-  const posts = slugs
-    .map((slug) => getPostBySlug(slug, fields))
-    // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
-  return posts
+export async function getStaticProps() {
+  const articles = await getAllArticles();
+
+  return {
+    props: {
+      articles,
+    },
+  };
 }

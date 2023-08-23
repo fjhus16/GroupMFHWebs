@@ -3,36 +3,31 @@ import Link from "next/link";
 import Container from "../../components/container";
 import MoreStories from "../../components/en/more-stories";
 import Layout from "../../components/en/layout";
-import { getAllPosts } from "../../lib/api";
+import { getAllArticles } from "../../lib/api";
 import Head from "next/head";
-import Post from "../../interfaces/post";
+import { Article } from "../../interfaces/post";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import SwiperCore, { Autoplay } from "swiper";
 import { useState, useEffect } from "react";
 
 type Props = {
-  allPosts: Post[];
+  allArticles: Article[];
 };
 
-export default function Blog({ allPosts }: Props) {
-  SwiperCore.use([Autoplay]);
-  
+export default function Blog({ allArticles }: Props) {
+  SwiperCore.use([Autoplay]);  
   const [slidesPerView, setSlidesPerView] = useState(4);
-
   useEffect(() => {
     const handleResize = () => {
       if (typeof window !== 'undefined') {
         setSlidesPerView(window.innerWidth < 1000 ? 2 : 4);
       }
-    };
-  
-    handleResize(); // Initial calculation
-  
+    };  
+    handleResize();  
     if (typeof window !== 'undefined') {
       window.addEventListener('resize', handleResize);
-    }
-  
+    }  
     return () => {
       if (typeof window !== 'undefined') {
         window.removeEventListener('resize', handleResize);
@@ -44,24 +39,22 @@ export default function Blog({ allPosts }: Props) {
   const selectedCategory = query.category as string;
   const searchQuery = query.search as string;
 
-  // Filter and sort the posts by language and date
-  var filteredPosts = allPosts
-    .filter((post) => post.lang === "en")
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  var filteredArticles = allArticles
+    .filter((article) => article.data.attributes.locale === "en");
 
     const categories = new Set<string>();
 
     categories.add("Current");
     
-    const postsByCategory: { [category: string]: Post[] } = {};
-    filteredPosts.forEach((post) => {
-      const postCategories = post.cat.split(";");
+    const postsByCategory: { [category: string]: Article[] } = {};
+    filteredArticles.forEach((article) => {
+      const postCategories = article.data.attributes.category.split(";");
       postCategories.forEach((category) => {
         categories.add(category);
         if (!postsByCategory[category]) {
           postsByCategory[category] = [];
         }
-        postsByCategory[category].push(post);
+        postsByCategory[category].push(article);
       });
     });
     
@@ -87,14 +80,20 @@ export default function Blog({ allPosts }: Props) {
     });   
 
   if (searchQuery != "" && searchQuery != null) {
-    filteredPosts = filteredPosts.filter((post) =>
-      post.title.toLowerCase().includes(searchQuery.toLowerCase())
+    filteredArticles = filteredArticles.filter((article) =>
+    article.data.attributes.title.toLowerCase().includes(searchQuery.toLowerCase())
     );
   }
 
-  const filteredPostsByCategory = selectedCategory
+  const filteredArticlesByCategory = selectedCategory
     ? postsByCategory[selectedCategory] || []
-    : filteredPosts;
+    : filteredArticles;
+
+    useEffect(() => {
+      if (filteredArticlesByCategory.length === 0) {
+        router.push('/en/blog');
+      }
+    }, [filteredArticlesByCategory]);
 
   return (
     <>
@@ -148,8 +147,8 @@ export default function Blog({ allPosts }: Props) {
                 </Swiper>
           </div>
           <div>
-            {filteredPostsByCategory.length > 0 ? (
-              <MoreStories posts={filteredPostsByCategory} />
+            {filteredArticlesByCategory.length > 0 ? (
+              <MoreStories allArticles={filteredArticlesByCategory} />
             ) : (
               <p></p>
             )}
@@ -161,17 +160,9 @@ export default function Blog({ allPosts }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    "lang",
-    "cat",
-    "title",
-    "date",
-    "slug",
-    "coverImage",
-    "excerpt",
-  ]);
+  const allArticles = await getAllArticles();
 
   return {
-    props: { allPosts },
+    props: { allArticles },
   };
 };

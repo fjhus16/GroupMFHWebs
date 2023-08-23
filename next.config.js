@@ -1,6 +1,7 @@
 module.exports = {
     images: {
         unoptimized: false,
+        domains: ['api.groupmfh.com'],
     },
     async redirects() {
         return [
