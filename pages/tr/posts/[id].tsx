@@ -405,6 +405,7 @@ export async function getStaticProps({ params }: Params) {
       allArticles,
       article,
     },
+    revalidate: 600,
   };
 }
 
