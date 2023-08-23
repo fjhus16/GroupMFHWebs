@@ -422,16 +422,6 @@ export async function getStaticPaths() {
         id: String(article.data.id),
       },
     })),
-    fallback: true,
-  };
-}
-
-export async function getServerSideProps({ params }) {
-  const article = await getArticleByID(params.id);
-
-  return {
-    props: {
-      article,
-    },
+    fallback: 'blocking',
   };
 }
