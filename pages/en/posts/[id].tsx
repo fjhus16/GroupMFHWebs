@@ -26,7 +26,6 @@ import { Phone, Search } from "@mui/icons-material";
 import { styled, TextField } from "@mui/material";
 import { Cormorant_Garamond } from "@next/font/google";
 import AboutMenu from "../../../components/en/about-menu";
-import PartnersMenu from "../../../components/en/partners";
 import Article from "../../../interfaces/post";
 
 type Props = {
@@ -137,7 +136,12 @@ export default function Post({ article, allArticles }: Props) {
               >
                 <p className={cormorantGaramond.className}>Our Services</p>
               </button>
-              <PartnersMenu />
+              <Link
+                className="hover:bg-black whitespace-nowrap hover:text-white text-xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000"
+                href="/en/global"
+              >
+                <p className={cormorantGaramond.className}>Global Network</p>
+              </Link>
               <Link
                 className="hover:bg-black hover:text-white text-xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000"
                 href="/en/blog"
@@ -238,7 +242,14 @@ export default function Post({ article, allArticles }: Props) {
                   >
                     <p className={cormorantGaramond.className}>Our Services</p>
                   </button>
-                  <PartnersMenu />
+                  <Link
+                    className="focus:outline-none focus:underline whitespace-nowrap px-2 mt-2 text-xl lg:text-2xl mb-2"
+                    href="/en/blog"
+                  >
+                    <p className={cormorantGaramond.className}>
+                      Global Network
+                    </p>
+                  </Link>
                   <Link
                     className="focus:outline-none focus:underline px-2 mt-2 text-xl lg:text-2xl mb-2"
                     href="/en/blog"
@@ -297,7 +308,10 @@ export default function Post({ article, allArticles }: Props) {
               <Card className="w-[300px] md:w-[400px] mt-10 mb-10 max-h-[500px]">
                 <CardMedia
                   sx={{ height: 140 }}
-                  image={"https://api.groupmfh.com"+morePosts[0].data.attributes.coverImage.data.attributes.url}
+                  image={
+                    "https://api.groupmfh.com" +
+                    morePosts[0].data.attributes.coverImage.data.attributes.url
+                  }
                   title="image for the most recent post"
                 />
                 <CardContent>
@@ -308,7 +322,7 @@ export default function Post({ article, allArticles }: Props) {
                     variant="body2"
                     className="text-black text-justify max-h-[110px]"
                   >
-                  {morePosts[0].data.attributes.excerpt}
+                    {morePosts[0].data.attributes.excerpt}
                   </Typography>
                 </CardContent>
                 <CardActions
@@ -321,13 +335,18 @@ export default function Post({ article, allArticles }: Props) {
                   >
                     Read article
                   </Link>
-                  <DateFormatter dateString={morePosts[0].data.attributes.date.toString()} />
+                  <DateFormatter
+                    dateString={morePosts[0].data.attributes.date.toString()}
+                  />
                 </CardActions>
               </Card>
               <Card className="w-[300px] md:w-[400px] mt-10 mb-10 max-h-[500px]">
                 <CardMedia
                   sx={{ height: 140 }}
-                  image={"https://api.groupmfh.com"+morePosts[1].data.attributes.coverImage.data.attributes.url}
+                  image={
+                    "https://api.groupmfh.com" +
+                    morePosts[1].data.attributes.coverImage.data.attributes.url
+                  }
                   title="image for the 2nd most recent post"
                 />
                 <CardContent>
@@ -351,13 +370,18 @@ export default function Post({ article, allArticles }: Props) {
                   >
                     Read article
                   </Link>
-                  <DateFormatter dateString={morePosts[1].data.attributes.date.toString()} />
+                  <DateFormatter
+                    dateString={morePosts[1].data.attributes.date.toString()}
+                  />
                 </CardActions>
               </Card>
               <Card className="w-[300px] md:w-[400px] mt-10 mb-10 max-h-[500px]">
                 <CardMedia
                   sx={{ height: 140 }}
-                  image={"https://api.groupmfh.com"+morePosts[2].data.attributes.coverImage.data.attributes.url}
+                  image={
+                    "https://api.groupmfh.com" +
+                    morePosts[2].data.attributes.coverImage.data.attributes.url
+                  }
                   title="image for the 3rd most recent post"
                 />
                 <CardContent>
@@ -381,7 +405,9 @@ export default function Post({ article, allArticles }: Props) {
                   >
                     Read article
                   </Link>
-                  <DateFormatter dateString={morePosts[2].data.attributes.date.toString()} />
+                  <DateFormatter
+                    dateString={morePosts[2].data.attributes.date.toString()}
+                  />
                 </CardActions>
               </Card>
             </div>
@@ -402,7 +428,9 @@ type Params = {
 export async function getStaticProps({ params }: Params) {
   const allArticles = await getAllArticles();
   const article: Article = await getArticleByID(params.id);
-  article.data.attributes.content = await markdownToHtml(article.data.attributes.content || "");
+  article.data.attributes.content = await markdownToHtml(
+    article.data.attributes.content || ""
+  );
 
   return {
     props: {
@@ -424,7 +452,6 @@ export async function getStaticPaths() {
         },
       };
     }),
-    fallback: 'blocking',
+    fallback: "blocking",
   };
 }
-

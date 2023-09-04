@@ -26,7 +26,6 @@ import { Phone, Search } from "@mui/icons-material";
 import { styled, TextField } from "@mui/material";
 import { Cormorant_Garamond } from "@next/font/google";
 import AboutMenu from "../../../components/tr/about-menu";
-import PartnersMenu from "../../../components/tr/partners";
 import Article from "../../../interfaces/post";
 
 type Props = {
@@ -54,8 +53,10 @@ export default function Post({ article, allArticles }: Props) {
   const cat = article.data.attributes.category;
 
   // Sort and filter the posts
-  const sortedPosts = allArticles
-    .filter((postM) => postM.data.attributes.locale === "tr" && postM.data.id !== article.data.id)
+  const sortedPosts = allArticles.filter(
+    (postM) =>
+      postM.data.attributes.locale === "tr" && postM.data.id !== article.data.id
+  );
 
   // Get the posts with matching category
   const matchingCatPosts = sortedPosts.filter((postM) =>
@@ -135,7 +136,13 @@ export default function Post({ article, allArticles }: Props) {
               >
                 <p className={cormorantGaramond.className}>Hizmetlerimiz</p>
               </button>
-              <PartnersMenu />
+              <Link
+                className="hover:bg-black whitespace-nowrap hover:text-white text-xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000"
+                href="/tr/global"
+              >
+                <p className={cormorantGaramond.className}>Küresel Ağımız</p>
+              </Link>
+
               <Link
                 className="hover:bg-black hover:text-white text-xl pt-1 pb-1 pl-2 pr-2 mt-3 duration-1000"
                 href="/tr/blog"
@@ -166,7 +173,10 @@ export default function Post({ article, allArticles }: Props) {
               </form>
               <Link
                 className="flex flex-row"
-                href={"/en/posts/" + article.data.attributes.localizations.data.at(0).id}
+                href={
+                  "/en/posts/" +
+                  article.data.attributes.localizations.data.at(0).id
+                }
               >
                 <img
                   alt="Flag of the United Kingdom"
@@ -182,7 +192,10 @@ export default function Post({ article, allArticles }: Props) {
           <div className="flex grow items-center justify-end lg:hidden">
             <Link
               className="px-2 mt-4 mb-4 text-3xl"
-              href={"/en/posts/" + article.data.attributes.localizations.data.at(0).id}
+              href={
+                "/en/posts/" +
+                article.data.attributes.localizations.data.at(0).id
+              }
             >
               <img
                 alt="Flag of the United Kingdom"
@@ -230,7 +243,15 @@ export default function Post({ article, allArticles }: Props) {
                   >
                     <p className={cormorantGaramond.className}>Hizmetlerimiz</p>
                   </button>
-                  <PartnersMenu />
+                  <Link
+                    className="focus:outline-none focus:underline px-2 mt-4 text-xl lg:text-2xl mb-4"
+                    href="/tr/global"
+                  >
+                    <p className={cormorantGaramond.className}>
+                      Küresel Ağımız
+                    </p>
+                  </Link>
+
                   <Link
                     className="focus:outline-none focus:underline px-2 mt-4 text-xl lg:text-2xl mb-4"
                     href="/tr/blog"
@@ -258,14 +279,25 @@ export default function Post({ article, allArticles }: Props) {
                   <article className="pb-16 flex flex-col text-justify justify-center items-center">
                     <Head>
                       <title>{title}</title>
-                      <meta property="og:image" content={"https://api.groupmfh.com"+article.data.attributes.coverImage.data.attributes.url} />
+                      <meta
+                        property="og:image"
+                        content={
+                          "https://api.groupmfh.com" +
+                          article.data.attributes.coverImage.data.attributes.url
+                        }
+                      />
                     </Head>
                     <PostHeader
                       title={article.data.attributes.title}
-                      coverImageUrl={article.data.attributes.coverImage.data.attributes.url}
+                      coverImageUrl={
+                        article.data.attributes.coverImage.data.attributes.url
+                      }
                       date={article.data.attributes.date.toString()}
                     />
-                    <PostBody content={article.data.attributes.content} date={article.data.attributes.date.toString()} />
+                    <PostBody
+                      content={article.data.attributes.content}
+                      date={article.data.attributes.date.toString()}
+                    />
                   </article>
                 </>
               )}
@@ -278,7 +310,10 @@ export default function Post({ article, allArticles }: Props) {
               <Card className="w-[300px] md:w-[400px] mt-10 mb-10 max-h-[500px]">
                 <CardMedia
                   sx={{ height: 140 }}
-                  image={"https://api.groupmfh.com"+morePosts[0].data.attributes.coverImage.data.attributes.url}
+                  image={
+                    "https://api.groupmfh.com" +
+                    morePosts[0].data.attributes.coverImage.data.attributes.url
+                  }
                   title="image for the most recent post"
                 />
                 <CardContent>
@@ -307,13 +342,18 @@ export default function Post({ article, allArticles }: Props) {
                   >
                     Devamını oku
                   </Link>
-                  <DateFormatter dateString={morePosts[0].data.attributes.date.toString()} />
+                  <DateFormatter
+                    dateString={morePosts[0].data.attributes.date.toString()}
+                  />
                 </CardActions>
               </Card>
               <Card className="w-[300px] md:w-[400px] mt-10 mb-10 max-h-[500px]">
                 <CardMedia
                   sx={{ height: 140 }}
-                  image={"https://api.groupmfh.com"+morePosts[1].data.attributes.coverImage.data.attributes.url}
+                  image={
+                    "https://api.groupmfh.com" +
+                    morePosts[1].data.attributes.coverImage.data.attributes.url
+                  }
                   title="image for the 2nd most recent post"
                 />
                 <CardContent>
@@ -342,13 +382,18 @@ export default function Post({ article, allArticles }: Props) {
                   >
                     Devamını oku
                   </Link>
-                  <DateFormatter dateString={morePosts[0].data.attributes.date.toString()} />
+                  <DateFormatter
+                    dateString={morePosts[0].data.attributes.date.toString()}
+                  />
                 </CardActions>
               </Card>
               <Card className="w-[300px] md:w-[400px] mt-10 mb-10 max-h-[500px]">
                 <CardMedia
                   sx={{ height: 140 }}
-                  image={"https://api.groupmfh.com"+morePosts[2].data.attributes.coverImage.data.attributes.url}
+                  image={
+                    "https://api.groupmfh.com" +
+                    morePosts[2].data.attributes.coverImage.data.attributes.url
+                  }
                   title="image for the 3rd most recent post"
                 />
                 <CardContent>
@@ -377,7 +422,9 @@ export default function Post({ article, allArticles }: Props) {
                   >
                     Devamını oku
                   </Link>
-                  <DateFormatter dateString={morePosts[0].data.attributes.date.toString()} />
+                  <DateFormatter
+                    dateString={morePosts[0].data.attributes.date.toString()}
+                  />
                 </CardActions>
               </Card>
             </div>
@@ -398,7 +445,9 @@ type Params = {
 export async function getStaticProps({ params }: Params) {
   const allArticles = await getAllArticles();
   const article: Article = await getArticleByID(params.id);
-  article.data.attributes.content = await markdownToHtml(article.data.attributes.content || "");
+  article.data.attributes.content = await markdownToHtml(
+    article.data.attributes.content || ""
+  );
 
   return {
     props: {
@@ -420,7 +469,6 @@ export async function getStaticPaths() {
         },
       };
     }),
-    fallback: 'blocking',
+    fallback: "blocking",
   };
 }
-
