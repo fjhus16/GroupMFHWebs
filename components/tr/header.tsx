@@ -164,26 +164,26 @@ const Header = () => {
             <nav className="grid border-none ml-3 font-bold">
               <AboutMenu />
               <button
-                className="hover:bg-black hover:text-white text-xl lg:text-2xl pt-1 pb-1 pl-2 pr-2 mt-2 duration-1000 mr-auto"
+                className="hover:bg-black hover:text-white text-xl lg:text-2xl pb-1 pl-2 pr-2 duration-1000 mr-auto"
                 onClick={handleScrollToServices}
               >
                 <p className={cormorantGaramond.className}>Hizmetlerimiz</p>
               </button>
 
               <Link
-                className="focus:outline-none focus:underline px-2 mt-4 text-xl lg:text-2xl mb-4"
+                className="focus:outline-none focus:underline px-2 text-xl lg:text-2xl mb-2"
                 href="/tr/global"
               >
                 <p className={cormorantGaramond.className}>Küresel Ağımız</p>
               </Link>
               <Link
-                className="focus:outline-none focus:underline px-2 mt-4 text-xl lg:text-2xl mb-4"
+                className="focus:outline-none focus:underline px-2 text-xl lg:text-2xl mb-2"
                 href="/tr/blog"
               >
                 <p className={cormorantGaramond.className}>Bülten</p>
               </Link>
               <Link
-                className="focus:outline-none focus:underline px-2 text-xl lg:text-2xl mb-4"
+                className="focus:outline-none focus:underline px-2 text-xl lg:text-2xl mb-2"
                 href="/tr/contact"
               >
                 <p className={cormorantGaramond.className}>İletişim</p>

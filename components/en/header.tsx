@@ -160,14 +160,14 @@ const Header = () => {
             <nav className="grid border-none ml-3 font-bold">
               <AboutMenu />
               <button
-                className="focus:outline-none focus:underline px-2 mt-2 text-xl lg:text-2xl mr-auto"
+                className="focus:outline-none focus:underline px-2 mt-1 text-xl lg:text-2xl mr-auto"
                 onClick={handleScrollToServices}
               >
                 <p className={cormorantGaramond.className}>Our Services</p>
               </button>
               <Link
-                className="focus:outline-none focus:underline whitespace-nowrap px-2 mt-2 text-xl lg:text-2xl mb-2"
-                href="/en/blog"
+                className="focus:outline-none focus:underline whitespace-nowrap px-2 mt-2 text-xl lg:text-2xl"
+                href="/en/global"
               >
                 <p className={cormorantGaramond.className}>Global Network</p>
               </Link>
