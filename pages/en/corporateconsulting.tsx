@@ -14,7 +14,6 @@ type Props = {
 export default function Corporateconsulting({ allArticles }: Props) {
   var filteredArticles = allArticles
     .filter((article) =>
-        article.data.attributes.locale === "en" &&
         article.data.attributes.services.includes(
           "Management, Corporate Finance and Technology Consulting"
         )
@@ -75,7 +74,7 @@ export default function Corporateconsulting({ allArticles }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allArticles = await getAllArticles();
+  const allArticles = await getAllArticles('en',50);
 
   return {
     props: { allArticles },

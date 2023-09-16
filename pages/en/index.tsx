@@ -36,8 +36,7 @@ export default function Index({ allArticles }: Props) {
       }
     };
   }, []);
-  const filteredArticles = allArticles
-    .filter((article) => article.data.attributes.locale === "en");
+  const filteredArticles = allArticles;
   const showArticles = filteredArticles.slice(0, 6);
   const currentArticles = filteredArticles
     .filter((article) => {
@@ -359,7 +358,7 @@ export default function Index({ allArticles }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allArticles = await getAllArticles();
+  const allArticles = await getAllArticles('en',10);
 
   return {
     props: { allArticles },

@@ -13,8 +13,7 @@ type Props = {
 
 export default function Socialsecurity({ allArticles }: Props) {
   var filteredArticles = allArticles
-    .filter((article) =>
-        article.data.attributes.locale === "tr" && article.data.attributes.services.includes("Sosyal Güvenlik Danışmalığı")
+    .filter((article) => article.data.attributes.services.includes("Sosyal Güvenlik Danışmalığı")
     )
     
 
@@ -61,7 +60,7 @@ export default function Socialsecurity({ allArticles }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allArticles = await getAllArticles();
+  const allArticles = await getAllArticles('tr',50);
 
   return {
     props: { allArticles },

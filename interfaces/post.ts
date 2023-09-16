@@ -19,12 +19,12 @@ export interface PurpleAttributes {
   services:      string;
   sector:        string;
   category:      string;
-  content:       string;
+  content?:       string;
   date:          Date;
-  keywords:      string;
-  locale:        string;
+  keywords?:      string;
+  locale?:        string;
   coverImage:    CoverImage;
-  localizations: Localizations;
+  localizations?: Localizations;
 }
 
 export interface CoverImage {
@@ -42,7 +42,7 @@ export interface FluffyAttributes {
 }
 
 export interface Localizations {
-  data: Datum[];
+  data?: Datum[];
 }
 
 export interface Datum {
@@ -56,16 +56,21 @@ export interface DatumAttributes {
   services: string;
   sector:   string;
   category: string;
-  content:  string;
+  content?:  string;
   date:     Date;
-  keywords: string;
-  locale:   string;
+  keywords?: string;
+  locale?:   string;
 }
 
 // Converts JSON strings to/from your types
 export class Convert {
   public static toArticle(json: string): Article {
+    try {
       return JSON.parse(json);
+    } catch (error) {
+      console.error('Error parsing JSON:', error);
+      return null; // or handle the error in an appropriate way
+    }
   }
 
   public static articleToJson(value: Article): string {

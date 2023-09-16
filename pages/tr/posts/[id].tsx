@@ -54,8 +54,7 @@ export default function Post({ article, allArticles }: Props) {
 
   // Sort and filter the posts
   const sortedPosts = allArticles.filter(
-    (postM) =>
-      postM.data.attributes.locale === "tr" && postM.data.id !== article.data.id
+    (postM) => postM.data.id !== article.data.id
   );
 
   // Get the posts with matching category
@@ -443,7 +442,7 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const allArticles = await getAllArticles();
+  const allArticles = await getAllArticles('tr', 20);
   const article: Article = await getArticleByID(params.id);
   article.data.attributes.content = await markdownToHtml(
     article.data.attributes.content || ""
@@ -459,7 +458,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const articles = await getAllArticles();
+  const articles = await getAllArticles('tr', 20);
 
   return {
     paths: articles.map((article) => {

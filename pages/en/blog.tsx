@@ -39,8 +39,7 @@ export default function Blog({ allArticles }: Props) {
   const selectedCategory = query.category as string;
   const searchQuery = query.search as string;
 
-  var filteredArticles = allArticles
-    .filter((article) => article.data.attributes.locale === "en");
+  var filteredArticles = allArticles;
 
     const categories = new Set<string>();
 
@@ -160,7 +159,7 @@ export default function Blog({ allArticles }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allArticles = await getAllArticles();
+  const allArticles = await getAllArticles('en', 1000);
 
   return {
     props: { allArticles },

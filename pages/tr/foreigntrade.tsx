@@ -13,8 +13,7 @@ type Props = {
 
 export default function Foreigntrade({ allArticles }: Props) {
   var filteredArticles = allArticles
-    .filter((article) =>
-        article.data.attributes.locale === "tr" && article.data.attributes.services.includes("Gümrük ve Dış Ticaret")
+    .filter((article) => article.data.attributes.services.includes("Gümrük ve Dış Ticaret")
     )
     
 
@@ -84,7 +83,7 @@ export default function Foreigntrade({ allArticles }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allArticles = await getAllArticles();
+  const allArticles = await getAllArticles('tr',50);
 
   return {
     props: { allArticles },

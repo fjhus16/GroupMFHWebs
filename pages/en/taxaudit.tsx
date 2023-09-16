@@ -14,7 +14,6 @@ type Props = {
 export default function Taxaudit({ allArticles }: Props) {
     var filteredArticles = allArticles.filter(
       (article) =>
-        article.data.attributes.locale === "en" &&
         article.data.attributes.services.includes(
           "Tax Auditing"
         )
@@ -67,7 +66,7 @@ export default function Taxaudit({ allArticles }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allArticles = await getAllArticles();
+  const allArticles =  await getAllArticles('en',50);
 
   return {
     props: { allArticles },

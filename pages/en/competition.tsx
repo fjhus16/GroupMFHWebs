@@ -14,7 +14,6 @@ type Props = {
 export default function Competition({ allArticles }: Props) {
   var filteredArticles = allArticles.filter(
     (article) =>
-      article.data.attributes.locale === "en" &&
       article.data.attributes.services.includes(
         "Competition Law and Compliance Services"
       )
@@ -80,7 +79,7 @@ export default function Competition({ allArticles }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allArticles = await getAllArticles();
+  const allArticles = await getAllArticles('en',50);
 
   return {
     props: { allArticles },
