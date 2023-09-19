@@ -16,7 +16,7 @@ import {
   AccordionSummary,
   Button,
   ButtonGroup,
-  Typography,
+  Typography, Box, 
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
@@ -167,10 +167,10 @@ export default function Blog({ allArticles }: Props) {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
-                    <Typography className="text-xl font-bold">
-                      Kategoriler
-                    </Typography>
-                  </AccordionSummary>
+                    
+<Typography component='div'><Box fontWeight='bold' display='inline'>Kategoriler</Box>
+                      
+                    </Typography>                  </AccordionSummary>
                   <AccordionDetails>
                     <ButtonGroup
                       color="inherit"
@@ -188,7 +188,7 @@ export default function Blog({ allArticles }: Props) {
                         }}
                         key="Hepsi"
                       >
-                        <Link href={"/tr/blog"}>Hepsi</Link>
+                        <a href={"/tr/blog"}>Hepsi</a>
                       </Button>
                       {Array.from(categories).map((category) => (
                         <Button
@@ -199,13 +199,13 @@ export default function Blog({ allArticles }: Props) {
                           }}
                           key={category}
                         >
-                          <Link
+                          <a
                             href={`/tr/blog?category=${encodeURIComponent(
                               category
                             )}`}
                           >
                             {category}
-                          </Link>
+                          </a>
                         </Button>
                       ))}
                     </ButtonGroup>
