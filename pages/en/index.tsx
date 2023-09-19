@@ -385,10 +385,16 @@ export default function Index({ allArticles }: Props) {
                             color: "black",
                             textTransform: "none",
                             justifyContent: "left",
+                            textAlign: "left"
                           }}
                           key={category}
                         >
-                          <Link className="whitespace-nowrap shrink"
+                          <Link className="text-left"  style={{
+                            color: "black",
+                            textTransform: "none",
+                            justifyContent: "left",
+                            textAlign: "left"
+                          }}
                             href={`/en/blog?category=${encodeURIComponent(
                               category
                             )}`}

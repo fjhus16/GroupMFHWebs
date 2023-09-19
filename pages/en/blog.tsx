@@ -190,10 +190,16 @@ export default function Blog({ allArticles }: Props) {
                 color: "black",
                 textTransform: "none",
                 justifyContent: "left",
+                textAlign: "left"
               }}
               key={category}
             >
-              <a className="whitespace-nowrap shrink"
+              <a className="text-left"  style={{
+                            color: "black",
+                            textTransform: "none",
+                            justifyContent: "left",
+                            textAlign: "left"
+                          }}
                 href={`/en/blog?category=${encodeURIComponent(
                   category
                 )}`}
