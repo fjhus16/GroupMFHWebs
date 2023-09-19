@@ -377,7 +377,7 @@ export default function Index({ allArticles }: Props) {
                         }}
                         key="Hepsi"
                       >
-                        <Link href={"/tr/blog"}>Hepsi</Link>
+                        <Link className="whitespace-nowrap shrink" href={"/tr/blog"}>Hepsi</Link>
                       </Button>
                       {Array.from(categories).map((category) => (
                         <Button
