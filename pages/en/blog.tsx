@@ -16,7 +16,7 @@ import {
   AccordionSummary,
   Button,
   ButtonGroup,
-  Typography,
+  Typography, Box, 
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
@@ -161,9 +161,9 @@ export default function Blog({ allArticles }: Props) {
         aria-controls="panel1a-content"
         id="panel1a-header"
       >
-        <Typography className="text-xl font-bold">
-          Categories
-        </Typography>
+        <Typography component='div'><Box fontWeight='bold' display='inline'>Categories</Box>
+                      
+                    </Typography> 
       </AccordionSummary>
       <AccordionDetails>
         <ButtonGroup
