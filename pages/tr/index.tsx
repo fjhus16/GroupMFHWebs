@@ -12,6 +12,15 @@ import ServicesGrid from "../../components/tr/ServicesGrid";
 import Image from "next/image";
 import ContactForm from "../../components/tr/contactform";
 import { useState, useEffect } from "react";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Button,
+  ButtonGroup,
+  Typography,
+} from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 type Props = {
   allArticles: Article[];
@@ -22,27 +31,21 @@ export default function Index({ allArticles }: Props) {
   const [slidesPerView, setSlidesPerView] = useState(4);
   useEffect(() => {
     const handleResize = () => {
-      if (typeof window !== 'undefined') {
+      if (typeof window !== "undefined") {
         setSlidesPerView(window.innerWidth < 1000 ? 2 : 4);
       }
-    };  
-    handleResize();  
-    if (typeof window !== 'undefined') {
-      window.addEventListener('resize', handleResize);
-    }  
+    };
+    handleResize();
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+    }
     return () => {
-      if (typeof window !== 'undefined') {
-        window.removeEventListener('resize', handleResize);
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleResize);
       }
     };
   }, []);
   const filteredArticles = allArticles;
-  const showArticles = filteredArticles.slice(0, 6);
-    const currentArticles = filteredArticles
-    .filter((article) => {
-      const postCategories = article.data.attributes.category.split(";");
-      return postCategories.some((category) => category.includes("Güncel"));
-    });
   const categories = new Set<string>();
   categories.add("Güncel");
   filteredArticles.forEach((article) => {
@@ -64,6 +67,11 @@ export default function Index({ allArticles }: Props) {
   categories.clear();
   sortedCategories.forEach((category) => {
     categories.add(category);
+  });
+  const showArticles = filteredArticles.slice(0, 6);
+  const currentArticles = filteredArticles.filter((article) => {
+    const postCategories = article.data.attributes.category.split(";");
+    return postCategories.some((category) => category.includes("Güncel"));
   });
 
   return (
@@ -273,7 +281,7 @@ export default function Index({ allArticles }: Props) {
                 disableOnInteraction: false,
               }}
             >
-             {Array.from(currentArticles).map((article) => (
+              {Array.from(currentArticles).map((article) => (
                 <SwiperSlide key={article.data.id}>
                   <Link
                     href={`/en/posts/${encodeURIComponent(article.data.id)}`}
@@ -302,8 +310,7 @@ export default function Index({ allArticles }: Props) {
               className="pt-2 ism:pt-2 items-center justify-center"
             >
               <div className="flex flex-wrap mt-2 mb-4 flex-center justify-center">
-               
-                <Swiper
+                {/*   <Swiper
                   className="mt-2 mb-4"
                   loop={true}
                   spaceBetween={-20}
@@ -314,20 +321,22 @@ export default function Index({ allArticles }: Props) {
                   }}
                 >
                   <SwiperSlide key={"all"}>
-                  <Link className="my-2" href={`/tr/blog`} passHref>
-                  <p
-                    className={`text-center text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-semibold py-3 px-3 lg:px-8 transitions-colors duration-200`}
-                  >
-                    Hepsi
-                  </p>
-                </Link>
-                    </SwiperSlide>
+                    <Link className="my-2" href={`/tr/blog`} passHref>
+                      <p
+                        className={`text-center text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-semibold py-3 px-3 lg:px-8 transitions-colors duration-200`}
+                      >
+                        Hepsi
+                      </p>
+                    </Link>
+                  </SwiperSlide>
                   {Array.from(categories).map((category) => (
                     <SwiperSlide key={category}>
                       <Link
                         className="my-2"
                         key={category}
-                        href={`/tr/blog?category=${encodeURIComponent(category)}`}
+                        href={`/tr/blog?category=${encodeURIComponent(
+                          category
+                        )}`}
                         passHref
                       >
                         <p
@@ -338,11 +347,64 @@ export default function Index({ allArticles }: Props) {
                       </Link>
                     </SwiperSlide>
                   ))}
-                </Swiper>
+                </Swiper> */}
+
+                <Accordion className="w-[80vw] md:w-[80vw] fhd:w-[60vw]">
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                  >
+                    <Typography className="text-xl font-bold">
+                      Kategoriler
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <ButtonGroup
+                      color="inherit"
+                      orientation="vertical"
+                      aria-label="vertical contained button group"
+                      variant="text"
+                      size="large"
+                      fullWidth
+                    >
+                      <Button
+                        style={{
+                          color: "black",
+                          textTransform: "none",
+                          justifyContent: "left",
+                        }}
+                        key="Hepsi"
+                      >
+                        <Link href={"/tr/blog"}>Hepsi</Link>
+                      </Button>
+                      {Array.from(categories).map((category) => (
+                        <Button
+                          style={{
+                            color: "black",
+                            textTransform: "none",
+                            justifyContent: "left",
+                          }}
+                          key={category}
+                        >
+                          <Link
+                            href={`/tr/blog?category=${encodeURIComponent(
+                              category
+                            )}`}
+                          >
+                            {category}
+                          </Link>
+                        </Button>
+                      ))}
+                    </ButtonGroup>
+                  </AccordionDetails>
+                </Accordion>
               </div>
             </div>
             <div className="flex flex-col justify-center items-center">
-              {showArticles.length > 0 && <MoreStories allArticles={showArticles} />}
+              {showArticles.length > 0 && (
+                <MoreStories allArticles={showArticles} />
+              )}
               <Link
                 href="/tr/blog"
                 className="text-white text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black font-bold py-3 px-10 lg:px-8 transitions-colors duration-200"
@@ -359,7 +421,7 @@ export default function Index({ allArticles }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allArticles = await getAllArticles('tr', 10);
+  const allArticles = await getAllArticles("tr", 30);
 
   return {
     props: { allArticles },

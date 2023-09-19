@@ -10,6 +10,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import SwiperCore, { Autoplay } from "swiper";
 import { useState, useEffect } from "react";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Button,
+  ButtonGroup,
+  Typography,
+} from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 type Props = {
   allArticles: Article[];
@@ -107,8 +116,8 @@ export default function Blog({ allArticles }: Props) {
           <div
             id="yazılar"
             className="pt-2 ism:pt-2 items-center justify-center"
-          >
-           <Swiper
+          ><div className="flex flex-wrap mt-2 mb-4 flex-center justify-center">
+        {/*   <Swiper
                   className="mt-2 mb-4"
                   loop={true}
                   spaceBetween={-20}
@@ -144,6 +153,59 @@ export default function Blog({ allArticles }: Props) {
                     </SwiperSlide>
                   ))}
                 </Swiper>
+              */}
+
+<Accordion className="w-[80vw] md:w-[80vw] fhd:w-[60vw]">
+      <AccordionSummary
+        expandIcon={<ExpandMoreIcon />}
+        aria-controls="panel1a-content"
+        id="panel1a-header"
+      >
+        <Typography className="text-xl font-bold">
+          Categories
+        </Typography>
+      </AccordionSummary>
+      <AccordionDetails>
+        <ButtonGroup
+          color="inherit"
+          orientation="vertical"
+          aria-label="vertical contained button group"
+          variant="text"
+          size="large"
+          fullWidth
+        >
+          <Button
+            style={{
+              color: "black",
+              textTransform: "none",
+              justifyContent: "left",
+            }}
+            key="All"
+          >
+            <Link href={"/en/blog"}>All</Link>
+          </Button>
+          {Array.from(categories).map((category) => (
+            <Button
+              style={{
+                color: "black",
+                textTransform: "none",
+                justifyContent: "left",
+              }}
+              key={category}
+            >
+              <Link
+                href={`/en/blog?category=${encodeURIComponent(
+                  category
+                )}`}
+              >
+                {category}
+              </Link>
+            </Button>
+          ))}
+        </ButtonGroup>
+      </AccordionDetails>
+    </Accordion>
+          </div>
           </div>
           <div>
             {filteredArticlesByCategory.length > 0 ? (
