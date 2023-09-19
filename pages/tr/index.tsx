@@ -18,7 +18,7 @@ import {
   AccordionSummary,
   Button,
   ButtonGroup,
-  Typography,
+  Typography, Box, 
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
@@ -355,10 +355,11 @@ export default function Index({ allArticles }: Props) {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
-                    <Typography className="text-xl font-bold">
-                      Kategoriler
-                    </Typography>
-                  </AccordionSummary>
+
+
+<Typography component='div'><Box fontWeight='bold' display='inline'>Kategoriler</Box>
+                      
+                    </Typography>                  </AccordionSummary>
                   <AccordionDetails>
                     <ButtonGroup
                       color="inherit"
