@@ -356,7 +356,7 @@ export default function Index({ allArticles }: Props) {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
-                    <Typography component='div'><Box fontWeight='fontWeightMedium' display='inline'>Categories </Box>
+                    <Typography component='div'><Box fontWeight='bold' display='inline'>Categories</Box>
                       
                     </Typography>
                   </AccordionSummary>
