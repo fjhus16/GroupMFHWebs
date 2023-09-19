@@ -182,7 +182,7 @@ export default function Blog({ allArticles }: Props) {
             }}
             key="All"
           >
-            <a href={"/en/blog"}>All</a>
+            <a className="whitespace-nowrap shrink" href={"/en/blog"}>All</a>
           </Button>
           {Array.from(categories).map((category) => (
             <Button
@@ -193,7 +193,7 @@ export default function Blog({ allArticles }: Props) {
               }}
               key={category}
             >
-              <a 
+              <a className="whitespace-nowrap shrink"
                 href={`/en/blog?category=${encodeURIComponent(
                   category
                 )}`}
