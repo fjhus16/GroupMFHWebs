@@ -182,7 +182,7 @@ export default function Blog({ allArticles }: Props) {
             }}
             key="All"
           >
-            <Link href={"/en/blog"}>All</Link>
+            <Link replace={true} href={"/en/blog"}>All</Link>
           </Button>
           {Array.from(categories).map((category) => (
             <Button
@@ -193,7 +193,7 @@ export default function Blog({ allArticles }: Props) {
               }}
               key={category}
             >
-              <Link
+              <Link replace={true} 
                 href={`/en/blog?category=${encodeURIComponent(
                   category
                 )}`}
