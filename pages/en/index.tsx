@@ -377,7 +377,7 @@ export default function Index({ allArticles }: Props) {
                         }}
                         key="All"
                       >
-                        <Link href={"/en/blog"}>All</Link>
+                        <Link className="whitespace-nowrap shrink" href={"/en/blog"}>All</Link>
                       </Button>
                       {Array.from(categories).map((category) => (
                         <Button
@@ -388,7 +388,7 @@ export default function Index({ allArticles }: Props) {
                           }}
                           key={category}
                         >
-                          <Link
+                          <Link className="whitespace-nowrap shrink"
                             href={`/en/blog?category=${encodeURIComponent(
                               category
                             )}`}
