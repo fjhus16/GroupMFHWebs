@@ -18,7 +18,8 @@ import {
   AccordionSummary,
   Button,
   ButtonGroup,
-  Typography, Box, 
+  Typography,
+  Box,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
@@ -355,11 +356,12 @@ export default function Index({ allArticles }: Props) {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
-
-
-<Typography component='div'><Box fontWeight='bold' display='inline'>Kategoriler</Box>
-                      
-                    </Typography>                  </AccordionSummary>
+                    <Typography component="div">
+                      <Box fontWeight="bold" display="inline">
+                        Kategoriler
+                      </Box>
+                    </Typography>{" "}
+                  </AccordionSummary>
                   <AccordionDetails>
                     <ButtonGroup
                       color="inherit"
@@ -375,9 +377,22 @@ export default function Index({ allArticles }: Props) {
                           textTransform: "none",
                           justifyContent: "left",
                         }}
+                        fullWidth
                         key="Hepsi"
                       >
-                        <Link className="whitespace-nowrap shrink" href={"/tr/blog"}>Hepsi</Link>
+                        <Link
+                          className="whitespace-nowrap shrink w-full"
+                          style={{
+                            color: "black",
+                            textTransform: "none",
+                            justifyContent: "left",
+                            textAlign: "left",
+                            width: "100%",
+                          }}
+                          href={"/tr/blog"}
+                        >
+                          Hepsi
+                        </Link>
                       </Button>
                       {Array.from(categories).map((category) => (
                         <Button
@@ -385,16 +400,20 @@ export default function Index({ allArticles }: Props) {
                             color: "black",
                             textTransform: "none",
                             justifyContent: "left",
-                            textAlign: "left"
+                            textAlign: "left",
                           }}
+                          fullWidth
                           key={category}
                         >
-                          <Link className="text-left"  style={{
-                            color: "black",
-                            textTransform: "none",
-                            justifyContent: "left",
-                            textAlign: "left"
-                          }}
+                          <Link
+                            className="text-left w-full"
+                            style={{
+                              color: "black",
+                              textTransform: "none",
+                              justifyContent: "left",
+                              textAlign: "left",
+                              width: "100%",
+                            }}
                             href={`/tr/blog?category=${encodeURIComponent(
                               category
                             )}`}

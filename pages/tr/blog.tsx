@@ -186,9 +186,17 @@ export default function Blog({ allArticles }: Props) {
                           textTransform: "none",
                           justifyContent: "left",
                         }}
+                        fullWidth
                         key="Hepsi"
                       >
-                        <a className="whitespace-nowrap shrink" href={"/tr/blog"}>Hepsi</a>
+                        <a className="text-left w-full"
+                            style={{
+                              color: "black",
+                              textTransform: "none",
+                              justifyContent: "left",
+                              textAlign: "left",
+                              width: "100%",
+                            }} href={"/tr/blog"}>Hepsi</a>
                       </Button>
                       {Array.from(categories).map((category) => (
                         <Button
@@ -198,14 +206,17 @@ export default function Blog({ allArticles }: Props) {
                             justifyContent: "left",
                             textAlign: "left"
                           }}
+                          fullWidth
                           key={category}
                         > 
-                          <a className="text-left" style={{
-                            color: "black",
-                            textTransform: "none",
-                            justifyContent: "left",
-                            textAlign: "left"
-                          }}
+                          <a className="text-left w-full"
+                            style={{
+                              color: "black",
+                              textTransform: "none",
+                              justifyContent: "left",
+                              textAlign: "left",
+                              width: "100%",
+                            }}
                             href={`/tr/blog?category=${encodeURIComponent(
                               category
                             )}`}

@@ -18,7 +18,8 @@ import {
   AccordionSummary,
   Button,
   ButtonGroup,
-  Typography, Box,
+  Typography,
+  Box,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
@@ -31,17 +32,17 @@ export default function Index({ allArticles }: Props) {
   const [slidesPerView, setSlidesPerView] = useState(4);
   useEffect(() => {
     const handleResize = () => {
-      if (typeof window !== 'undefined') {
+      if (typeof window !== "undefined") {
         setSlidesPerView(window.innerWidth < 1000 ? 2 : 4);
       }
     };
-    handleResize();  
-    if (typeof window !== 'undefined') {
-      window.addEventListener('resize', handleResize);
+    handleResize();
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
     }
     return () => {
-      if (typeof window !== 'undefined') {
-        window.removeEventListener('resize', handleResize);
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleResize);
       }
     };
   }, []);
@@ -69,12 +70,10 @@ export default function Index({ allArticles }: Props) {
     categories.add(category);
   });
   const showArticles = filteredArticles.slice(0, 6);
-  const currentArticles = filteredArticles
-    .filter((article) => {
-      const postCategories = article.data.attributes.category.split(";");
-      return postCategories.some((category) => category.includes("Current"));
-    });
-  
+  const currentArticles = filteredArticles.filter((article) => {
+    const postCategories = article.data.attributes.category.split(";");
+    return postCategories.some((category) => category.includes("Current"));
+  });
 
   return (
     <>
@@ -293,8 +292,7 @@ export default function Index({ allArticles }: Props) {
                   </Link>
                 </SwiperSlide>
               ))}
-              </Swiper> 
-            
+            </Swiper>
           </div>
 
           <Container>
@@ -312,8 +310,7 @@ export default function Index({ allArticles }: Props) {
               className="pt-2 ism:pt-2 items-center justify-center"
             >
               <div className="flex flex-wrap mt-2 mb-4 flex-center justify-center">
-               
-             {/*    <Swiper
+                {/*    <Swiper
                   className="mt-2 mb-4"
                   loop={true}
                   spaceBetween={-20}
@@ -350,14 +347,16 @@ export default function Index({ allArticles }: Props) {
                   ))}
                 </Swiper>*/}
 
-            <Accordion className="w-[80vw] md:w-[80vw] fhd:w-[60vw]">
+                <Accordion className="w-[80vw] md:w-[80vw] fhd:w-[60vw]">
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
-                    <Typography component='div'><Box fontWeight='bold' display='inline'>Categories</Box>
-                      
+                    <Typography component="div">
+                      <Box fontWeight="bold" display="inline">
+                        Categories
+                      </Box>
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
@@ -375,9 +374,22 @@ export default function Index({ allArticles }: Props) {
                           textTransform: "none",
                           justifyContent: "left",
                         }}
+                        fullWidth
                         key="All"
                       >
-                        <Link className="whitespace-nowrap shrink" href={"/en/blog"}>All</Link>
+                        <Link
+                          className="whitespace-nowrap shrink w-full"
+                          style={{
+                            color: "black",
+                            textTransform: "none",
+                            justifyContent: "left",
+                            textAlign: "left",
+                            width: "100%",
+                          }}
+                          href={"/en/blog"}
+                        >
+                          All
+                        </Link>
                       </Button>
                       {Array.from(categories).map((category) => (
                         <Button
@@ -385,16 +397,20 @@ export default function Index({ allArticles }: Props) {
                             color: "black",
                             textTransform: "none",
                             justifyContent: "left",
-                            textAlign: "left"
+                            textAlign: "left",
                           }}
+                          fullWidth
                           key={category}
                         >
-                          <Link className="text-left"  style={{
-                            color: "black",
-                            textTransform: "none",
-                            justifyContent: "left",
-                            textAlign: "left"
-                          }}
+                          <Link
+                            className="text-left w-full"
+                            style={{
+                              color: "black",
+                              textTransform: "none",
+                              justifyContent: "left",
+                              textAlign: "left",
+                              width: "100%",
+                            }}
                             href={`/en/blog?category=${encodeURIComponent(
                               category
                             )}`}
@@ -409,7 +425,9 @@ export default function Index({ allArticles }: Props) {
               </div>
             </div>
             <div className="flex flex-col justify-center items-center">
-              {showArticles.length > 0 && <MoreStories allArticles={showArticles} />}
+              {showArticles.length > 0 && (
+                <MoreStories allArticles={showArticles} />
+              )}
               <Link
                 href="/en/blog"
                 className="text-sm ism:text-md mx-3 bg-gray-700 hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-10 lg:px-8 duration-200 transition-colors mb-6"
@@ -426,7 +444,7 @@ export default function Index({ allArticles }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allArticles = await getAllArticles('en',30);
+  const allArticles = await getAllArticles("en", 30);
 
   return {
     props: { allArticles },
