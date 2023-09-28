@@ -51,6 +51,13 @@ export default function Post({ article, allArticles }: Props) {
   const router = useRouter();
   const title = article.data.attributes.title;
   const cat = article.data.attributes.category;
+  const { asPath } = router;
+
+  if (article.data.attributes.locale != asPath.substring(1, 3)) {
+    router.push(
+      "/" + article.data.attributes.locale + "/posts/" + article.data.id
+    );
+  }
 
   // Sort and filter the posts
   const sortedPosts = allArticles.filter(
@@ -81,8 +88,6 @@ export default function Post({ article, allArticles }: Props) {
   if (!router.isFallback && !article.data.id) {
     return <ErrorPage statusCode={404} />;
   }
-
-  const { asPath } = router;
 
   const handleScrollToServices = () => {
     if (asPath !== "/tr") {
@@ -442,7 +447,7 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const allArticles = await getAllArticles('tr', 20);
+  const allArticles = await getAllArticles("tr", 20);
   const article: Article = await getArticleByID(params.id);
   article.data.attributes.content = await markdownToHtml(
     article.data.attributes.content || ""
@@ -458,7 +463,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const articles = await getAllArticles('tr', 20);
+  const articles = await getAllArticles("tr", 20);
 
   return {
     paths: articles.map((article) => {
