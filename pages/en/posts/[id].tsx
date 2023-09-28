@@ -20,7 +20,7 @@ import Meta from "../../../components/meta";
 import Footer from "../../../components/en/footer";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import Image from "next/image";
 import { Phone, Search } from "@mui/icons-material";
 import { styled, TextField } from "@mui/material";
@@ -53,11 +53,17 @@ export default function Post({ article, allArticles }: Props) {
   const cat = article.data.attributes.category;
   const { asPath } = router;
 
-  if (article.data.attributes.locale != asPath.substring(1, 3)) {
+  const handleWrongLocale = () => {
     router.push(
       "/" + article.data.attributes.locale + "/posts/" + article.data.id
     );
-  }
+  };
+
+  useEffect(() => {
+    if (article.data.attributes.locale != asPath.substring(1, 3)) {
+      handleWrongLocale();
+    }
+  });
 
   // Sort and filter the posts
   const sortedPosts = allArticles.filter(
@@ -99,6 +105,8 @@ export default function Post({ article, allArticles }: Props) {
       });
     }
   };
+
+  
 
   const [searchQuery, setSearchQuery] = useState("");
 
