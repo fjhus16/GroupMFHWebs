@@ -28,6 +28,7 @@ export default function Incentivesrd({ allArticles }: Props) {
           name="description"
           content="MFH Group: Tax, incentives, and dispute resolution solutions. We offer consultancy on investment, foreign direct investment, R&D incentives, and more. Trust us for expert guidance."
         />
+        <meta name="language" content="EN"/>
       </Head>
       <Layout>
         <Container>

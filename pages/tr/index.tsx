@@ -84,6 +84,7 @@ export default function Index({ allArticles }: Props) {
             name="description"
             content="Vergi danışmanlığı, vergi davaları, yatırım, teşvik ve devlet desteği gibi konularda uzmanlaşmış bir kurumuz."
           />
+          <meta name="language" content="TR"/>
         </Head>
         <div className="flex flex-col md:flex-row w-full top-[96px] z-10 md:fixed g-[800px] md:h-[450px]">
           <div className="w-full h-[450px]">

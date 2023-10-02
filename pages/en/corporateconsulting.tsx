@@ -31,6 +31,7 @@ export default function Corporateconsulting({ allArticles }: Props) {
           name="description"
           content="MFH Group: Tailored solutions, collaborative approach. Expertise, flexibility, industry knowledge. Trust us for consultancy expertise."
         />
+        <meta name="language" content="EN"/>
       </Head>
       <Layout>
         <Container>

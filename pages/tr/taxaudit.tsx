@@ -26,6 +26,7 @@ export default function Taxaudit({ allArticles }: Props) {
           name="description"
           content="MFH Group, gerçek ve tüzel kişilerin bilanço, gelir tablosu ve vergi beyanlarını denetler ve tasdik eder. Raporlar müşterilere ve resmi mercilere sunulur."
         />
+        <meta name="language" content="TR"/>
       </Head>
       <Layout>
         <Container>

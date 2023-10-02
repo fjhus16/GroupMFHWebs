@@ -26,6 +26,7 @@ export default function Foreigntrade({ allArticles }: Props) {
           name="description"
           content="MFH Group, İhracat, İthalat ve Kambiyo Mevzuatı alanında çözüm odaklı hizmetler sunar."
         />
+        <meta name="language" content="TR"/>
       </Head>
       <Layout>
         <Container>

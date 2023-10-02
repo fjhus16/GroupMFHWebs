@@ -10,6 +10,11 @@ export default function Contact() {
       <Layout>
         <Head>
           <title>GroupMFH</title>
+          <meta
+            name="description"
+            content="Vergi danışmanlığı, vergi davaları, yatırım, teşvik ve devlet desteği gibi konularda uzmanlaşmış bir kurumuz."
+          />
+          <meta name="language" content="TR"/>
         </Head>
         <Container>
           <div className='flex flex-col justify-center items-center'>

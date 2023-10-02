@@ -84,6 +84,7 @@ export default function Index({ allArticles }: Props) {
             name="description"
             content="We are a specialized institution in tax consultancy, tax litigation, investment, incentives, and government support."
           />
+          <meta name="language" content="EN"/>
         </Head>
         <div className="flex flex-col md:flex-row w-full top-[96px] z-10 md:fixed gap-[800px] md:h-[450px]">
           <div className="w-full h-[450px]">

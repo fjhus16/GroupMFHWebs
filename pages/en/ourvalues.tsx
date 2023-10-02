@@ -9,6 +9,11 @@ export default function OurValues() {
       <Layout>
         <Head>
           <title>GroupMFH</title>
+        <meta
+          name="description"
+          content="MFH Group: Comprehensive financial, administrative, and legal services. Tax consulting, dispute resolution, establishment procedures, and more. Trust us for tailored solutions."
+        />
+        <meta name="language" content="EN"/>
         </Head>
         <Container>
           <section className="flex-col flex items-center md:justify-between pt-6 pb-6">

@@ -31,6 +31,7 @@ export default function Corporateconsulting({ allArticles }: Props) {
           name="description"
           content="MFH Group, müşterilere teknik bilgi ve esneklikle yaklaşır, sektör uzmanlığıyla değer odaklı çözümler sunar."
         />
+        <meta name="language" content="TR"/>
       </Head>
       <Layout>
         <Container>

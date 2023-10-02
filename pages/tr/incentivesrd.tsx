@@ -27,6 +27,7 @@ export default function Incentivesrd({ allArticles }: Props) {
           name="description"
           content="MFH Group, müşterilere vergi, teşvik ve istisna konularında çözüm odaklı danışmanlık hizmetleri sunar."
         />
+        <meta name="language" content="TR"/>
       </Head>
       <Layout>
         <Container>

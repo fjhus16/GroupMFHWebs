@@ -29,6 +29,7 @@ export default function Taxaudit({ allArticles }: Props) {
           name="description"
           content="MFH Group: Trusted tax auditing and certification services for individuals and businesses. Compliance, certified reports, and peace of mind."
         />
+        <meta name="language" content="EN"/>
       </Head>
       <Layout>
         <Container>

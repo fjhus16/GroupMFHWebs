@@ -27,6 +27,7 @@ export default function Competition({ allArticles }: Props) {
           name="description"
           content="MFH Group, müşterilere mali danışmanlık, vergi planlaması ve danışmanlık hizmetleri sunar."
         />
+        <meta name="language" content="TR"/>
       </Head>
       <Layout>
         <Container>

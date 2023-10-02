@@ -26,6 +26,7 @@ export default function Socialsecurity({ allArticles }: Props) {
           name="description"
           content="MFH Group, şirketlere iş ve sosyal güvenlik konularında çözüm odaklı hizmetler sunar."
         />
+        <meta name="language" content="TR"/>
       </Head>
       <Layout>
         <Container>

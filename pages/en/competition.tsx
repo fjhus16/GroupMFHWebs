@@ -25,10 +25,12 @@ export default function Competition({ allArticles }: Props) {
     <>
       <Head>
         <title>Competition Law and Compliance Services</title>
+        
         <meta
           name="description"
           content="MFH Group: Comprehensive financial, administrative, and legal services. Tax consulting, dispute resolution, establishment procedures, and more. Trust us for tailored solutions."
         />
+        <meta name="language" content="EN"/>
       </Head>
       <Layout>
         <Container>

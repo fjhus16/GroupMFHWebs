@@ -29,6 +29,7 @@ export default function Accounting({ allArticles }: Props) {
           name="description"
           content="MFH Group: Comprehensive financial, administrative, and legal services. Tax consulting, dispute resolution, establishment procedures, and more. Trust us for tailored solutions."
         />
+        <meta name="language" content="EN"/>
       </Head>
       <Layout>
         <Container>

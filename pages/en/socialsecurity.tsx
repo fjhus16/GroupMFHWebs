@@ -27,6 +27,7 @@ export default function Socialsecurity({ allArticles }: Props) {
           name="description"
           content="MFH Group: Labor and social security solutions for companies. We handle procedures, terminations, compliance, and more. Trust us for comprehensive support."
         />
+        <meta name="language" content="EN"/>
       </Head>
       <Layout>
         <Container>

@@ -116,6 +116,11 @@ export default function Blog({ allArticles }: Props) {
       <Layout>
         <Head>
           <title>GroupMFH</title>
+          <meta
+            name="description"
+            content="Vergi danışmanlığı, vergi davaları, yatırım, teşvik ve devlet desteği gibi konularda uzmanlaşmış bir kurumuz."
+          />
+          <meta name="language" content="TR"/>
         </Head>
         <Container>
           <h2 className="mb-2 text-5xl justify-center w-full flex font-bold">

@@ -111,6 +111,11 @@ export default function Blog({ allArticles }: Props) {
       <Layout>
         <Head>
           <title>GroupMFH</title>
+        <meta
+          name="description"
+          content="MFH Group: Comprehensive financial, administrative, and legal services. Tax consulting, dispute resolution, establishment procedures, and more. Trust us for tailored solutions."
+        />
+        <meta name="language" content="EN"/>
         </Head>
         <Container>
           <h2 className="mb-2 text-5xl justify-center w-full flex font-bold">

@@ -29,6 +29,7 @@ export default function Foreigntrade({ allArticles }: Props) {
           name="description"
           content="MFH Group: Export, import, and foreign exchange solutions. We cover customs, tax, and trade legislation. Trust us for comprehensive support."
         />
+        <meta name="language" content="EN"/>
       </Head>
       <Layout>
         <Container>

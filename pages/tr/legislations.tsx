@@ -27,6 +27,7 @@ export default function Legislations({ allArticles }: Props) {
           name="description"
           content="6102 sayılı Türk Ticaret Kanunu'na göre, ticari işletmelerin tür değişikliği, birleşme veya bölünme işlemleri vergi mevzuatına uygun hizmetlerle gerçekleştirilir."
         />
+        <meta name="language" content="TR"/>
       </Head>
       <Layout>
         <Container>

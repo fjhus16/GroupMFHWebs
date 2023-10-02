@@ -28,6 +28,7 @@ export default function Legislations({ allArticles }: Props) {
           name="description"
           content="MFH Group: We assist with seamless changes in commercial enterprises and companies, complying with Turkish Commercial Code No. 6102 and tax legislation."
         />
+        <meta name="language" content="EN"/>
       </Head>
       <Layout>
         <Container>

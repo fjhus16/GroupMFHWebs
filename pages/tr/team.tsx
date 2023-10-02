@@ -9,6 +9,11 @@ export default function Team() {
       <Layout>
         <Head>
           <title>GroupMFH</title>
+          <meta
+            name="description"
+            content="Vergi danışmanlığı, vergi davaları, yatırım, teşvik ve devlet desteği gibi konularda uzmanlaşmış bir kurumuz."
+          />
+          <meta name="language" content="TR"/>
         </Head>
         <Container>
           <section className="flex-col flex items-center md:justify-between pt-6 pb-6">

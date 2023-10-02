@@ -8,6 +8,11 @@ export default function Legal() {
       <Layout>
         <Head>
           <title>MFH Group</title>
+          <meta
+            name="description"
+            content="Vergi danışmanlığı, vergi davaları, yatırım, teşvik ve devlet desteği gibi konularda uzmanlaşmış bir kurumuz."
+          />
+          <meta name="language" content="TR"/>
         </Head>
         <Container>
           <div className='text-justify'>
