@@ -123,7 +123,14 @@ export default function Post({ article, allArticles }: Props) {
       <Meta />
       <Head>
         <title>GroupMFH - {article.data.attributes.title}</title>
-        <meta name="description" content={article.data.attributes.keywords} />
+        
+        <meta
+          name="keywords"
+          content={"" + article.data.attributes.keywords + ""}
+        />
+        <meta name="language" content="TR"/>
+        <meta name="description" content={""+article.data.attributes.excerpt+""} />
+        <meta name="subject" content={""+article.data.attributes.title+""} />
       </Head>
       <div className="bg-white">
         <Popover className="z-50 bg-gradient-to-b from-slate-400 via-slate-200 to-slate-100 sticky top-0 flex items-center px-4 md:px-8 py-2 h-24 z-10">

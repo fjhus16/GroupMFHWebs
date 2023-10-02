@@ -4,7 +4,7 @@ const API_URL = "https://api.groupmfh.com/api/articles";
 
 export async function getArticleByID(id: string) {
   const response = await fetch(
-    `${API_URL}/${id}?fields[0]=title&fields[1]=date&fields[2]=excerpt&fields[3]=category&fields[4]=services&fields[5]=content&fields[6]=sector&fields[7]=locale&populate[coverImage][fields][0]=name&populate[coverImage][fields][1]=url&populate[localizations][fields][0]=locale`
+    `${API_URL}/${id}?fields[0]=title&fields[1]=date&fields[2]=excerpt&fields[3]=category&fields[4]=services&fields[5]=content&fields[6]=sector&fields[7]=locale&fields[8]=keywords&populate[coverImage][fields][0]=name&populate[coverImage][fields][1]=url&populate[localizations][fields][0]=locale`
   );
   const data = await response.json();
   const jsonString = JSON.stringify(data);
