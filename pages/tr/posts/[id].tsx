@@ -132,6 +132,7 @@ export default function Post({ article, allArticles }: Props) {
         <meta name="description" content={""+article.data.attributes.excerpt+""} />
         <meta name="subject" content={""+article.data.attributes.title+""} />
         <meta name="revised" content={"" + article.data.attributes.date + ""} />
+        <link rel="canonical" href={"https://groupmfh.com/tr/posts/" + article.data.id} />
       </Head>
       <div className="bg-white">
         <Popover className="z-50 bg-gradient-to-b from-slate-400 via-slate-200 to-slate-100 sticky top-0 flex items-center px-4 md:px-8 py-2 h-24 z-10">
