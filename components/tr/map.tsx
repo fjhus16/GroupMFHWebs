@@ -10,7 +10,7 @@ import {
 } from "react-simple-maps";
 
 const geoUrl =
-  "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries-sans-antarctica.json";
+  "/assets/world-countries-sans-antarctica.json";
 
 const markers = [
   {
