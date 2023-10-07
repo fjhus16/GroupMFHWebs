@@ -460,7 +460,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const articles = await getAllArticles("en", 20);
+  const articles = await getAllArticles("en", 5000);
 
   return {
     paths: articles.map((article) => {
