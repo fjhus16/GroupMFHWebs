@@ -101,7 +101,7 @@ const Header = () => {
               value={searchQuery}
               onChange={handleSearchChange}
             />
-            <button type="submit" name="SearchButton" className="p-2">
+            <button type="submit" name="SearchButton" id="SearchButton" className="p-2">
               <Search className="h-6 w-6" />
             </button>
           </form>
