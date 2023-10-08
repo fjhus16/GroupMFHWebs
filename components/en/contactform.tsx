@@ -10,11 +10,11 @@ const ContactForm = () => {
         <div className='flex flex-center flex-col justify-center'>
           <h3 className='ml-6 mr-6 pt-3'>Fill in and send the form, our most suitable expert will get in touch with you as soon as possible.</h3>
         </div>
-        <TextField required className='w-[90%]' id="outlined-basic" label="Your name" name="isim" variant="outlined" />
-        <TextField required className='w-[90%]' id="outlined-basic" label="Your e-mail address" name="email" variant="outlined" />
-        <TextField className='w-[90%]' id="outlined-basic" label="Your phone number" name="telefon" variant="outlined" />
-        <TextField className='w-[90%]' id="outlined-basic" label="The name of your company" name="şirket" variant="outlined" />
-        <TextField required className='w-[90%]' multiline id="outlined-basic" label="Your message" name="mesaj" variant="outlined" />
+        <TextField required className='w-[90%]' id="InputName" label="Your name" name="isim" variant="outlined" />
+        <TextField required className='w-[90%]' id="InputMail" label="Your e-mail address" name="email" variant="outlined" />
+        <TextField className='w-[90%]' id="InputPhone" label="Your phone number" name="telefon" variant="outlined" />
+        <TextField className='w-[90%]' id="InputCompany" label="The name of your company" name="şirket" variant="outlined" />
+        <TextField required className='w-[90%]' multiline id="InputMessage" label="Your message" name="mesaj" variant="outlined" />
         <input type="text" name="_honey" className="hidden" />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_template" value="box" />
