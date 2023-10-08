@@ -102,7 +102,7 @@ const Header = () => {
               value={searchQuery}
               onChange={handleSearchChange}
             />
-            <button type="submit" name="AramaButonu" id="AramaButonu" className="p-2">
+            <button type="submit" name="AramaButonu" id="AramaButonu" aria-label="AramaButonu" className="p-2">
               <Search className="h-6 w-6" />
             </button>
           </form>
