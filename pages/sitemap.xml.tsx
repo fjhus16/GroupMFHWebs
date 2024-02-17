@@ -49,14 +49,14 @@ function generateSiteMap(postsEn: Article[], postsTr: Article[]) {
           <loc>${`${URLEn}/posts/${post.data.id}`}</loc>
       </url>
     `;
-     })}
+     }).join('')}
      ${postsTr.map((post) => {
        return `
       <url>
           <loc>${`${URLTr}/posts/${post.data.id}`}</loc>
       </url>
     `;
-     })}
+     }).join('')}
    </urlset>
  `;
 }
