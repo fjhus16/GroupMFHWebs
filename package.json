@@ -20,6 +20,7 @@
     "gray-matter": "^4.0.3",
     "headlessui": "^0.0.0",
     "next": "latest",
+    "nodemailer": "^6.9.14",
     "react": "^18.2.0",
     "react-collapse": "^5.1.1",
     "react-dom": "^18.2.0",

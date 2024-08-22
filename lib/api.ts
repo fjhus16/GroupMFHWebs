@@ -24,15 +24,3 @@ export async function getAllArticles(lang: string, count: number) {
   });
   return Articles;
 }
-
-/*
-export async function getStaticProps() {
-  const articles = await getAllArticles();
-
-  return {
-    props: {
-      articles,
-    },
-  };
-}
-*/
