@@ -16,7 +16,7 @@ export async function getProductByID(req) {
 
     let mailOptionsCompany = {
       from: `"${process.env.MAIL_USER}" <${process.env.MAIL_USER}>`, // Sender address
-      to: "contact@huseyinonal.com", // List of recipients
+      to: "form@groupmfh.com", // List of recipients
       subject: "Groupmfh.com form", // Subject line
       html: `
             <!DOCTYPE html>
