@@ -12,11 +12,6 @@ const PostHeader = ({ title, coverImageUrl, date }: Props) => {
   return (
     <>
       <PostTitle>{title}</PostTitle>
-      <div className="max-w-2xl mx-auto">
-        <div className="mb-4 text-lg">
-          <DateFormatter dateString={date} />
-        </div>
-      </div>
       <div className="sm:mx-0">
         <CoverImage title={title} src={"https://api.groupmfh.com"+coverImageUrl} />
       </div>
