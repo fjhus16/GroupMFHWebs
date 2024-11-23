@@ -76,7 +76,6 @@ const PostPreview = ({
             className="flex flex-row items-center justify-between mt-auto font-bold text-lg"
           >
             {category.replaceAll(";", ", ")}
-            <DateFormatter dateString={date} />
           </CardActions>
         </Card>
       </div>
